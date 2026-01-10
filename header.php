@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+
+<head>
+  <?php
+  $title = '';
+  if (is_home()) {
+    $title = 'フェミューズクリニック | 東新宿駅徒歩1分、新宿駅・歌舞伎町からも近い美容皮膚科・婦人科';
+  } else if (is_page('doctor')) {
+    $title =  '医師紹介 | フェミューズクリニック';
+  } else {
+    $title = single_post_title('', false) . ' | ' . 'フェミューズクリニック';
+  }
+  $description = "美容皮膚科と婦人科のトータルケア。美白美肌からデリケートゾーンのお悩みまで、女性の体に寄り添うクリニックです。またオンライン診療にも対応しています。性病検査や性病治療、低用量ピルの処方も行っております。"
+  ?>
+  <title><?php echo $title ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="keywords" content="">
+  <meta name="description" content="<?php echo $description; ?>">
+  <meta property="og:url" content="" />
+  <?php if (is_home()) : ?>
+    <meta property="og:type" content="website" />
+  <?php else : ?>
+    <meta property="og:type" content="article" />
+  <?php endif; ?>
+  <meta name="og:title" content="<?php echo $title ?>" />
+  <meta property="og:description" content="<?php echo $description; ?>" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:image" content="<?php my_theme_uri(); ?>/assets/images/ogp.jpg" />
+  <meta name="twitter:title" content="<?php echo $title ?>" />
+  <meta name="twitter:description" content="<?php echo $description; ?>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="<?php my_theme_uri(); ?>/assets/images/ogp.jpg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  <?php wp_head(); ?>
+  <link rel="icon" href="<?php my_theme_uri(); ?>/assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KP2T5TVL');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KP2T5TVL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div class="logo">
+      <a href="<?php my_home_uri(); ?>">
+        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.png" alt="femuse" />
+      </a>
+    </div>
+    <div id="menu-sp" class="header-menu sp">
+      <img src="<?php my_theme_uri(); ?>/assets/images/common/menu_button.png" alt="" />
+    </div>
+    <nav id="nav-sp" class="nav">
+      <div class="nav-logo sp">
+        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo_w.png" alt="" />
+      </div>
+      <img id="menu-close-sp" class="nav-close sp" src="<?php my_theme_uri(); ?>/assets/images/common/close.png" alt="" />
+      <ul>
+        <li class="nav-sp-link"><a id="haeder-nav-menu" href="<?php my_home_uri(); ?>#menu">メニュー</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("price")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>price">料金表</a></li>
+        <li class="nav-sp-link"><a href="<?php my_home_uri(); ?>#store">施設情報</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>about">About femuse clinic</a></li>
+      </ul>
+    </nav>
+  </header>
