@@ -81,29 +81,35 @@
       </div>
       <img id="menu-close-sp" class="nav-close sp" src="<?php my_theme_uri(); ?>/assets/images/common/close.webp" alt="" />
       <ul>
-      <li class="nav-sp-link has-plus js-accordion">
-        <a href="javascript:void(0);">診療内容</a>
-
-        <ul class="nav-sp-child">
-          <li><a href="#">美容皮膚科</a></li>
-          <li><a href="#">美容注射・点滴</a></li>
-          <li><a href="#">低用量ピル・月経移動</a></li>
-          <li><a href="#">アフターピル</a></li>
-          <li><a href="#">性感染症</a></li>
-          <li><a href="#">糖尿病</a></li>
-          <li><a href="#">二日酔い防止</a></li>
-          <li><a href="#">痩身相談</a></li>
-          <li><a href="#">睡眠障害</a></li>
-          <li><a href="#">花粉症治療</a></li>
-          <li><a href="#">予防接種（インフルエンザ）</a></li>
-        </ul>
-      </li>
+        <?php if ( wp_is_mobile() ) : ?>
+          <li class="nav-sp-link has-plus js-accordion">
+            <a href="javascript:void(0);" class="js-accordion-trigger">診療内容</a>
+            <ul class="nav-sp-child">
+              <li><a href="#">美容皮膚科</a></li>
+              <li><a href="#">美容注射・点滴</a></li>
+              <li><a href="#">低用量ピル・月経移動</a></li>
+              <li><a href="#">アフターピル</a></li>
+              <li><a href="#">性感染症</a></li>
+              <li><a href="#">糖尿病</a></li>
+              <li><a href="#">二日酔い防止</a></li>
+              <li><a href="#">痩身相談</a></li>
+              <li><a href="#">睡眠障害</a></li>
+              <li><a href="#">花粉症治療</a></li>
+              <li><a href="#">予防接種（インフルエンザ）</a></li>
+            </ul>
+          </li>
+        <?php else : ?>
+          <li class="nav-sp-link">
+            <a class="<?php if ( is_page('menu') ) : ?>header-nav-current<?php endif; ?>"
+              href="<?php my_home_uri(); ?>">診療内容</a>
+          </li>
+        <?php endif; ?>
         <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">当院について</a></li>
         <li class="nav-sp-link"><a class="<?php if (is_page("")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>#access">アクセス</a></li>
         <li class="nav-sp-link"><a class="<?php if (is_page("faq")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">よくある質問</a></li>
         <li class="nav-sp-link"><a class="<?php if (is_page("contact")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">お問い合わせ</a></li>
         <li class="nav-sp-link web"><a class="header-nav-online" href="#">オンライン診療予約</a></li>
-        <li class="nav-sp-link web"><a class="header-nav-web" href="#">お問い合わせ</a></li>
+        <li class="nav-sp-link web"><a class="header-nav-web" href="#">来院予約</a></li>
         <li class="nav-sp-link line"><a class="header-nav-line" href="#"><img src="<?php my_theme_uri(); ?>/assets/images/common/line.webp" alt="公式ライン" /></a></li>
       </ul>
     </nav>

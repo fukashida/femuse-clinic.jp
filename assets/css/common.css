@@ -593,7 +593,7 @@ header .logo img {
 }
 @media screen and (max-width: 767px) and (max-width:540px) {
   .nav li {
-    padding: 3% 5%;
+    padding: 2% 5%;
   }
 }
 @media screen and (max-width: 767px) {

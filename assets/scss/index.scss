@@ -661,6 +661,7 @@ img {
 
 .nav-sp-link {
   position: relative;
+  @include pc(sp){
   &::after {
     content: "";
     position: absolute;
@@ -670,12 +671,14 @@ img {
     height: 20px;
     background: url(../images/common/arrow.webp) no-repeat center / 100%;
     transform: translateY(-50%);
+    }
   }
   &.has-plus {
     & a{
       display: block;
       width: 100%;
       position: relative;
+      @include pc(sp){
       &::after {
         position: absolute;
         content: "";
@@ -685,6 +688,7 @@ img {
         top: 50%;
         transform: translateY(-50%);
         background: url(../images/common/plus.webp) no-repeat center / 100%;
+        }
       }
     }
     &.is-open {
