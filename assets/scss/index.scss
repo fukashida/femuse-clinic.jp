@@ -1,5 +1,26 @@
 @import "./mixin";
 
+$breakpoints: (
+  "ssp": "screen and (max-width:320px)",
+  "sp": "screen and (max-width:540px)",
+  "tb": "screen and (max-width:768px)",
+  "mb": "screen and (max-width:900px)",
+  "nb": "screen and (max-width:1024px)",
+  "np": "screen and (max-width:1440px)"
+) !default;
+
+@mixin pc($breakpoint: nb) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
 .fv {
   position: relative;
   height: 40vw;
@@ -611,3 +632,48 @@
     margin: 10% 4% 5%;
   }
 }
+
+.header-nav-online {
+  display: block;
+  background: #63abd7;
+  color: white;
+  padding: 0.8vh;
+  border-radius: 8px;
+  @include pc(sp){
+    padding: 1vh;
+    padding: 0;
+    background: none;
+  }
+}
+
+.header-nav-web {
+  display: block;
+  background: #3b3978;
+  color: white;
+  padding: 0.8vh;
+  border-radius: 8px;
+  @include pc(sp){
+    padding: 1vh;
+    padding: 0;
+    background: none;
+  }
+}
+
+.nav-sp-link {
+  &.web {
+    margin: 0 5px;
+    @include pc(sp){
+      margin: 0;
+    }
+  }
+  &.line {
+    width: 4%;
+    margin: 0px;
+    margin-left: 20px;
+    @include pc(sp){
+      width: 80px;
+      margin: auto;
+    }
+  }
+}
+

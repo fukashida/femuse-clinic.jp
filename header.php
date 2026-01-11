@@ -81,10 +81,14 @@
       </div>
       <img id="menu-close-sp" class="nav-close sp" src="<?php my_theme_uri(); ?>/assets/images/common/close.png" alt="" />
       <ul>
-        <li class="nav-sp-link"><a id="haeder-nav-menu" href="<?php my_home_uri(); ?>#menu">メニュー</a></li>
-        <li class="nav-sp-link"><a class="<?php if (is_page("price")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>price">料金表</a></li>
-        <li class="nav-sp-link"><a href="<?php my_home_uri(); ?>#store">施設情報</a></li>
-        <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>about">About femuse clinic</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("menu")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">診療内容</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">当院について</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("access")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">アクセス</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("faq")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">よくある質問</a></li>
+        <li class="nav-sp-link"><a class="<?php if (is_page("contact")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">お問い合わせ</a></li>
+        <li class="nav-sp-link web"><a class="header-nav-online" href="#">オンライン診療予約</a></li>
+        <li class="nav-sp-link web"><a class="header-nav-web" href="#">お問い合わせ</a></li>
+        <li class="nav-sp-link line"><a class="header-nav-line" href="#"><img src="<?php my_theme_uri(); ?>/assets/images/common/line.webp" alt="公式ライン" /></a></li>
       </ul>
     </nav>
   </header>

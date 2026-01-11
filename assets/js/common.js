@@ -114,7 +114,7 @@ $(function () {
   });
 
   $('a[href*="#"]').click(function () {
-    const adjust = -100;
+    const adjust = 0;
     const speed = 400;
     const target = $(this.hash === "#" || "" ? "html" : this.hash);
     if (!target.length) return;
