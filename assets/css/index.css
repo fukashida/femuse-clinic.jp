@@ -618,6 +618,53 @@ img {
   }
 }
 
+.nav-sp-link {
+  position: relative;
+}
+.nav-sp-link::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: url(../images/common/arrow.webp) no-repeat center/100%;
+  transform: translateY(-50%);
+}
+.nav-sp-link.has-plus a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.nav-sp-link.has-plus a::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/common/plus.webp) no-repeat center/100%;
+}
+.nav-sp-link.has-plus.is-open a::after {
+  background: url(../images/common/minus.webp) no-repeat center/100%;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child {
+  margin-top: 10px;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li::after {
+  display: none;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li a {
+  font-size: 14px;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li a::after {
+  right: -15px;
+  background: url(../images/common/arrow.webp) no-repeat center/100%;
+}
+.nav-sp-link.has-plus::after {
+  display: none;
+}
 .nav-sp-link.web {
   margin: 0 5px;
 }
@@ -636,4 +683,12 @@ img {
     width: 80px;
     margin: auto;
   }
+}
+.nav-sp-link.line::after {
+  display: none;
+}
+
+/* 診療内容の子メニューは初期は閉じる（SPナビ内だけ） */
+#nav-sp .js-accordion > .nav-sp-child {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

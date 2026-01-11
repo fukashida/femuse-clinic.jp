@@ -18,14 +18,16 @@ const fadeInScroll = () => {
 };
 
 $(function () {
-  $("#menu-sp").on("click", function () {
+  // -------------------------
+  // SPメニュー開閉（ボタンだけtoggle）
+  // -------------------------
+  $("#menu-sp, #menu-close-sp").on("click", function () {
     $("#nav-sp").toggleClass("active");
   });
 
-  $("#menu-close-sp").on("click", function () {
-    $("#nav-sp").toggleClass("active");
-  });
-
+  // -------------------------
+  // モーダル（電話）
+  // -------------------------
   let modalCallOpen = $(".modal-call-open"),
     modalCallClose = $(".modal-call-close"),
     modalCall = $("#modal-call");
@@ -45,6 +47,9 @@ $(function () {
     }
   });
 
+  // -------------------------
+  // モーダル（LINE）
+  // -------------------------
   let modalLineOpen = $(".modal-line-open"),
     modalLineClose = $(".modal-line-close"),
     modalLine = $("#modal-line");
@@ -64,43 +69,71 @@ $(function () {
     }
   });
 
-  $("[class^='nav-sp-link']").on("click", function (e) {
-    $("#nav-sp").toggleClass("active");
+  // =========================================================
+  // ✅ 診療内容（アコーディオン）: ナビ開閉と独立させる
+  // =========================================================
+  // ✅ 診療内容（アコーディオン）：イベント委譲で確実に効かせる
+  $(document).on("click", "#nav-sp .js-accordion > a", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation(); // ← これが効く（他のclickを止める）
+
+    const $parent = $(this).closest(".js-accordion");
+    const $child = $parent.children(".nav-sp-child"); // findより確実
+
+    // 1個だけ開ける（不要ならこのブロック削除）
+    $("#nav-sp .js-accordion").not($parent)
+      .removeClass("is-open")
+      .children(".nav-sp-child").stop(true, true).slideUp(200);
+
+    $parent.toggleClass("is-open");
+    $child.stop(true, true).slideToggle(200);
   });
 
-  $(".menu-open").click(function () {
-    if (!window.matchMedia("(max-width: 768px)").matches) {
-      return;
-    }
-
-    if ($(this).hasClass("active")) {
-      $(this).toggleClass("active");
-      $(this).next(".menu-open-area").fadeOut();
-    } else {
-      $(".menu-open-area").fadeOut();
-      $(".menu-open").removeClass("active");
-      $(this).toggleClass("active");
-      $(this).next(".menu-open-area").fadeIn();
-    }
+  // ✅ 子リンク押下 → ナビ閉じる
+  $(document).on("click", "#nav-sp .js-accordion .nav-sp-child a", function () {
+    $("#nav-sp").removeClass("active");
   });
 
-  $(".telemedicine-menu-open").click(function () {
-    if (!window.matchMedia("(max-width: 768px)").matches) {
-      return;
-    }
-
-    if ($(this).hasClass("active")) {
-      $(this).toggleClass("active");
-      $(this).next(".telemedicine-menu-open-area").fadeOut();
-    } else {
-      $(".telemedicine-menu-open-area").fadeOut();
-      $(".telemedicine-menu-open").removeClass("active");
-      $(this).toggleClass("active");
-      $(this).next(".telemedicine-menu-open-area").fadeIn();
-    }
+  // ✅ 通常のナビ項目押下 → ナビ閉じる（診療内容は除外）
+  $(document).on("click", "#nav-sp .nav-sp-link:not(.js-accordion) a", function () {
+    $("#nav-sp").removeClass("active");
   });
 
-  // ヘッダーメニューのコンテンツ位置を取得
+
+  // =========================================================
+  // ✅ 通常のナビ項目押下 → ナビ閉じる（アコーディオンは除外）
+  // =========================================================
+  $("#nav-sp .nav-sp-link").not(".js-accordion").on("click", function () {
+    $("#nav-sp").removeClass("active");
+  });
+
+  // ❌ これは削除（衝突の元）
+  // $("[class^='nav-sp-link']").on("click", function (e) {
+  //   $("#nav-sp").toggleClass("active");
+  // });
+
+  // =========================================================
+  // スムーススクロール（1箇所だけ）
+  // =========================================================
+  $('a[href*="#"]').on("click", function () {
+    // 診療内容（親）は除外（念のため）
+    if ($(this).closest(".js-accordion").length) return;
+
+    const adjust = 0;
+    const speed = 400;
+    const target = $(this.hash === "#" || "" ? "html" : this.hash);
+    if (!target.length) return;
+
+    const targetPos = target.offset().top + adjust;
+    $("html, body").animate({ scrollTop: targetPos }, speed, "swing");
+    $("#nav-sp").removeClass("active");
+    return false;
+  });
+
+  // -------------------------
+  // 位置取得 & スクロール処理
+  // -------------------------
   $(".nav-position").each(function (index) {
     position_list[index] = $(this).offset().top;
   });
@@ -108,21 +141,9 @@ $(function () {
   fadeInScroll();
   setScrollNaviPosition();
 
-  $(window).scroll(function () {
+  $(window).on("scroll", function () {
     fadeInScroll();
     setScrollNaviPosition();
-  });
-
-  $('a[href*="#"]').click(function () {
-    const adjust = 0;
-    const speed = 400;
-    const target = $(this.hash === "#" || "" ? "html" : this.hash);
-    if (!target.length) return;
-    const targetPos = target.offset().top + adjust;
-    $("html, body").animate({ scrollTop: targetPos }, speed, "swing");
-    $("#nav-sp").removeClass("active");
-
-    return false;
   });
 });
 
@@ -139,9 +160,7 @@ function setScrollNaviPosition() {
 
 // カレント位置ヘッダーメニューにclassを付与
 function setNavMenuCurrent(index) {
-  if (index == current_position_index) {
-    return;
-  }
+  if (index == current_position_index) return;
 
   $("header nav li a").removeClass("header-nav-current");
 

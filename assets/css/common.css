@@ -459,24 +459,31 @@ header .logo img {
   gap: 1.5rem;
 }
 .footer .footer-nav {
-  display: flex;
-  gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
 }
 @media screen and (max-width:540px) {
   .footer .footer-nav {
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    text-align: left;
   }
 }
 .footer .footer-nav a {
   color: white;
 }
+.footer .footer-nav a.line {
+  max-width: 40px;
+  grid-column: 1/-1; /* 横幅いっぱい使う */
+  justify-self: center;
+  margin-top: 8px;
+}
 @media screen and (max-width:540px) {
   .footer .footer-nav a {
     width: 100%;
-  }
-  .footer .footer-nav a.line {
-    max-width: 40px;
   }
 }
 .footer .copyright {
@@ -571,7 +578,7 @@ header .logo img {
     position: absolute;
     width: 7%;
     right: 5%;
-    top: 10%;
+    top: 3%;
   }
   .nav .nav-logo {
     padding: 5% 4%;
@@ -590,6 +597,16 @@ header .logo img {
   }
 }
 @media screen and (max-width: 767px) {
+  .nav li a {
+    color: #3b3978;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav li a::after {
+    content: "";
+    position: absolute;
+    background: #8c6b5e;
+  }
   .nav li:last-child {
     border-bottom: solid 0px;
   }

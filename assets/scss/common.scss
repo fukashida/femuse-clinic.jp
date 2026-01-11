@@ -485,19 +485,26 @@ header .logo img {
   align-items: center;
   gap: 1.5rem;
   & .footer-nav {
-    display: flex;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
     @include pc(sp){
+      display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+      text-align: left;
       }
     & a {
       color: white;
-      @include pc(sp){
-      width: 100%;
       &.line {
         max-width: 40px;
+        grid-column: 1 / -1; /* 横幅いっぱい使う */
+        justify-self: center;
+        margin-top: 8px;
       }
+      @include pc(sp){
+      width: 100%;
       }
     }
   }
