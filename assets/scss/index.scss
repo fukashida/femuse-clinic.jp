@@ -5,7 +5,7 @@ $breakpoints: (
   "sp": "screen and (max-width:540px)",
   "tb": "screen and (max-width:768px)",
   "mb": "screen and (max-width:900px)",
-  "nb": "screen and (max-width:1024px)",
+  "nb": "screen and (max-width:1200px)",
   "np": "screen and (max-width:1440px)"
 ) !default;
 
@@ -13,12 +13,6 @@ $breakpoints: (
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
-}
-
-img {
-  display: block;
-  margin: auto;
-  width: 100%;
 }
 
 .fv {
@@ -209,13 +203,6 @@ img {
   transform: rotate(45deg);
 }
 
-.container {
-  width: 60%;
-  min-width: 1000px;
-  max-width: 1250px;
-  margin: auto;
-}
-
 .top-about {
   display: flex;
   padding: 7% 0 5%;
@@ -394,12 +381,7 @@ img {
 @media screen and (max-width: 767px) {
   main {
     width: 100%;
-  }
-
-  .container {
-    width: 100% !important;
-    min-width: 100%;
-    padding: 0 !important;
+    padding-top: 60px;
   }
 
   .fv-line {
@@ -633,46 +615,139 @@ img {
   }
 }
 
-.header-nav-online {
-  display: block;
-  background: #63abd7;
-  color: white;
-  padding: 0.8vh;
-  border-radius: 8px;
-  @include pc(sp){
-    padding: 1vh;
-    padding: 0;
-    background: none;
-  }
-}
-
-.header-nav-web {
-  display: block;
-  background: #3b3978;
-  color: white;
-  padding: 0.8vh;
-  border-radius: 8px;
-  @include pc(sp){
-    padding: 1vh;
-    padding: 0;
-    background: none;
-  }
-}
-
-.nav-sp-link {
-  &.web {
-    margin: 0 5px;
-    @include pc(sp){
-      margin: 0;
+.access {
+  & .flex {
+    gap: 60px;
+    margin: auto;
+    width: fit-content;
+    & img {
+      &.logo {
+        width: 250px;
+        margin: 0;
+      }
+      &.schedule {
+        width: 350px;
+        margin: 0;
+      }
+    }
+    & p {
+      margin: 40px 0;
+      line-height: 1.8;
+    }
+    & .item {
+      flex: 1;
+    }
+    & iframe {
+      width: 350px;
+      height: 350px;
     }
   }
-  &.line {
-    width: 4%;
-    margin: 0px;
-    margin-left: 20px;
-    @include pc(sp){
-      width: 80px;
-      margin: auto;
+}
+
+.access-flow {
+  // 既存の .bacground-gray に背景色がある前提（なければここで指定してOK）
+  // background: #f6f6f6;
+
+  &__grid {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  &__item {
+    color: #4D4D4D; // 画像の例に寄せて（背景が暗い想定なら白文字）
+  }
+
+  &__head {
+    display: flex;
+    align-items: end;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__head--last {
+    .access-flow__arrow {
+      display: none;
+    }
+  }
+
+  &__no {
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 300;
+    opacity: 0.9;
+    flex: 0 0 auto;
+    color: #3B3978;
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    flex: 1 1 auto;
+    opacity: 0.9;
+    display: block;
+    width: fit-content;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      right: 100px;
+      transform: translateY(-50%);
+      background: url(../images/common/arrow.webp) no-repeat center/100%;
+      @include pc(nb){
+        right: 40px;
+      }
+    }
+    &.end {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__arrow {
+    flex: 0 0 auto;
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__figure img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+  }
+
+  &__caption {
+    margin-top: 25px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+  }
+
+  /* --- 横スクロール対応 --- */
+  @media (max-width: 1200px) {
+    &__grid {
+      grid-auto-flow: column;          // 横方向に流す
+      grid-auto-columns: 320px;        // 1カードの幅（ここ調整可）
+      grid-template-columns: unset;    // repeat指定を解除
+      overflow-x: auto;
+      padding-bottom: 12px;            // スクロールバー逃し
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &__item {
+      min-width: 320px;                // 念のため
     }
   }
 }
