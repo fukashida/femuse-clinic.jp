@@ -9,6 +9,14 @@ body {
 main {
   margin: auto;
   padding-top: 80px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4D4D4D;
+}
+@media screen and (max-width:540px) {
+  main {
+    font-size: 16px;
+  }
 }
 
 .pc {
@@ -25,6 +33,17 @@ main {
   }
   .sp {
     display: block !important;
+  }
+}
+/* TB・ハンバーガー表示（〜1200px） */
+@media screen and (max-width: 1200px) {
+  .tb {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .tb {
+    display: none !important;
   }
 }
 .fadein {
@@ -69,9 +88,10 @@ header {
   background-color: white;
   color: #534744;
 }
-
-header {
-  width: 100%;
+@media screen and (max-width:540px) {
+  header {
+    height: 60px;
+  }
 }
 
 header .logo {
@@ -79,13 +99,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 100%;
-  max-width: 200px;
-}
-
-.container {
-  width: 60%;
-  margin: auto;
+  width: 200px;
 }
 
 .title h2 {
@@ -491,14 +505,14 @@ header .logo img {
   font-size: 0.875rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   header nav ul {
     display: flex;
     align-items: center;
     justify-content: end;
   }
   header nav li {
-    margin: 0 20px;
+    margin: 0 1vw;
     position: relative;
   }
   header .online-btn {
@@ -539,23 +553,20 @@ header .logo img {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 767px) {
-  header {
-    padding: 4% 5%;
-    width: 100%;
-  }
+@media screen and (max-width: 1200px) {
   header .logo {
     width: 30vw;
   }
   header .logo img {
     width: 100%;
+    margin: 0;
   }
   header .header-menu {
     width: 10%;
   }
   header .header-menu img {
     width: 100%;
-    max-width: 50px;
+    max-width: 30px;
   }
   .nav {
     width: 100%;
@@ -576,27 +587,38 @@ header .logo img {
   }
   .nav .nav-close {
     position: absolute;
-    width: 7%;
-    right: 5%;
+    width: 5%;
+    right: 7%;
     top: 3%;
   }
   .nav .nav-logo {
     padding: 5% 4%;
-    width: 40%;
+    width: 200px;
   }
   .nav .nav-logo img {
-    width: 100%;
+    width: 200px;
   }
+  .nav ul {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width:540px) {
+  .nav ul {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1200px) {
   .nav li {
     padding: 5% 4%;
   }
 }
-@media screen and (max-width: 767px) and (max-width:540px) {
+@media screen and (max-width: 1200px) and (max-width:768px) {
   .nav li {
-    padding: 2% 5%;
+    padding: 2.5% 0%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .nav li a {
     color: #3b3978;
     position: relative;
@@ -672,6 +694,12 @@ header .logo img {
     font-size: 150%;
   }
 }
+@media screen and (max-width: 767px) {
+  header {
+    padding: 4% 5%;
+    width: 100%;
+  }
+}
 header nav li a.header-nav-online:hover::after {
   transform: scale(0);
 }
@@ -686,4 +714,190 @@ header nav li a.header-nav-web:hover::after {
 
 header nav li a.header-nav-web:hover {
   opacity: 0.8;
+}
+
+.header-nav-online {
+  display: block;
+  background: #63abd7;
+  color: white;
+  padding: 1vw;
+  border-radius: 8px;
+}
+@media screen and (max-width:1200px) {
+  .header-nav-online {
+    padding: 1vh;
+    padding: 0;
+    background: none;
+  }
+}
+
+.header-nav-web {
+  display: block;
+  background: #3b3978;
+  color: white;
+  padding: 1vw;
+  border-radius: 8px;
+}
+@media screen and (max-width:1200px) {
+  .header-nav-web {
+    padding: 1vh;
+    padding: 0;
+    background: none;
+  }
+}
+
+.nav-sp-link {
+  position: relative;
+}
+@media screen and (max-width:1200px) {
+  .nav-sp-link::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background: url(../images/common/arrow.webp) no-repeat center/100%;
+    transform: translateY(-50%);
+  }
+}
+.nav-sp-link.has-plus > a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width:1200px) {
+  .nav-sp-link.has-plus > a::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    right: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/common/plus.webp) no-repeat center/100%;
+  }
+}
+.nav-sp-link.has-plus.is-open a::after {
+  background: url(../images/common/minus.webp) no-repeat center/100%;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child {
+  margin-top: 10px;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li {
+  padding: 2.5% 0;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li::after {
+  display: none;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li a {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  position: relative;
+}
+.nav-sp-link.has-plus.is-open .nav-sp-child li a::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../images/common/arrow.webp) no-repeat center/100%;
+}
+.nav-sp-link.has-plus::after {
+  display: none;
+}
+.nav-sp-link.web {
+  margin: 0 5px;
+}
+@media screen and (max-width:1200px) {
+  .nav-sp-link.web {
+    margin: 0;
+  }
+}
+.nav-sp-link.line {
+  width: 40px;
+  margin: 0px;
+  margin-left: 1vw;
+}
+@media screen and (max-width:1200px) {
+  .nav-sp-link.line {
+    width: 100px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:768px) {
+  .nav-sp-link.line {
+    width: 60px;
+    margin: auto;
+  }
+}
+.nav-sp-link.line::after {
+  display: none;
+}
+
+/* 診療内容の子メニューは初期は閉じる（SPナビ内だけ） */
+#nav-sp .js-accordion > .nav-sp-child {
+  display: none;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+section {
+  display: block;
+  padding: 70px 0;
+}
+section h2 {
+  font-size: 25px;
+  text-align: center;
+  color: #3b3978;
+  margin-bottom: 50px;
+}
+section h2.left {
+  text-align: left;
+}
+section h2#news {
+  margin-bottom: 60px;
+}
+section .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+@media screen and (max-width:1200px) {
+  section .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width:540px) {
+  section .container {
+    width: 85%;
+  }
+}
+
+.bacground-gray {
+  background: #fafafa;
+}
+
+.news-list li {
+  padding: 25px 0;
+  border-bottom: solid 2px #eaeaea;
+}
+.news-list li:first-child {
+  border-top: solid 2px #eaeaea;
+}
+.news-list li time {
+  color: #3b3978;
+  margin-right: 40px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=common.css.map */

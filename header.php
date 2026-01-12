@@ -69,17 +69,17 @@
   <header>
     <div class="logo">
       <a href="<?php my_home_uri(); ?>">
-        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.png" alt="femuse" />
+        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.webp" alt="femuse" />
       </a>
     </div>
-    <div id="menu-sp" class="header-menu sp">
-      <img src="<?php my_theme_uri(); ?>/assets/images/common/menu_button.png" alt="" />
+    <div id="menu-sp" class="header-menu tb">
+      <img src="<?php my_theme_uri(); ?>/assets/images/common/menu_button.webp" alt="" />
     </div>
     <nav id="nav-sp" class="nav">
-      <div class="nav-logo sp">
-        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.png" alt="" />
+      <div class="nav-logo tb">
+        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.webp" alt="" />
       </div>
-      <img id="menu-close-sp" class="nav-close sp" src="<?php my_theme_uri(); ?>/assets/images/common/close.webp" alt="" />
+      <img id="menu-close-sp" class="nav-close tb" src="<?php my_theme_uri(); ?>/assets/images/common/close.webp" alt="" />
       <ul>
         <?php if ( wp_is_mobile() ) : ?>
           <li class="nav-sp-link has-plus js-accordion">

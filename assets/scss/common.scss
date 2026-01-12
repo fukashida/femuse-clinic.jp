@@ -7,7 +7,7 @@ $breakpoints: (
   "sp": "screen and (max-width:540px)",
   "tb": "screen and (max-width:768px)",
   "mb": "screen and (max-width:900px)",
-  "nb": "screen and (max-width:1024px)",
+  "nb": "screen and (max-width:1200px)",
   "np": "screen and (max-width:1440px)"
 ) !default;
 
@@ -27,6 +27,12 @@ body {
 main {
   margin: auto;
   padding-top: 80px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #4D4D4D;
+  @include pc(sp){
+    font-size: 16px;
+  }
 }
 
 .pc {
@@ -44,6 +50,18 @@ main {
 
   .sp {
     display: block !important;
+  }
+}
+
+/* TB・ハンバーガー表示（〜1200px） */
+@media screen and (max-width: 1200px) {
+  .tb {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .tb {
+    display: none !important;
   }
 }
 
@@ -90,10 +108,9 @@ header {
   margin: auto;
   background-color: white;
   color: #534744;
-}
-
-header {
-  width: 100%;
+  @include pc(sp){
+    height: 60px;
+  }
 }
 
 header .logo {
@@ -101,13 +118,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 100%;
-  max-width: 200px;
-}
-
-.container {
-  width: 60%;
-  margin: auto;
+  width: 200px;
 }
 
 .title h2 {
@@ -514,7 +525,7 @@ header .logo img {
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   header nav ul {
     display: flex;
     align-items: center;
@@ -522,7 +533,7 @@ header .logo img {
   }
 
   header nav li {
-    margin: 0 20px;
+    margin: 0 1vw;
     position: relative;
   }
 
@@ -568,11 +579,7 @@ header .logo img {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 767px) {
-  header {
-    padding: 4% 5%;
-    width: 100%;
-  }
+@media screen and (max-width: 1200px) {
 
   header .logo {
     width: 30vw;
@@ -580,6 +587,7 @@ header .logo img {
 
   header .logo img {
     width: 100%;
+    margin: 0;
   }
 
   header .header-menu {
@@ -588,7 +596,7 @@ header .logo img {
 
   header .header-menu img {
     width: 100%;
-    max-width: 50px;
+    max-width: 30px;
   }
 
   .nav {
@@ -613,24 +621,34 @@ header .logo img {
 
   .nav .nav-close {
     position: absolute;
-    width: 7%;
-    right: 5%;
+    width: 5%;
+    right: 7%;
     top: 3%;
   }
 
   .nav .nav-logo {
     padding: 5% 4%;
-    width: 40%;
+    width: 200px;
   }
 
   .nav .nav-logo img {
-    width: 100%;
+    width: 200px;
+  }
+
+  .nav {
+    & ul {
+    width: 90%;
+    margin: auto;
+    @include pc(sp){
+      width: 85%;
+    }
+    }
   }
 
   .nav li {
     padding: 5% 4%;
-    @include pc(sp){
-      padding: 2% 5%;
+    @include pc(tb){
+      padding: 2.5% 0%;
     }
     & a {
       color: #3b3978;
@@ -725,6 +743,13 @@ header .logo img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    padding: 4% 5%;
+    width: 100%;
+  }
+}
+
 header nav li a.header-nav-online:hover::after {
   transform: scale(0);
 }
@@ -736,4 +761,188 @@ header nav li a.header-nav-web:hover::after {
 }
 header nav li a.header-nav-web:hover {
   opacity: 0.8;
+}
+
+.header-nav-online {
+  display: block;
+  background: #63abd7;
+  color: white;
+  padding: 1vw;
+  border-radius: 8px;
+  @include pc(nb){
+    padding: 1vh;
+    padding: 0;
+    background: none;
+  }
+}
+
+.header-nav-web {
+  display: block;
+  background: #3b3978;
+  color: white;
+  padding: 1vw;
+  border-radius: 8px;
+  @include pc(nb){
+    padding: 1vh;
+    padding: 0;
+    background: none;
+  }
+}
+
+.nav-sp-link {
+  position: relative;
+
+  @include pc(nb) {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+      background: url(../images/common/arrow.webp) no-repeat center / 100%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.has-plus {
+    // ✅ 親直下のaだけ
+    & > a {
+      display: block;
+      width: 100%;
+      position: relative;
+
+      @include pc(nb) {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 22px;
+          height: 22px;
+          right: -3px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url(../images/common/plus.webp) no-repeat center / 100%;
+        }
+      }
+    }
+
+    &.is-open {
+      &  a::after {
+        background: url(../images/common/minus.webp) no-repeat center / 100%;
+      }
+
+      & .nav-sp-child {
+        margin-top: 10px;
+
+        & li {
+          padding: 2.5% 0;
+
+          &::after { display: none; }
+
+          & a {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              width: 15px;
+              height: 15px;
+              right: -18px;
+              top: 50%;
+              transform: translateY(-50%);
+              background: url(../images/common/arrow.webp) no-repeat center / 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &::after { display: none; }
+  }
+
+  &.web {
+    margin: 0 5px;
+    @include pc(nb){
+      margin: 0;
+    }
+  }
+  &.line {
+    width: 40px;
+    margin: 0px;
+    margin-left: 1vw;
+    @include pc(nb){
+      width: 100px;
+      margin: auto;
+    }
+    @include pc(tb){
+      width: 60px;
+      margin: auto;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
+/* 診療内容の子メニューは初期は閉じる（SPナビ内だけ） */
+#nav-sp .js-accordion > .nav-sp-child {
+  display: none;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+section {
+  display: block;
+  padding: 70px 0;
+  & h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #3b3978;
+    margin-bottom: 50px;
+    &.left {
+      text-align: left;
+    }
+    &#news {
+      margin-bottom: 60px;
+    }
+  }
+  & .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    @include pc(nb){
+      width: 90%;
+    }
+    @include pc(sp){
+      width: 85%;
+    }
+  }
+}
+
+.bacground-gray {
+ background: #fafafa;
+}
+
+.news-list {
+  & li {
+    padding: 25px 0;
+    border-bottom: solid 2px #eaeaea;
+    &:first-child {
+      border-top: solid 2px #eaeaea;
+    }
+    & time {
+      color: #3b3978;
+      margin-right: 40px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
