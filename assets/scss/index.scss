@@ -620,19 +620,34 @@ $breakpoints: (
     gap: 60px;
     margin: auto;
     width: fit-content;
+    @include pc(tb){
+      gap: 40px;
+      flex-wrap: wrap;
+    }
     & img {
       &.logo {
         width: 250px;
         margin: 0;
       }
       &.schedule {
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
         margin: 0;
       }
     }
     & p {
-      margin: 40px 0;
+      margin: 40px 0 0;
       line-height: 1.8;
+      @include pc(sp){
+        margin: 20px 0 0;
+      }
+      &.text {
+        margin-top: 0;
+        margin-bottom: 40px;
+        @include pc(sp){
+          margin-bottom: 20px;
+        }
+      }
     }
     & .item {
       flex: 1;
@@ -640,6 +655,26 @@ $breakpoints: (
     & iframe {
       width: 350px;
       height: 350px;
+      @include pc(ssp){
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.access {
+  & .copyable-address {
+    position: relative;
+    display: block;
+    width: fit-content;
+    & button {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      right: -30px;
     }
   }
 }

@@ -72,33 +72,40 @@ $(function () {
   // =========================================================
   // ✅ 診療内容（アコーディオン）: ナビ開閉と独立させる
   // =========================================================
-  // ✅ 診療内容（アコーディオン）：イベント委譲で確実に効かせる
+  const ACC_BREAKPOINT = 1200;
+
+  // ✅ 診療内容（アコーディオン）：1200px以下だけ開閉
   $(document).on("click", "#nav-sp .js-accordion > a", function (e) {
+    // 1200px超 → 通常リンクで #menu へ（何もしない）
+    if (window.innerWidth > ACC_BREAKPOINT) return;
+  
+    // 1200px以下 → アコーディオン
     e.preventDefault();
     e.stopPropagation();
-    e.stopImmediatePropagation(); // ← これが効く（他のclickを止める）
-
+    e.stopImmediatePropagation();
+  
     const $parent = $(this).closest(".js-accordion");
-    const $child = $parent.children(".nav-sp-child"); // findより確実
-
-    // 1個だけ開ける（不要ならこのブロック削除）
+    const $child  = $parent.children(".nav-sp-child");
+  
+    // 1個だけ開ける（不要なら削除）
     $("#nav-sp .js-accordion").not($parent)
       .removeClass("is-open")
       .children(".nav-sp-child").stop(true, true).slideUp(200);
-
+  
     $parent.toggleClass("is-open");
     $child.stop(true, true).slideToggle(200);
   });
-
-  // ✅ 子リンク押下 → ナビ閉じる
+  
+  // ✅ 子リンク押下 → ナビ閉じる（そのままでOK）
   $(document).on("click", "#nav-sp .js-accordion .nav-sp-child a", function () {
     $("#nav-sp").removeClass("active");
   });
-
-  // ✅ 通常のナビ項目押下 → ナビ閉じる（診療内容は除外）
+  
+  // ✅ 通常のナビ項目押下 → ナビ閉じる（そのままでOK）
   $(document).on("click", "#nav-sp .nav-sp-link:not(.js-accordion) a", function () {
     $("#nav-sp").removeClass("active");
   });
+  
 
 
   // =========================================================
@@ -178,3 +185,18 @@ function setNavMenuCurrent(index) {
 
   current_position_index = index;
 }
+
+
+  // =========================================================
+  // コピー
+  // =========================================================
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.querySelector(btn.dataset.copy);
+    if (!target) return;
+
+    const text = target.innerText.replace(/\n+/g, '\n');
+    navigator.clipboard.writeText(text);
+    alert('住所をコピーしました');
+  });
+});
