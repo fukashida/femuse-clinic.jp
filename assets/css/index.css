@@ -577,17 +577,38 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+@media screen and (max-width:768px) {
+  .access .flex {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+}
 .access .flex img.logo {
   width: 250px;
   margin: 0;
 }
 .access .flex img.schedule {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   margin: 0;
 }
 .access .flex p {
-  margin: 40px 0;
+  margin: 40px 0 0;
   line-height: 1.8;
+}
+@media screen and (max-width:540px) {
+  .access .flex p {
+    margin: 20px 0 0;
+  }
+}
+.access .flex p.text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+@media screen and (max-width:540px) {
+  .access .flex p.text {
+    margin-bottom: 20px;
+  }
 }
 .access .flex .item {
   flex: 1;
@@ -595,6 +616,27 @@
 .access .flex iframe {
   width: 350px;
   height: 350px;
+}
+@media screen and (max-width:320px) {
+  .access .flex iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.access .copyable-address {
+  position: relative;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.access .copyable-address button {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  right: -30px;
 }
 
 .access-flow {

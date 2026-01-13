@@ -1,13 +1,30 @@
 <?php get_header(); ?>
-<main>
-    <div class="main contact">
-        <h1 class="contact-title">
-            <img src="<?php my_theme_uri(); ?>/assets/images/contact/title_contact.png" alt="CONTACT">
-        </h1> <?php the_content(); ?> <div class="menu-top">
-            <a href="<?php my_home_uri(); ?>">
-                <img src="<?php my_theme_uri(); ?>/assets/images/common/menu_top.png" alt="">
-            </a>
-        </div>
-    </div>
-</main>
+
+<div class="contact-iframe-wrap">
+<iframe
+  id="contactFrame"
+  src="https://femuse-clinic.jp/online/contact/"
+  style="width:100%; border:0;"
+  scrolling="no"
+></iframe>
+
+<script>
+(function(){
+  const iframe = document.getElementById('contactFrame');
+
+  function resize() {
+    if (window.innerWidth <= 540) {
+      iframe.style.height = '1350px';
+    } else {
+      iframe.style.height = '1000px';
+    }
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+})();
+</script>
+
+</div>
+
 <?php get_footer(); ?>
