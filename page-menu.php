@@ -1,72 +1,60 @@
 <?php get_header(); ?> 
-<main class="menu">
-    <div class="container">
-        <div class="about-kv">
-            <picture>
-                <source media="(min-width: 768px)" srcset="<?php my_theme_uri(); ?>/assets/images/about/pc_kv.png">
-                <img class="about-kv-img fadein" src="<?php my_theme_uri(); ?>/assets/images/about/sp_kv.png" alt="">
-            </picture>
-            <h1>メニュー名メニュー名</h1>
+<?php
+global $post;
+
+// 共通URL
+$visit_url  = 'https://example.com/visit-reserve/';
+$online_url = 'https://example.com/online-reserve/';
+
+$children = get_pages([
+  'parent'      => $post->ID,
+  'sort_column' => 'menu_order',
+  'sort_order'  => 'ASC',
+  'post_status' => 'publish',
+]);
+?>
+
+
+<section class="menu-list">
+  <div class="container">
+    <div class="menu-grid">
+      <?php foreach ($children as $child): ?>
+        <?php
+          // チェックボックス or True/False どっちでも耐える判定
+          $has_online = get_field('has_online', $child->ID);
+
+          // True/False（bool）でも、チェックボックス（配列/文字列）でもOKにする
+          $enabled =
+            $has_online === true ||
+            $has_online === 1 ||
+            $has_online === '1' ||
+            (is_array($has_online) && in_array('1', $has_online, true));
+        ?>
+
+        <div class="menu-card">
+          <a class="menu-card__panel" href="<?php echo esc_url(get_permalink($child->ID)); ?>">
+            <h3 class="menu-card__title"><?php echo esc_html($child->post_title); ?></h3>
+            <span class="menu-card__detail">詳細</span>
+          </a>
+
+          <div class="menu-card__actions">
+            <?php if ($enabled): ?>
+              <a class="btn btn--primary" href="<?php echo esc_url($online_url); ?>">
+                オンライン診療予約
+              </a>
+            <?php endif; ?>
+
+            <a class="btn btn--secondary" href="<?php echo esc_url($visit_url); ?>">
+              来院予約
+            </a>
+          </div>
         </div>
-        <div class="about-container">
-            <h1>
-                About <br>
-                femuse clinic
-            </h1>
-            <div class="about-info">
-                <h2 class="about-info-main-copy">
-                メインコピーが入りますメイン<br>コピーが入ります
-                </h2>
-                <p>
-                ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。
-                </p>
-            </div>
-            <div class="about-title-area">
-                <div class="about-title-line"></div>
-                <div class="title">
-                    <h2> femuse clinic の強み </h2>
-                    <span>advantage</span>
-                </div>
-            </div>
-            <div class="about-detail">
-                <div class="about-detail-group">
-                    <div class="about-detail-box">
-                        <h3 class="about-line-title">強みのコピーが入ります強みのコピー が入ります<h3>
-                        <p>
-                        ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。
-                        </p>
-                    </div>
-                    <div class="about-detail-box">
-                        <img src="<?php my_theme_uri(); ?>/assets/images/about/temp.png">
-                    </div>
-                </div>
-                <div class="about-detail-group">
-                    <div class="about-detail-box">
-                        <img src="<?php my_theme_uri(); ?>/assets/images/about/temp.png">
-                    </div>
-                    <div class="about-detail-box">
-                        <h3  class="about-line-title">強みのコピーが入ります強みのコピー が入ります<h3>
-                        <p>
-                        ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。
-                        </p>
-                    </div>
-                </div>
-                <div class="about-detail-group">
-                    <div class="about-detail-box">
-                        <h3 class="about-line-title">強みのコピーが入ります強みのコピー が入ります<h3>
-                        <p>
-                        ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。ブランドメッセージのテキストが入ります。
-                        </p>
-                    </div>
-                    <div class="about-detail-box">
-                        <img src="<?php my_theme_uri(); ?>/assets/images/about/temp.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php get_template_part('parts/store', null, $args = ['is-disp-title' => false]) ?> 
+      <?php endforeach; ?>
     </div>
-</main>
-<?php get_template_part('parts/reserve-modal') ?> 
+  </div>
+</section>
+
+
+<?php get_template_part('parts/section', 'access'); ?>
 
 <?php get_footer(); ?>

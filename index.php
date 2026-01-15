@@ -15,9 +15,68 @@
     <h2 id="campaign">キャンペーン</h2>
   </section>
 
-  <section>
-    <h2 id="menu">診療内容</h2>
-  </section>
+
+<section>
+  <h2 id="menu">診療内容</h2>
+  <?php
+    // 共通URL
+    $visit_url  = 'https://example.com/visit-reserve/';
+    $online_url = 'https://example.com/online-reserve/';
+
+    // 親ページ（/menu/）を取得
+    $menu_parent = get_page_by_path('menu');
+    $menu_parent_id = $menu_parent ? (int) $menu_parent->ID : 0;
+
+    // 子ページ取得
+    $children = $menu_parent_id ? get_pages([
+      'parent'      => $menu_parent_id,
+      'sort_column' => 'menu_order',
+      'sort_order'  => 'ASC',
+      'post_status' => 'publish',
+    ]) : [];
+  ?>
+
+  <?php if (!empty($children)): ?>
+      <div class="container">
+        <div class="menu-grid">
+          <?php foreach ($children as $child): ?>
+            <?php
+              $has_online = function_exists('get_field') ? get_field('has_online', $child->ID) : null;
+
+              $enabled =
+                $has_online === true ||
+                $has_online === 1 ||
+                $has_online === '1' ||
+                (is_array($has_online) && in_array('1', $has_online, true));
+            ?>
+
+            <div class="menu-card">
+              <a class="menu-card__panel" href="<?php echo esc_url(get_permalink($child->ID)); ?>">
+                <h3 class="menu-card__title"><?php echo esc_html($child->post_title); ?></h3>
+                <span class="menu-card__detail">詳細</span>
+              </a>
+
+              <div class="menu-card__actions">
+                <?php if ($enabled): ?>
+                  <a class="btn btn--primary" href="<?php echo esc_url($online_url); ?>">
+                    オンライン診療予約
+                  </a>
+                <?php endif; ?>
+
+                <a class="btn btn--secondary" href="<?php echo esc_url($visit_url); ?>">
+                  来院予約
+                </a>
+              </div>
+            </div>
+
+          <?php endforeach; ?>
+        </div>
+      </div>
+  <?php else: ?>
+    <p>現在メニューは準備中です。</p>
+  <?php endif; ?>
+</section>
+
 
   <section class="bacground-gray">
   <div class="container">
