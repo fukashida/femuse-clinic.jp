@@ -108,6 +108,7 @@ header {
   margin: auto;
   background-color: white;
   color: #534744;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
   @include pc(sp){
     height: 60px;
   }
@@ -960,3 +961,331 @@ section {
   display: flex;
   align-items: center;
 }
+
+
+.access {
+  & .flex {
+    gap: 60px;
+    margin: auto;
+    width: fit-content;
+    @include pc(tb){
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    & img {
+      &.logo {
+        width: 250px;
+        margin: 0;
+      }
+      &.schedule {
+        max-width: 350px;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    & p {
+      margin: 40px 0 0;
+      line-height: 1.8;
+      @include pc(sp){
+        margin: 20px 0 0;
+      }
+      &.text {
+        margin: 0;
+      }
+    }
+    & .item {
+      flex: 1;
+    }
+    & iframe {
+      width: 350px;
+      height: 350px;
+      @include pc(sp){
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+  & .copyable-address {
+    position: relative;
+    display: block;
+    width: fit-content;
+    & button {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 18px;
+      top: 50%;
+      right: -30px;
+    }
+  }
+}
+
+.access-flow {
+  // 既存の .bacground-gray に背景色がある前提（なければここで指定してOK）
+  // background: #f6f6f6;
+
+  &__grid {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  &__item {
+    color: #4D4D4D; // 画像の例に寄せて（背景が暗い想定なら白文字）
+  }
+
+  &__head {
+    display: flex;
+    align-items: end;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__head--last {
+    .access-flow__arrow {
+      display: none;
+    }
+  }
+
+  &__no {
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 300;
+    opacity: 0.9;
+    flex: 0 0 auto;
+    color: #3B3978;
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    flex: 1 1 auto;
+    opacity: 0.9;
+    display: block;
+    width: fit-content;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      right: 100px;
+      transform: translateY(-50%);
+      background: url(../images/common/arrow.webp) no-repeat center/100%;
+      @include pc(nb){
+        right: 40px;
+      }
+    }
+    &.end {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__arrow {
+    flex: 0 0 auto;
+    font-size: 18px;
+    opacity: 0.7;
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__figure img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+  }
+
+  &__caption {
+    margin-top: 25px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+  }
+
+  /* --- 横スクロール対応 --- */
+  @media (max-width: 1200px) {
+    &__grid {
+      grid-auto-flow: column;          // 横方向に流す
+      grid-auto-columns: 320px;        // 1カードの幅（ここ調整可）
+      grid-template-columns: unset;    // repeat指定を解除
+      overflow-x: auto;
+      padding-bottom: 12px;            // スクロールバー逃し
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &__item {
+      min-width: 320px;                // 念のため
+    }
+  }
+}
+
+
+.menu-list {
+  padding-top: 150px;
+  padding-bottom: 0;
+
+  @include pc(sp) {
+    padding-top: 130px;
+  }
+
+  .container {
+    box-sizing: border-box;
+  }
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px 56px;
+  max-width: 900px;
+  width: 100%;
+  min-width: 0; // 念のため（中身に引っ張られない）
+}
+
+.menu-card {
+  min-width: 0; // grid itemのはみ出し対策
+}
+
+.menu-card__panel {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 11;
+  background: url(../images/common/cover.webp) no-repeat center / 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; // detail疑似要素のはみ出し保険
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.menu-card__title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: #3B3978;
+}
+
+.menu-card__detail {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  font-size: 14px;
+  color: #3B3978;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    border-bottom: solid 1px #3B3978;
+    bottom: -3px;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 10px;
+    background: url(../images/common/arrow.webp) no-repeat center / 100%;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+}
+
+.menu-card__actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  @include pc(sp){
+    flex-wrap: wrap; // ← これ重要（2ボタンでも溢れない）
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  padding: 14px 18px 30px;
+  border-radius: 14px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 8px;
+    background: url(../images/common/btn_arrow.webp) no-repeat center / 100%;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover {
+    &::after {
+      width: 45px;
+      background: url(../images/common/btn_arrow_hover.webp) no-repeat center / 100%;
+    }
+  }
+}
+
+.btn--primary {
+  background: #63abd7;
+  color: #fff;
+}
+
+.btn--secondary {
+  background: #3b3978;
+  color: #fff;
+}
+
+/* SP */
+@include pc(sp) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+}
+
+.menu-page-title{
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background: url(../images/common/menu_cover.webp) no-repeat center/cover;
+  @include pc(sp){
+    padding-top: 100px;
+  }
+  .menu-page-title__text{
+    display: block;
+    padding: 14px 18px;
+    background: #fff;    // 背景
+    color: #3B3978;
+    border-radius: 12px;
+    letter-spacing: .06em;
+    width: fit-content;
+    margin: auto;
+    font-size: 28px;
+  }
+}
+

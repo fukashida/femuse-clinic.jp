@@ -13,7 +13,6 @@
             </button>
           </p>
           <p class="text">東新宿駅A3出口より徒歩1分</p>
-          <img class="schedule" src="<?php my_theme_uri(); ?>/assets/images/common/pc_business_day_footer.webp" alt="診療時間" />
         </div>
         <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.158262129711!2d139.70514937578844!3d35.69772287258188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd95fccaaf1%3A0x89c2535f2a283669!2z44OV44Kn44Of44Ol44O844K644Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1768226544336!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
