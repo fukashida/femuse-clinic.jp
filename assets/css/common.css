@@ -1134,6 +1134,7 @@ section .container {
   gap: 48px 56px;
   max-width: 900px;
   width: 100%;
+  margin: auto;
   min-width: 0;
 }
 
