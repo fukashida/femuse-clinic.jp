@@ -68,9 +68,11 @@
   <!-- End Google Tag Manager (noscript) -->
   <header>
     <div class="logo">
-      <a href="<?php my_home_uri(); ?>">
-        <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.webp" alt="femuse" />
-      </a>
+      <h1>
+        <a href="<?php my_home_uri(); ?>">
+          <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.webp" alt="femuse" />
+        </a>
+      </h1>
     </div>
     <div id="menu-sp" class="header-menu tb">
       <img src="<?php my_theme_uri(); ?>/assets/images/common/menu_button.webp" alt="" />
@@ -89,17 +91,9 @@
           >診療内容</a>
 
           <ul class="nav-sp-child">
-            <li><a href="#">美容皮膚科</a></li>
-            <li><a href="#">美容注射・点滴</a></li>
-            <li><a href="#">低用量ピル・月経移動</a></li>
-            <li><a href="#">アフターピル</a></li>
-            <li><a href="#">性感染症</a></li>
-            <li><a href="#">糖尿病</a></li>
-            <li><a href="#">二日酔い防止</a></li>
-            <li><a href="#">痩身相談</a></li>
-            <li><a href="#">睡眠障害</a></li>
-            <li><a href="#">花粉症治療</a></li>
-            <li><a href="#">予防接種（インフルエンザ）</a></li>
+            <li><a href="<?php echo esc_url( home_url('/injection/') ); ?>">美容注射・点滴</a></li>
+            <li><a href="<?php echo esc_url( home_url('/medicine/') ); ?>">美容内服処方</a></li>
+            <li><a href="<?php echo esc_url( home_url('/pill/') ); ?>">ピル処方</a></li>
           </ul>
         </li>
 
