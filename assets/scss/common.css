@@ -1380,9 +1380,14 @@ section .container {
   display: inline-block;
   font-size: 16px;
   line-height: 1;
-  transform: translateY(-6%);
+  transform: translateY(-20%);
   opacity: 0.8;
   transition: transform 0.12s ease, opacity 0.12s ease;
+}
+@media screen and (max-width:540px) {
+  .iv-menu__detailBtn span {
+    transform: translateY(-6%);
+  }
 }
 .iv-menu__detailBtn:hover {
   background: #ffffff;
