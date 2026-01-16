@@ -200,3 +200,60 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
     alert('住所をコピーしました');
   });
 });
+
+
+// =========================================================
+// ポップアップ
+// =========================================================
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("ivModal");
+  if (!modal) return;
+
+  const titleEl = modal.querySelector("#ivModalTitle");
+  const fieldEls = {
+    overview: modal.querySelector('[data-field="overview"]'),
+    forwho: modal.querySelector('[data-field="forwho"]'),
+    frequency: modal.querySelector('[data-field="frequency"]'),
+  };
+
+  const openModal = (data, fallbackTitle = "") => {
+    titleEl.textContent = data.title || fallbackTitle || "詳細";
+    fieldEls.overview.innerHTML = data.overview || "";
+    fieldEls.forwho.innerHTML = data.forwho || "";
+    fieldEls.frequency.innerHTML = data.frequency || "";
+
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".iv-menu__detailBtn");
+    if (!btn) {
+      if (e.target.closest(".iv-modal__close")) closeModal();
+      if (e.target.classList.contains("iv-modal__backdrop")) closeModal();
+      return;
+    }
+
+    const item = btn.closest(".iv-menu__item");
+    const key = item?.dataset.popupKey;
+    if (!key) return;
+
+    const data = window.ivPopupData?.[String(key)];
+    if (!data) return;
+
+    const fallbackTitle =
+      item.querySelector(".iv-menu__name")?.textContent?.trim() || "";
+    openModal(data, fallbackTitle);
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
+      closeModal();
+    }
+  });
+});
