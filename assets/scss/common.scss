@@ -1409,6 +1409,9 @@ section {
       transform: translateY(-20%);
       opacity: .8;
       transition: transform .12s ease, opacity .12s ease;
+      @include pc(sp){
+        transform: translateY(-6%);
+      }
     }
 
     &:hover {
