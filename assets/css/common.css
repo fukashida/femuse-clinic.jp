@@ -920,11 +920,16 @@ section h2 {
   color: #3b3978;
   margin-bottom: 50px;
 }
+@media screen and (max-width:540px) {
+  section h2 {
+    margin-bottom: 40px;
+  }
+}
 section h2.left {
   text-align: left;
 }
 section h2#news {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 section .container {
   max-width: 1040px;
@@ -1252,6 +1257,29 @@ section .container {
     min-width: 0;
   }
 }
+.menu-detail-kv {
+  padding: 40px 20px;
+  background: url(../images/common/menu_cover.webp) no-repeat center/cover;
+}
+.menu-detail-kv h1 {
+  display: block;
+  padding: 14px 18px;
+  background: #fff;
+  color: #3B3978;
+  border-radius: 12px;
+  letter-spacing: 0.06em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 28px;
+  line-height: 1.4;
+}
+@media screen and (max-width:540px) {
+  .menu-detail-kv h1 {
+    font-size: 22px;
+  }
+}
+
 .menu-page-title {
   padding: 40px 0;
   background: url(../images/common/menu_cover.webp) no-repeat center/cover;
@@ -1380,9 +1408,14 @@ section .container {
   display: inline-block;
   font-size: 16px;
   line-height: 1;
-  transform: translateY(-6%);
+  transform: translateY(-20%);
   opacity: 0.8;
   transition: transform 0.12s ease, opacity 0.12s ease;
+}
+@media screen and (max-width:540px) {
+  .iv-menu__detailBtn span {
+    transform: translateY(-6%);
+  }
 }
 .iv-menu__detailBtn:hover {
   background: #ffffff;
@@ -1500,7 +1533,7 @@ section .container {
   color: #1f2a37;
   font-size: 20px;
   line-height: 1;
-  padding-left: 10.5px;
+  padding-left: 5.5px;
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1604,6 +1637,7 @@ section .container {
   font-weight: 700;
   color: #3b2f2f;
   letter-spacing: 0.02em;
+  margin-top: 30px;
 }
 .flow__dot {
   width: 10px;
@@ -1611,6 +1645,9 @@ section .container {
   border-radius: 999px;
   background: #3b3978;
   flex: 0 0 10px;
+}
+.flow__dot.sub {
+  background: #63abd7;
 }
 .flow__list {
   list-style: none;
@@ -1622,6 +1659,19 @@ section .container {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 35px;
   position: relative;
+}
+.flow__list.sub .flow__item .flow__no {
+  color: #63abd7;
+}
+.flow__list.sub .flow__item:not(:last-child)::after {
+  background: #ecf5fa;
+}
+.flow__list.sub .flow__item:not(:last-child)::before {
+  border-right: 2px solid #63abd7;
+  border-bottom: 2px solid #63abd7;
+}
+.flow__list.sub .flow__item .flow__link {
+  color: #63abd7;
 }
 .flow__item {
   position: relative;
@@ -1664,7 +1714,6 @@ section .container {
   margin: 0 0 10px;
   padding-bottom: 10px;
   font-size: 18px;
-  font-weight: 600;
   color: #3b2f2f;
   text-align: center;
   border-bottom: 1px solid #e9eef3;

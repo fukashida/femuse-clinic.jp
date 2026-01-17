@@ -921,11 +921,14 @@ section {
     text-align: center;
     color: #3b3978;
     margin-bottom: 50px;
+    @include pc(sp){
+      margin-bottom: 40px;
+    }
     &.left {
       text-align: left;
     }
     &#news {
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
   }
   & .container {
@@ -1272,6 +1275,26 @@ section {
   }
 }
 
+.menu-detail-kv{
+  padding: 40px 20px;
+  background: url(../images/common/menu_cover.webp) no-repeat center/cover;
+  & h1{
+    display: block;
+    padding: 14px 18px;
+    background: #fff;    // 背景
+    color: #3B3978;
+    border-radius: 12px;
+    letter-spacing: .06em;
+    width: fit-content;
+    margin: auto;
+    font-size: 28px;
+    line-height: 1.4;
+    @include pc(sp){
+      font-size: 22px;
+    }
+  }
+}
+
 .menu-page-title{
   padding: 40px 0;
   background: url(../images/common/menu_cover.webp) no-repeat center/cover;
@@ -1554,7 +1577,7 @@ section {
     color: #1f2a37;
     font-size: 20px;
     line-height: 1;
-    padding-left: 10.5px;
+    padding-left: 5.5px;
     cursor: pointer;
     appearance: none;
     transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
@@ -1673,14 +1696,18 @@ section {
     font-weight: 700;
     color: #3b2f2f; // 濃いブラウン寄り
     letter-spacing: .02em;
+    margin-top: 30px;
   }
 
   &__dot {
     width: 10px;
     height: 10px;
     border-radius: 999px;
-    background: #3b3978; // ピンクの丸
+    background: #3b3978;
     flex: 0 0 10px;
+    &.sub{
+      background: #63abd7;
+    }
   }
 
   &__list {
@@ -1693,6 +1720,23 @@ section {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 35px;
     position: relative;
+    &.sub {
+      & .flow__item { 
+        & .flow__no {
+          color: #63abd7;
+        }
+        &:not(:last-child)::after {
+          background: #ecf5fa;
+        }
+        &:not(:last-child)::before {
+          border-right: 2px solid #63abd7;
+          border-bottom: 2px solid #63abd7;
+        }
+        & .flow__link {
+          color: #63abd7;
+        }
+      }
+    }
   }
 
   &__item {
@@ -1741,7 +1785,6 @@ section {
     margin: 0 0 10px;
     padding-bottom: 10px;
     font-size: 18px;
-    font-weight: 600;
     color: #3b2f2f;
     text-align: center;
     border-bottom: 1px solid #e9eef3; // 細い下線

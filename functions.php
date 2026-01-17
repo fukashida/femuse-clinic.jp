@@ -21,6 +21,7 @@ function register_style()
   wp_register_style('style-menu', get_template_directory_uri() . '/assets/css/menu.css?20241030');
   wp_register_style('style-doctor', get_template_directory_uri() . '/assets/css/doctor.css?20241030');
   wp_register_style('style-price', get_template_directory_uri() . '/assets/css/price.css');
+  wp_register_style('style-line', get_template_directory_uri() . '/assets/css/line.css?20260110');
 }
 function add_style()
 {
@@ -45,6 +46,9 @@ function add_style()
   }
   if (is_page('price')) {
     wp_enqueue_style('style-price');
+  }
+  if (is_page('line')) {
+    wp_enqueue_style('style-line');
   }
 }
 
