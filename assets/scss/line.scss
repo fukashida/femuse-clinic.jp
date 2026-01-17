@@ -1,0 +1,90 @@
+$breakpoints: (
+  "ssp": "screen and (max-width:320px)",
+  "sp": "screen and (max-width:540px)",
+  "tb": "screen and (max-width:768px)",
+  "mb": "screen and (max-width:900px)",
+  "nb": "screen and (max-width:1200px)",
+  "np": "screen and (max-width:1440px)"
+) !default;
+
+@mixin pc($breakpoint: nb) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.line-guide {
+    & h2 {
+      @include pc(sp){
+        font-size: 23px;
+      }
+    }
+    & a {
+      display: flex;
+      background: #34ad37;
+      padding: 10px 35px 10px 15px;
+      gap: 10px;
+      align-items: center;
+      line-height: 1.3;
+      font-weight: normal;
+      font-size: 15px;
+      color: white;
+      margin: 35px auto 0;
+      width: fit-content;
+      border-radius: 8px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+      &:hover {
+        &::after {
+          right: 12px;
+        }
+      }
+      & img {
+        max-width: 50px;
+        width: 100%;
+        margin: 0;
+      }
+    }
+    & .flex {
+        margin-top: 40px;
+        padding: 30px 25px;
+        background: #fafafa;
+        gap: 20px;
+        @include pc(sp){
+          padding: 20px 25px;
+          gap: 15px;
+          justify-content: center;
+           flex-wrap: wrap;
+        }
+        & img {
+          max-width: 35px;
+          width: 100%;
+          margin: 0;
+        }
+        & div {
+          @include pc(sp){
+            width: 100%;
+          }
+        }
+        & p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            @include pc(sp){
+              margin-bottom: 15px;
+            }
+            &.last {
+              margin-bottom: 0;
+            }
+        }
+    }
+}

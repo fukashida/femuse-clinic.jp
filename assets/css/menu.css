@@ -3,51 +3,6 @@
   border: solid 0 !important;
 }
 
-.menu-detail {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.menu-detail h2 {
-  color: white;
-  padding: 1.5% 3%;
-  font-size: 120%;
-  margin: 5% 0 4%;
-  background: transparent linear-gradient(270deg, #f9d7de 0%, #d98599 100%) 0% 0% no-repeat padding-box;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-detail h2 {
-    padding: 4% 3%;
-    font-size: 120%;
-    margin: 10% 0 8%;
-  }
-}
-.menu-detail-kv {
-  position: relative;
-}
-
-.menu-detail-kv h1 {
-  position: absolute;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-size: 300%;
-  color: #534744;
-  text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-detail-kv h1 {
-    font-size: 200%;
-  }
-}
-.menu-detail-kv-img {
-  width: 100%;
-}
-
 @media screen and (max-width: 767px) {
   .menu-detail-container {
     width: 92%;
@@ -615,4 +570,4 @@
   .menu-detail-kv-img {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=menu.css.map */
