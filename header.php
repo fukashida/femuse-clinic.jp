@@ -97,12 +97,12 @@
           </ul>
         </li>
 
-        <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">当院について</a></li>
+        <!-- <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">当院について</a></li> -->
         <li class="nav-sp-link"><a class="<?php if (is_page("")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>#access">アクセス</a></li>
-        <li class="nav-sp-link"><a class="<?php if (is_page("faq")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">よくある質問</a></li>
+        <!-- <li class="nav-sp-link"><a class="<?php if (is_page("faq")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">よくある質問</a></li> -->
         <li class="nav-sp-link"><a class="<?php if (is_page("contact")) : ?>header-nav-current<?php endif; ?>" href="<?php echo esc_url( home_url('/contact/') ); ?>">お問い合わせ</a></li>
-        <li class="nav-sp-link web"><a class="header-nav-online" href="#">オンライン診療予約</a></li>
-        <li class="nav-sp-link web"><a class="header-nav-web" href="#">来院予約</a></li>
+        <li class="nav-sp-link web"><a target=”_blank” class="header-nav-online" href="https://femuse-clinic.jp/online/">オンライン診療予約</a></li>
+        <li class="nav-sp-link web"><a target=”_blank” class="header-nav-web" href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f">来院予約</a></li>
         <li class="nav-sp-link line"><a class="header-nav-line" href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1064&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447"><img src="<?php my_theme_uri(); ?>/assets/images/common/line.webp" alt="公式ライン" /></a></li>
       </ul>
     </nav>
