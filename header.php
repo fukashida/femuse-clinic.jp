@@ -13,6 +13,9 @@
   }
   $description = "美容皮膚科と婦人科のトータルケア。美白美肌からデリケートゾーンのお悩みまで、女性の体に寄り添うクリニックです。またオンライン診療にも対応しています。性病検査や性病治療、低用量ピルの処方も行っております。"
   ?>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title><?php echo $title ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta charset="<?php bloginfo('charset'); ?>">
@@ -69,7 +72,7 @@
   <header>
     <div class="logo">
       <h1>
-        <a href="<?php my_home_uri(); ?>">
+        <a href="/?top=1">
           <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.webp" alt="femuse" />
         </a>
       </h1>
@@ -86,7 +89,7 @@
 
         <li class="nav-sp-link has-plus js-accordion">
           <a
-            href="<?php echo esc_url( home_url('/#menu') ); ?>"
+            href="/?top=1#menu"
             class="js-accordion-trigger"
           >診療内容</a>
 
@@ -97,12 +100,12 @@
           </ul>
         </li>
 
-        <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">当院について</a></li>
+        <!-- <li class="nav-sp-link"><a class="<?php if (is_page("about")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">当院について</a></li> -->
         <li class="nav-sp-link"><a class="<?php if (is_page("")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>#access">アクセス</a></li>
-        <li class="nav-sp-link"><a class="<?php if (is_page("faq")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">よくある質問</a></li>
+        <!-- <li class="nav-sp-link"><a class="<?php if (is_page("faq")) : ?>header-nav-current<?php endif; ?>" href="<?php my_home_uri(); ?>">よくある質問</a></li> -->
         <li class="nav-sp-link"><a class="<?php if (is_page("contact")) : ?>header-nav-current<?php endif; ?>" href="<?php echo esc_url( home_url('/contact/') ); ?>">お問い合わせ</a></li>
-        <li class="nav-sp-link web"><a class="header-nav-online" href="#">オンライン診療予約</a></li>
-        <li class="nav-sp-link web"><a class="header-nav-web" href="#">来院予約</a></li>
+        <li class="nav-sp-link web"><a target=”_blank” class="header-nav-online" href="https://femuse-clinic.jp/online/">オンライン診療予約</a></li>
+        <li class="nav-sp-link web"><a target=”_blank” class="header-nav-web" href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f">来院予約</a></li>
         <li class="nav-sp-link line"><a class="header-nav-line" href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1064&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447"><img src="<?php my_theme_uri(); ?>/assets/images/common/line.webp" alt="公式ライン" /></a></li>
       </ul>
     </nav>

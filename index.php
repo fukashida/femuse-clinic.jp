@@ -11,17 +11,17 @@
     </div>
   </div>
 
-  <section class="bacground-gray">
+  <!-- <section class="bacground-gray">
     <h2 id="campaign">キャンペーン</h2>
-  </section>
+  </section> -->
 
 
 <section>
   <h2 id="menu">診療内容</h2>
   <?php
     // 共通URL
-    $visit_url  = 'https://example.com/visit-reserve/';
-    $online_url = 'https://example.com/online-reserve/';
+    $visit_url  = 'https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f';
+    $online_url = 'https://femuse-clinic.jp/online/';
 
     // 親ページ（/menu/）を取得
     $menu_parent = get_page_by_path('menu');
@@ -58,12 +58,12 @@
 
               <div class="menu-card__actions">
                 <?php if ($enabled): ?>
-                  <a class="btn btn--primary" href="<?php echo esc_url($online_url); ?>">
+                  <a target=”_blank” class="btn btn--primary" href="<?php echo esc_url($online_url); ?>">
                     オンライン診療予約
                   </a>
                 <?php endif; ?>
 
-                <a class="btn btn--secondary" href="<?php echo esc_url($visit_url); ?>">
+                <a target=”_blank” class="btn btn--secondary" href="<?php echo esc_url($visit_url); ?>">
                   来院予約
                 </a>
               </div>
