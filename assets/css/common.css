@@ -1032,9 +1032,6 @@ section .container {
   right: -30px;
 }
 
-.access-flow {
-  /* --- 横スクロール対応 --- */
-}
 .access-flow__grid {
   margin-top: 28px;
   display: grid;
@@ -1105,6 +1102,9 @@ section .container {
   text-align: center;
   letter-spacing: 0.04em;
   opacity: 0.85;
+}
+.access-flow {
+  /* --- 横スクロール対応 --- */
 }
 @media (max-width: 1200px) {
   .access-flow__grid {
@@ -1308,14 +1308,6 @@ section .container {
   }
 }
 
-.iv-menu {
-  /* ------------------------------
-    詳細を見るボタン
-  ------------------------------ */
-  /* ------------------------------
-    SP（縦積み）
-  ------------------------------ */
-}
 .iv-menu__group {
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -1327,6 +1319,16 @@ section .container {
 }
 .iv-menu__group:nth-child(2) {
   margin-top: 0;
+}
+.iv-menu__group.top {
+  margin-top: 0;
+}
+.iv-menu__group.center {
+  text-align: center;
+}
+.iv-menu p.center {
+  text-align: center;
+  font-size: 14px;
 }
 .iv-menu__list {
   border-radius: 14px;
@@ -1381,6 +1383,11 @@ section .container {
 }
 .iv-menu__price span {
   font-size: 16px;
+}
+.iv-menu {
+  /* ------------------------------
+    詳細を見るボタン
+  ------------------------------ */
 }
 .iv-menu__detailBtn {
   margin-top: 10px;
@@ -1440,6 +1447,11 @@ section .container {
   cursor: not-allowed;
   box-shadow: none;
 }
+.iv-menu {
+  /* ------------------------------
+    SP（縦積み）
+  ------------------------------ */
+}
 @media (max-width: 767px) {
   .iv-menu__group {
     font-size: 18px;
@@ -1488,7 +1500,6 @@ section .container {
   inset: 0;
   z-index: 9999;
   /* 閉じてる時は完全に消して下を触れるように */
-  /* 画像の「左：ラベル / 右：本文」 */
 }
 .iv-modal[aria-hidden=true] {
   display: none;
@@ -1556,6 +1567,9 @@ section .container {
   padding: 18px 20px 20px;
   background: #fff;
 }
+.iv-modal {
+  /* 画像の「左：ラベル / 右：本文」 */
+}
 .iv-modal__row {
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -1614,6 +1628,87 @@ section .container {
     font-size: 14px;
     line-height: 1.75;
   }
+}
+
+.flex.menu {
+  margin: 35px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+a.menu-cta {
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  background: #63abd7;
+}
+a.menu-cta:last-child {
+  background: #3b3978;
+}
+a.menu-cta {
+  position: relative;
+}
+a.menu-cta::after {
+  content: "";
+  position: absolute;
+  top: 43%;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+}
+
+.menu-page-content .flex {
+  align-items: stretch;
+}
+.menu-page-content .flex.col3 {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+.menu-page-content .flex.col3 .box {
+  width: 31.25%;
+}
+@media screen and (max-width:540px) {
+  .menu-page-content .flex.col3 .box {
+    width: 100%;
+  }
+}
+.menu-page-content .flex.col3 .box .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.menu-page-content .box {
+  padding: 25px;
+  background: #f4f6f9;
+}
+.menu-page-content .box p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.menu-page-content .box p:last-child {
+  margin-bottom: 0;
+}
+.menu-page-content .box p span {
+  font-size: 12px;
+}
+.menu-page-content .box .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3B3978;
 }
 
 /* =========================================================
@@ -1713,7 +1808,7 @@ section .container {
 .flow__head {
   margin: 0 0 10px;
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #3b2f2f;
   text-align: center;
   border-bottom: 1px solid #e9eef3;

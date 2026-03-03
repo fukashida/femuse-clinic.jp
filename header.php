@@ -97,6 +97,7 @@
             <li><a href="<?php echo esc_url( home_url('/injection/') ); ?>">美容注射・点滴</a></li>
             <li><a href="<?php echo esc_url( home_url('/medicine/') ); ?>">美容内服処方</a></li>
             <li><a href="<?php echo esc_url( home_url('/pill/') ); ?>">ピル処方</a></li>
+            <li><a href="<?php echo esc_url( home_url('/std/') ); ?>">性感染症検査・治療</a></li>
           </ul>
         </li>
 
