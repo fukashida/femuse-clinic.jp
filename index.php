@@ -50,10 +50,15 @@
               $online_enabled   = is_array($has_online) && in_array('1', $has_online, true);
               $athome_enabled   = is_array($has_athome) && in_array('1', $has_athome, true);
               $atclinic_enabled = is_array($has_atclinic) && in_array('1', $has_atclinic, true);
+
+              // xolair だけ遷移先を上書き
+              $card_url = ($child->post_name === 'xolair')
+                ? 'https://femuse-clinic.jp/xolair/'
+                : get_permalink($child->ID);
             ?>
 
             <div class="menu-card">
-              <a class="menu-card__panel" href="<?php echo esc_url(get_permalink($child->ID)); ?>">
+              <a class="menu-card__panel" href="<?php echo esc_url($card_url); ?>">
                 <h3 class="menu-card__title"><?php echo esc_html($child->post_title); ?></h3>
                 <span class="menu-card__detail">詳細</span>
               </a>
