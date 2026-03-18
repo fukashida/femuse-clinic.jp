@@ -98,6 +98,12 @@
   <?php endif; ?>
 </section>
 
+<section class="schedule">
+  <div class="container">
+  <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/3月（PC）.png" alt="" class="pc">
+  <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/3月（SP）.png" alt="" class="sp">
+  </div>
+</section>
 
   <section class="bacground-gray">
   <div class="container">

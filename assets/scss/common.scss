@@ -916,6 +916,9 @@ img {
 section {
   display: block;
   padding: 70px 0;
+  &.schedule {
+    padding-top: 0;
+  }
   & h2 {
     font-size: 25px;
     text-align: center;

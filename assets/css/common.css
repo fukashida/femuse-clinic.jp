@@ -914,6 +914,9 @@ section {
   display: block;
   padding: 70px 0;
 }
+section.schedule {
+  padding-top: 0;
+}
 section h2 {
   font-size: 25px;
   text-align: center;
