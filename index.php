@@ -1,4 +1,37 @@
 <?php get_header(); ?>
+
+<style>
+.schedule-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.schedule-tab-btn {
+  padding: 8px 24px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.schedule-tab-btn.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.schedule-panel {
+  display: none;
+}
+
+.schedule-panel.active {
+  display: block;
+}
+</style>
+
 <main class="top">
   <div id="fv" class="fv fadein">
     <div class="top-kv-slider">
@@ -14,6 +47,25 @@
   <!-- <section class="bacground-gray">
     <h2 id="campaign">キャンペーン</h2>
   </section> -->
+
+
+  <section class="p-newmenu">
+  <div class="inner1100">
+    <h2 class="">
+      メニューのご紹介
+    </h2>
+  </div>
+
+  <div class="slider-outer">
+    <div class="slider-track-wrap">
+      <div class="slider-track" id="sliderTrack">
+        <!-- slides injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <ul class="slick-dots" id="slickDots"></ul>
+</section>
 
 
 <section>
@@ -98,6 +150,26 @@
   <?php endif; ?>
 </section>
 
+<section class="schedule">
+  <div class="container">
+
+    <div class="schedule-tabs">
+      <button class="schedule-tab-btn active" data-target="schedule-march">3月</button>
+      <button class="schedule-tab-btn" data-target="schedule-april">4月</button>
+    </div>
+
+    <div class="schedule-panel active" id="schedule-march">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/3月（PC）.png" alt="3月のスケジュール" class="pc">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/3月（SP）.png" alt="3月のスケジュール" class="sp">
+    </div>
+
+    <div class="schedule-panel" id="schedule-april">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/4月（PC）.png" alt="4月のスケジュール" class="pc">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/4月（SP）.png" alt="4月のスケジュール" class="sp">
+    </div>
+
+  </div>
+</section>
 
   <section class="bacground-gray">
   <div class="container">
@@ -135,5 +207,20 @@
   <?php get_template_part('parts/section', 'access'); ?>
 
 </main>
+
+<script>
+document.querySelectorAll('.schedule-tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.schedule-tab-btn').forEach(function(b) {
+      b.classList.remove('active');
+    });
+    document.querySelectorAll('.schedule-panel').forEach(function(p) {
+      p.classList.remove('active');
+    });
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.target).classList.add('active');
+  });
+});
+</script>
 
 <?php get_footer(); ?>
