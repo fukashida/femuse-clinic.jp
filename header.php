@@ -13,6 +13,9 @@
   }
   $description = "美容皮膚科と婦人科のトータルケア。美白美肌からデリケートゾーンのお悩みまで、女性の体に寄り添うクリニックです。またオンライン診療にも対応しています。性病検査や性病治療、低用量ピルの処方も行っております。"
   ?>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title><?php echo $title ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta charset="<?php bloginfo('charset'); ?>">
@@ -69,7 +72,7 @@
   <header>
     <div class="logo">
       <h1>
-        <a href="<?php my_home_uri(); ?>">
+        <a href="/?top=1">
           <img src="<?php my_theme_uri(); ?>/assets/images/common/logo.webp" alt="femuse" />
         </a>
       </h1>
@@ -86,7 +89,7 @@
 
         <li class="nav-sp-link has-plus js-accordion">
           <a
-            href="<?php echo esc_url( home_url('/#menu') ); ?>"
+            href="/?top=1#menu"
             class="js-accordion-trigger"
           >診療内容</a>
 
@@ -94,6 +97,7 @@
             <li><a href="<?php echo esc_url( home_url('/injection/') ); ?>">美容注射・点滴</a></li>
             <li><a href="<?php echo esc_url( home_url('/medicine/') ); ?>">美容内服処方</a></li>
             <li><a href="<?php echo esc_url( home_url('/pill/') ); ?>">ピル処方</a></li>
+            <li><a href="<?php echo esc_url( home_url('/std/') ); ?>">性感染症検査・治療</a></li>
           </ul>
         </li>
 
