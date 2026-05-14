@@ -1,0 +1,637 @@
+@import "./mixin";
+
+.fv {
+  position: relative;
+  height: 40vw;
+  overflow: hidden;
+  margin-inline: auto;
+
+  @include sp {
+    height: 140vw;
+  }
+
+  .top-kv-title {
+    width: 12%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 9000;
+
+    @include sp {
+      width: 30%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .top-kv-slider {
+    height: 40vw;
+    margin-inline: auto;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    @include sp {
+      height: 140vw;
+    }
+  }
+
+  .top-kv-slide-img-bg-1,
+  .top-kv-slide-img-bg-2,
+  .top-kv-slide-img-bg-3 {
+    z-index: 10;
+    background-position: center center;
+    animation-duration: 20000ms;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40vw;
+
+    @include sp {
+      height: 140vw;
+    }
+  }
+
+  .top-kv-slide-img-bg-3 {
+    opacity: 0;
+    background-image: url(../images/top/femuse_pc_kv_3.jpg);
+
+    -webkit-animation: anime1 15s 0s infinite;
+    animation: anime1 15s 0s infinite;
+
+    @include sp {
+      background-image: url(../images/top/femuse_sp_kv_3.jpg);
+    }
+  }
+  .top-kv-slide-img-bg-2 {
+    opacity: 0;
+    background-image: url(../images/top/femuse_pc_kv_2.jpg);
+    -webkit-animation: anime3 15s 0s infinite;
+    animation: anime 15s 0s infinite;
+
+    @include sp {
+      background-image: url(../images/top/femuse_sp_kv_2.jpg);
+    }
+  }
+  .top-kv-slide-img-bg-1 {
+    opacity: 0;
+    background-image: url(../images/top/femuse_pc_kv_1.jpg);
+
+    -webkit-animation: anime2 15s 0s infinite;
+    animation: anime2 15s 0s infinite;
+    @include sp {
+      background-image: url(../images/top/femuse_sp_kv_1.jpg);
+    }
+  }
+
+  @keyframes anime1 {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      z-index: 11;
+    }
+    33.3% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 1;
+      z-index: 8;
+    }
+  }
+
+  @keyframes anime2 {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    33.3% {
+      opacity: 0;
+      filter: blur(10px);
+      z-index: 11;
+    }
+
+    66.6% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 1;
+      z-index: 8;
+    }
+  }
+
+  @keyframes anime3 {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    66.6% {
+      opacity: 0;
+      filter: blur(10px);
+      z-index: 11;
+    }
+
+    99.9% {
+      opacity: 1;
+      filter: blur(0px);
+      z-index: 8;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 1;
+      z-index: 8;
+    }
+  }
+
+  // @keyframes anime1 {
+  //   0% {
+  //     opacity: 0;
+  //     filter: blur(10px);
+  //     z-index: 11;
+  //   }
+  //   8% {
+  //     opacity: 1;
+  //   }
+  //   17% {
+  //     opacity: 1;
+  //   }
+
+  //   23% {
+  //     opacity: 1;
+  //     filter: blur(0px);
+  //   }
+  //   45% {
+  //     opacity: 1;
+  //     z-index: 8;
+  //   }
+  //   60% {
+  //     opacity: 1;
+  //     z-index: 8;
+  //   }
+  //   100% {
+  //     transform: scale(1.1);
+  //     opacity: 1;
+  //     z-index: 8;
+  //   }
+  // }
+
+  .top-kv-slide img {
+    width: 100%;
+  }
+  @keyframes zoomUp {
+    0% {
+      transform: scale(1);
+      filter: blur(10px);
+    }
+    20% {
+      filter: blur(0px);
+    }
+
+    100% {
+      transform: scale(1.15); /* 拡大率 */
+      filter: blur(0px);
+    }
+  }
+  .add-animation {
+    animation: zoomUp 3s linear 0s normal both;
+  }
+}
+
+.fv img {
+  width: 100%;
+}
+
+.fv-line {
+  width: 25%;
+  height: 0.5px;
+  background: black;
+  position: absolute;
+  bottom: 15%;
+  left: 16%;
+  z-index: 1000;
+  transform: rotate(45deg);
+}
+
+.container {
+  width: 60%;
+  min-width: 1000px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.top-about {
+  display: flex;
+  padding: 10% 0 5%;
+}
+
+.top-about-img {
+  width: 55%;
+}
+
+.top-about-img img {
+  width: 100%;
+}
+
+.top-about-detail {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  line-height: 180%;
+}
+
+.menu {
+  padding-top: 30px;
+}
+
+.menu-title,
+.telemedicine-title {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #534744;
+  border-left: solid 3px #cf92a0;
+  font-size: 120%;
+  margin: 70px 0 30px;
+}
+
+.menu-box-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.menu-box {
+  width: 49%;
+  background-color: #fcfbf9;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+
+.menu-box-title {
+  color: #534744;
+  display: flex;
+  background-color: #fdeff2;
+  padding: 20px 20px;
+}
+
+.menu-box-title h3 {
+  font-size: 120%;
+  width: 65%;
+}
+
+.menu-box-price {
+  width: 35%;
+  color: #cf5e79;
+  text-align: right;
+  font-weight: bold;
+}
+
+.menu-box-detail {
+  padding: 20px;
+  background-color: #fcfbf9;
+  min-height: 300px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.menu-box-tab div {
+  color: #cf92a0;
+  padding: 5px 0px;
+  display: block;
+  font-size: 90%;
+}
+
+.menu-box-tab h4 {
+  margin: 10px 0;
+  color: #cf92a0;
+  padding: 5px 10px;
+  border: solid 1px #cf92a0;
+  display: inline-block;
+}
+
+.menu-box-component h4 {
+  margin: 10px 0;
+  color: #9ec6ce;
+  padding: 5px 10px;
+  border: solid 1px #9ec6ce;
+  display: inline-block;
+}
+
+.menu-box-component div {
+  margin: 0 0 10px;
+  color: #9ec6ce;
+  font-size: 90%;
+  line-height: 160%;
+}
+
+.menu-box-detail-text {
+  color: #534744;
+  line-height: 200%;
+}
+
+.menu-box-btn-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.menu-box-btn-area .menu-box-detail-link {
+  color: #534744;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.menu-box-btn-area .menu-box-reserve-btn {
+  background-color: #cf92a0;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.telemedicine {
+  margin: 8% 0;
+}
+
+.telemedicine-menu {
+  width: 49%;
+}
+
+.telemedicine h4 {
+  margin: 5% 0 2%;
+}
+
+.telemedicine-menu-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1% 0 4%;
+}
+
+.telemedicine-menu-title {
+  background-color: #fdeff2;
+  padding: 3% 4%;
+  color: #534744;
+  font-size: 110%;
+}
+
+.telemedicine-menu-list li {
+  font-size: 90%;
+  color: #534744;
+  background-color: #fcfbf9;
+  padding: 3% 4%;
+  margin: 2% 0 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu .title {
+    margin-bottom: -40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+
+  .container {
+    width: 100% !important;
+    min-width: 100%;
+    padding: 0 !important;
+  }
+
+  .fv-line {
+    width: 60%;
+    height: 0.5px;
+    bottom: 10%;
+    left: 0;
+  }
+
+  .menu {
+    padding-top: 10px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .menu-open-area,
+  .telemedicine-menu-open-area {
+    display: none;
+  }
+
+  .menu-open,
+  .telemedicine-menu-open {
+    position: relative;
+  }
+
+  .menu-open::before,
+  .telemedicine-menu-open::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: rotate(135deg);
+  }
+
+  .menu-open.active::before,
+  .telemedicine-menu-open.active::before {
+    transform: rotate(-45deg) !important;
+  }
+
+  .menu-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .menu-box-price {
+    padding-right: 30px;
+  }
+
+  .menu-title {
+    margin: 25px 0 20px;
+  }
+
+  .telemedicine-title {
+    margin: 15px 0 20px;
+  }
+
+  .title h2 {
+    font-size: 140%;
+  }
+
+  .telemedicine-menu {
+    margin: 3% 0;
+    width: 100%;
+  }
+
+  .telemedicine-menu-title {
+    padding: 5% 7%;
+  }
+
+  .telemedicine-menu-list li {
+    padding: 5% 8%;
+  }
+
+  .telemedicine-explanation {
+    line-height: 200%;
+    margin-bottom: 10%;
+  }
+
+  .top-about {
+    flex-wrap: wrap;
+    padding: 15% 5% 5%;
+  }
+
+  .top-about-img {
+    width: 100%;
+  }
+
+  .top-about-img img {
+    width: 100%;
+  }
+
+  .top-about-detail {
+    margin-top: 5%;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.menu-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  color: #534744;
+
+  .menu-card {
+    border: 1px solid #cf92a0;
+    padding: 20px 20px 40px;
+    width: 48.5%;
+    position: relative;
+    margin-bottom: 3%;
+    cursor: pointer;
+
+    @include sp {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
+    .menu-card-img {
+      width: 30%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .menu-card-title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin-left: 30px;
+        font-size: 110%;
+      }
+    }
+
+    .menu-crad-body {
+      line-height: 170%;
+      margin-top: 10px;
+      padding: 0 5px;
+    }
+
+    .menu-card-arrow {
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+    }
+  }
+}
+
+.modal-menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  z-index: 2000;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal-menu-title-area {
+  padding: 20px 0;
+  color: white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: transparent linear-gradient(270deg, #f9d7de 0%, #d98599 100%) 0%
+    0% no-repeat padding-box;
+
+  .modal-menu-title {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    font-size: 180%;
+
+    @include sp {
+      font-size: 150%;
+      padding: 0 20px;
+    }
+  }
+
+  .modal-menu-close {
+    position: absolute;
+    right: 0%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 43px;
+    cursor: pointer;
+
+    @include sp {
+      right: 5%;
+      height: 26px;
+    }
+  }
+}
+
+.modal-menu-body {
+  padding: 120px 0px 25px;
+  max-width: 1000px;
+  margin: auto;
+
+  @include sp {
+    padding: 110px 15px 50px;
+  }
+}
