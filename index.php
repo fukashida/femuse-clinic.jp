@@ -154,6 +154,7 @@
   <div class="container">
 
     <div class="schedule-tabs">
+<<<<<<< Updated upstream
       <button class="schedule-tab-btn active" data-target="schedule-march">3月</button>
       <button class="schedule-tab-btn" data-target="schedule-april">4月</button>
     </div>
@@ -167,6 +168,21 @@
       <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/4月（PC）.png" alt="4月のスケジュール" class="pc">
       <img src="https://femuse-clinic.jp/wp-content/uploads/2026/03/4月（SP）.png" alt="4月のスケジュール" class="sp">
     </div>
+=======
+      <button class="schedule-tab-btn active" data-target="schedule-march">5月</button>
+      <!-- <button class="schedule-tab-btn" data-target="schedule-april">6月</button> -->
+    </div>
+
+    <div class="schedule-panel active" id="schedule-march">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/05/5月（PC）.png" alt="3月のスケジュール" class="pc">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/05/5月（SP）.png" alt="3月のスケジュール" class="sp">
+    </div>
+
+    <!-- <div class="schedule-panel" id="schedule-april">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/06/6月（PC）.png" alt="4月のスケジュール" class="pc">
+      <img src="https://femuse-clinic.jp/wp-content/uploads/2026/06/6月（SP）.png" alt="4月のスケジュール" class="sp">
+    </div> -->
+>>>>>>> Stashed changes
 
   </div>
 </section>
@@ -223,4 +239,9 @@ document.querySelectorAll('.schedule-tab-btn').forEach(function(btn) {
 });
 </script>
 
+<<<<<<< Updated upstream
+=======
+<script src="https://femuse-clinic.jp/assets/tracking.js"></script>
+
+>>>>>>> Stashed changes
 <?php get_footer(); ?>

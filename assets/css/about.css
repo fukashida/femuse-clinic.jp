@@ -1,0 +1,149 @@
+.about-kv-img {
+  width: 100%;
+}
+
+.about h1 {
+  font-size: 400%;
+  font-family: "Montserrat", sans-serif;
+  color: #534744;
+  letter-spacing: 5.84px;
+  margin-top: -4%;
+  line-height: 140%;
+}
+
+.about-info {
+  width: 100%;
+  margin: 5% 0;
+}
+
+.about-info p {
+  width: 70%;
+}
+
+.about-info-main-copy {
+  color: #95865d;
+  font-size: 200%;
+  line-height: 220%;
+  font-family: "Noto Serif JP", serif;
+}
+
+.about-info p {
+  margin: 4% 0;
+  line-height: 200%;
+  color: #534744;
+}
+
+.about-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-detail-box {
+  width: 47%;
+}
+
+.about-detail-box img {
+  width: 100%;
+}
+
+.about-line-title {
+  display: block;
+  padding: 0 10px 5px;
+  color: #534744;
+  font-size: 140%;
+  margin: 0 0 20px;
+  line-height: 180%;
+  position: relative;
+}
+
+.about-line-title::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  background-color: #cf92a0;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.about-detail-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 4% 0;
+}
+
+.about-detail-box p {
+  color: #534744;
+  line-height: 180%;
+}
+
+.about-title-area {
+  margin: 9% 0 3%;
+  position: relative;
+}
+
+.about-title-line {
+  width: 30%;
+  height: 0.5px;
+  background: black;
+  position: absolute;
+  top: -98%;
+  right: 0%;
+  z-index: 1000;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .about-kv-img {
+    width: 96%;
+  }
+  .about h1 {
+    margin-top: 4%;
+    font-size: 230%;
+  }
+  .about .about-container {
+    width: 90%;
+    margin: auto;
+  }
+  .about-info {
+    width: 100%;
+    position: relative;
+  }
+  .about-info p {
+    width: 100%;
+  }
+  .about-info-main-copy {
+    font-size: 140%;
+    line-height: 160%;
+    font-family: "Noto Serif JP", serif;
+  }
+  .about-detail-group:nth-child(2) .about-detail-box:nth-child(1) {
+    order: 2;
+  }
+  .about-detail-group:nth-child(2) .about-detail-box:nth-child(2) {
+    order: 1;
+  }
+  .about-detail-box {
+    width: 100%;
+  }
+  .about-detail-box img {
+    margin: 5% 0;
+  }
+  .about-title-area {
+    padding-top: 20%;
+  }
+  .about-title-line {
+    width: 40%;
+    height: 0.5px;
+    background: black;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    z-index: 1000;
+    transform: rotate(-45deg);
+  }
+}
