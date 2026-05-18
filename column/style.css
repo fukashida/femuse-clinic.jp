@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* レスポンシブ設定 */
+@media screen and (min-width: 321px) {
+  .ssp {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) {
+  .sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tb {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nb {
+    display: none;
+  }
+}
+:root {
+  --base-black:#3C3C3C;
+  --base-darkgray:#858585;
+  --base-gray:#CCCCCC;
+  --base-lightgray:#EAEAEA;
+  --base-blightgray:#F6F6F6;
+  --base-white:#FFFFFF;
+  --blue-dark:#6068D5;
+  --blue-main:#7980E9;
+  --blue-light:#E2E4FF;
+  --blue-blight:#F6F7FF;
+  --sky-moredark:#199FB4;
+  --sky-dark:#1EBED7;
+  --sky-main:#79DAE9;
+  --sky-light:#E3FCFF;
+  --sky-blight:#F2FEFF;
+  --green-dark:#2AC854;
+  --green-main:#82E36C;
+  --green-light:#E3FFDD;
+  --green-blight:#F1FFEE;
+  --accent-gradation:linear-gradient(135deg,var(--green-main),var(--sky-main),var(--blue-main));
+  --accent-light-gradation:linear-gradient(135deg,var(--green-light),var(--sky-light),var(--blue-light));
+}
+
+header {
+  background-color: var(--base-white);
+  border-bottom: 1px solid var(--base-gray);
+}
+
+.column .top-title {
+  margin-top: 90px;
+  padding: 50px 0;
+  background: url(../img/article/article-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.column .top-title h1 {
+  font-size: 27px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.column .top-title p {
+  text-align: center;
+}
+.column .top-title p.en {
+  color: var(--base-darkgray);
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+.column .category-filter {
+  padding: 24px;
+  border-top: 1px solid var(--base-lightgray);
+  border-bottom: 1px solid var(--base-lightgray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.column .category-filter button {
+  cursor: pointer;
+}
+.column .category-filter button.filter-btn {
+  border-radius: 100px;
+  padding: 5px 20px;
+  border: 1px solid var(--base-gray);
+  background: var(--base-white);
+}
+.column .category-filter button.filter-btn.active {
+  background: var(--base-black);
+  font-family: "Bold";
+  border-color: var(--base-black);
+  color: var(--base-white);
+}
+.column .content {
+  padding-top: 35px;
+}
+.column .content .article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 340px;
+  list-style: none;
+}
+.column .content .article-list .card {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--base-gray);
+  background-color: var(--base-white);
+}
+.column .content .article-list .card .card-thumbnail {
+  width: 100%;
+  border-bottom: 1px solid var(--base-gray);
+}
+.column .content .article-list .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px 12px;
+}
+.column .content .article-list .card .card-body .badge {
+  display: inline-block;
+  background-color: var(--base-blightgray);
+  color: var(--base-black);
+  font-size: 10px;
+  font-family: "Medium";
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.column .content .article-list .card .card-body .card-title {
+  font-size: 14px;
+  font-family: "Bold";
+  line-height: 1.57;
+  letter-spacing: 0;
+  color: var(--base-black);
+  text-align: left;
+}
+.column .content .article-list .card .card-body .flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.column .content .article-list .card .card-body .flex .card-meta {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0;
+  color: var(--base-darkgray);
+}
+.column .content .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+.column .content .pagination .nav-links {
+  display: flex;
+  gap: 10px;
+}
+.column .content .pagination .page-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--base-black);
+  background: var(--base-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  color: var(--base-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column .content .pagination .page-btn.active {
+  background: var(--base-black);
+  color: var(--base-white);
+}
+.column .content .pagination .page-btn:hover {
+  background: var(--base-black);
+  color: var(--base-white);
+}
+.column .content .pagination .page-btn.next {
+  background: none;
+  border: none;
+}
+.column .content .pagination .page-btn.prev {
+  background: none;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

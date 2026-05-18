@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* レスポンシブ設定 */
+@media screen and (min-width: 321px) {
+  .ssp {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) {
+  .sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tb {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nb {
+    display: none;
+  }
+}
+:root {
+  --base-black:#3C3C3C;
+  --base-darkgray:#858585;
+  --base-gray:#CCCCCC;
+  --base-lightgray:#EAEAEA;
+  --base-blightgray:#F6F6F6;
+  --base-white:#FFFFFF;
+  --blue-dark:#6068D5;
+  --blue-main:#7980E9;
+  --blue-light:#E2E4FF;
+  --blue-blight:#F6F7FF;
+  --sky-moredark:#199FB4;
+  --sky-dark:#1EBED7;
+  --sky-main:#79DAE9;
+  --sky-light:#E3FCFF;
+  --sky-blight:#F2FEFF;
+  --green-dark:#2AC854;
+  --green-main:#82E36C;
+  --green-light:#E3FFDD;
+  --green-blight:#F1FFEE;
+  --accent-gradation:linear-gradient(135deg,var(--green-main),var(--sky-main),var(--blue-main));
+  --accent-light-gradation:linear-gradient(135deg,var(--green-light),var(--sky-light),var(--blue-light));
+}
+
+header {
+  background-color: var(--base-white);
+  border-bottom: 1px solid var(--base-gray);
+}
+
+.news .top-title {
+  margin-top: 90px;
+  padding: 50px 0;
+  background: url(../img/article/article-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.news .top-title h1 {
+  font-size: 27px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.news .top-title p {
+  text-align: center;
+}
+.news .top-title p.en {
+  color: var(--base-darkgray);
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+.news .content {
+  padding-top: 35px;
+}
+.news .content .news-list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.news .content .news-list .news-item {
+  width: 100%;
+}
+.news .content .news-list .news-item .news-article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--base-gray);
+}
+.news .content .news-list .news-item .news-article .news-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.news .content .news-list .news-item .news-article .news-header .news-date {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--base-darkgray);
+}
+.news .content .news-list .news-item .news-article .news-header .badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: "Medium";
+  line-height: 1;
+  border: none;
+}
+.news .content .news-list .news-item .news-article .news-header .badge.badge-gray {
+  background-color: var(--base-blightgray);
+  color: var(--base-black);
+}
+.news .content .news-list .news-item .news-article .news-header .badge.badge-green {
+  background-color: var(--green-light);
+  color: var(--base-black);
+}
+.news .content .news-list .news-item .news-article .news-header .badge.badge-pink {
+  background-color: #ffe2ef;
+  color: #ab1346;
+}
+.news .content .news-list .news-item .news-article p.news-title {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--base-black);
+}
+.news .content .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+.news .content .pagination .nav-links {
+  display: flex;
+  gap: 10px;
+}
+.news .content .pagination .page-numbers {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--base-black);
+  background: var(--base-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  color: var(--base-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news .content .pagination .page-numbers.current {
+  background: var(--base-black);
+  color: var(--base-white);
+}
+.news .content .pagination .page-numbers:hover {
+  background: var(--base-black);
+  color: var(--base-white);
+}
+.news .content .pagination .page-numbers.next {
+  background: none;
+  border: none;
+}
+.news .content .pagination .page-numbers.prev {
+  background: none;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

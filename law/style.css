@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* レスポンシブ設定 */
+@media screen and (min-width: 321px) {
+  .ssp {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) {
+  .sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tb {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nb {
+    display: none;
+  }
+}
+:root {
+  --base-black:#3C3C3C;
+  --base-darkgray:#858585;
+  --base-gray:#CCCCCC;
+  --base-lightgray:#EAEAEA;
+  --base-blightgray:#F6F6F6;
+  --base-white:#FFFFFF;
+  --blue-dark:#6068D5;
+  --blue-main:#7980E9;
+  --blue-light:#E2E4FF;
+  --blue-blight:#F6F7FF;
+  --sky-moredark:#199FB4;
+  --sky-dark:#1EBED7;
+  --sky-main:#79DAE9;
+  --sky-light:#E3FCFF;
+  --sky-blight:#F2FEFF;
+  --green-dark:#2AC854;
+  --green-main:#82E36C;
+  --green-light:#E3FFDD;
+  --green-blight:#F1FFEE;
+  --accent-gradation:linear-gradient(135deg,var(--green-main),var(--sky-main),var(--blue-main));
+  --accent-light-gradation:linear-gradient(135deg,var(--green-light),var(--sky-light),var(--blue-light));
+}
+
+header {
+  background-color: var(--base-white);
+  border-bottom: 1px solid var(--base-gray);
+}
+
+.page404 .title-block {
+  padding: 120px 0 50px;
+  text-align: center;
+}
+.page404 .title-block h1 {
+  color: var(--base-darkgray);
+  font-size: 60px;
+}
+.page404 .title-block p.subtitle {
+  font-family: "Bold";
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.page404 .title-block p.content {
+  color: var(--base-darkgray);
+}
+.page404 .button-block {
+  padding: 50px 0;
+  background: var(--base-blightgray);
+}
+.page404 .button-block p {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Bold";
+}
+.page404 .button-block p.title {
+  font-size: 16px;
+  margin: 30px auto 20px;
+}
+.page404 .button-block a.btn-outline.mt {
+  margin-top: 16px;
+}
+
+.law .top-title {
+  background-color: var(--base-darkgray);
+  padding: 130px 0 35px;
+  margin-bottom: 35px;
+}
+.law .top-title h1 {
+  color: var(--base-white);
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Bold";
+}
+.law .top-title p.en {
+  font-size: 12px;
+  text-align: center;
+  color: var(--base-white);
+}
+.law .content {
+  padding: 0 0 60px;
+}
+.law .content p {
+  color: var(--base-darkgray);
+  font-size: 13px;
+}
+.law .content h2 {
+  text-align: left;
+  font-family: "Bold";
+  margin: 30px auto 15px;
+  font-size: 16px;
+}
+.law .content .items .box {
+  background: var(--base-blightgray);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.law .content .items .box:last-child {
+  margin-bottom: 0;
+}
+.law .content .items p {
+  color: var(--base-black);
+}
+.law .content .items p.subtitle {
+  font-size: 12px;
+  color: var(--base-darkgray);
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */

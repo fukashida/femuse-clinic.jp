@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* レスポンシブ設定 */
+@media screen and (min-width: 321px) {
+  .ssp {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) {
+  .sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tb {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nb {
+    display: none;
+  }
+}
+:root {
+  --base-black:#3C3C3C;
+  --base-darkgray:#858585;
+  --base-gray:#CCCCCC;
+  --base-lightgray:#EAEAEA;
+  --base-blightgray:#F6F6F6;
+  --base-white:#FFFFFF;
+  --blue-dark:#6068D5;
+  --blue-main:#7980E9;
+  --blue-light:#E2E4FF;
+  --blue-blight:#F6F7FF;
+  --sky-moredark:#199FB4;
+  --sky-dark:#1EBED7;
+  --sky-main:#79DAE9;
+  --sky-light:#E3FCFF;
+  --sky-blight:#F2FEFF;
+  --green-dark:#2AC854;
+  --green-main:#82E36C;
+  --green-light:#E3FFDD;
+  --green-blight:#F1FFEE;
+  --accent-gradation:linear-gradient(135deg,var(--green-main),var(--sky-main),var(--blue-main));
+  --accent-light-gradation:linear-gradient(135deg,var(--green-light),var(--sky-light),var(--blue-light));
+}
+
+header {
+  background-color: var(--base-white);
+  border-bottom: 1px solid var(--base-gray);
+}
+
+.single {
+  padding-top: 150px;
+}
+.single .top-title {
+  margin-bottom: 40px;
+}
+.single .top-title h1 {
+  font-size: 22px;
+  color: var(--base-black);
+}
+.single .top-title .flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.single .top-title .flex span.category {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: "Medium";
+  line-height: 1;
+  border: none;
+}
+.single .top-title .flex span.category.badge-gray {
+  background-color: var(--base-blightgray);
+  color: var(--base-black);
+}
+.single .top-title .flex span.category.badge-green {
+  background-color: var(--green-light);
+  color: var(--base-black);
+}
+.single .top-title .flex span.category.badge-pink {
+  background-color: #ffe2ef;
+  color: #ab1346;
+}
+.single .top-title .flex p.time {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--base-darkgray);
+}
+.single nav.post-navigation {
+  background: var(--base-blightgray);
+  padding: 24px;
+  margin-top: 60px;
+}
+.single nav.post-navigation .nav-button {
+  display: inline-block;
+  padding: 0 0 15px;
+  border-bottom: 1px solid var(--base-darkgray);
+  text-decoration: none;
+  color: var(--base-black);
+  transition: all 0.2s;
+}
+.single nav.post-navigation .nav-button:hover {
+  opacity: 0.8;
+}
+.single nav.post-navigation .nav-button .nav-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--base-darkgray);
+  margin-bottom: 0.2rem;
+}
+.single nav.post-navigation .nav-button .nav-title {
+  display: block;
+  font-size: 0.95rem;
+}
+.single nav.post-navigation .nav-button.nav-button-back {
+  color: var(--base-black);
+  background: none;
+  border: none;
+  position: relative;
+  font-family: "Bold";
+  margin: 20px 0 0 20px;
+  padding-bottom: 0;
+}
+.single nav.post-navigation .nav-button.nav-button-back::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid var(--base-black);
+  border-left: 2px solid var(--base-black);
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.single nav.post-navigation .nav-button.nav-button-back:hover {
+  opacity: 0.8;
+}
+.single nav.post-navigation .nav-button.is-disabled {
+  display: inline-block;
+  padding: 15px 0 0;
+  border: none;
+  cursor: not-allowed;
+}
+.single nav.post-navigation .post-nav-next .nav-button {
+  border: none;
+  padding: 15px 0 0;
+}
+
+.single-column .thumbnail {
+  margin-top: 90px;
+}
+.single-column .thumbnail img {
+  height: 100%;
+}
+.single-column .top-title {
+  padding: 30px 0;
+}
+.single-column .top-title h1 {
+  font-size: 22px;
+  color: var(--base-black);
+}
+.single-column .related-posts {
+  margin-top: 60px;
+  padding: 0 20px; /* sub-container の外に出した場合の余白調整 */
+}
+.single-column .related-posts .related-title {
+  font-size: 24px;
+  font-family: "Bold";
+  margin-bottom: 24px;
+  text-align: center;
+}
+.single-column .related-posts .article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.single-column .related-posts .article-list .card a {
+  display: flex;
+  color: var(--base-black);
+  border: 1px solid var(--base-gray);
+  border-radius: 5px;
+}
+.single-column .related-posts .article-list .card a .card-thumbnail {
+  border-radius: 5px 0 0 5px;
+}
+.single-column .related-posts .article-list .card a .card-thumbnail img {
+  width: 120px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single-column .related-posts .article-list .card a .card-body {
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+}
+.single-column .related-posts .article-list .card a .card-body h3 {
+  font-size: 13px;
+}
+.single-column .related-posts .article-list .card a .card-body .card-meta {
+  font-size: 12px;
+  color: var(--base-darkgray);
+}
+.single-column .doctor {
+  background-color: var(--blue-light);
+  padding: 30px 0;
+}
+.single-column .doctor p.sub-title {
+  text-align: center;
+  color: var(--blue-dark);
+  font-size: 12px;
+}
+.single-column .doctor .box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  background: var(--base-white);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px auto;
+}
+.single-column .doctor .box img.icon {
+  width: 56px;
+  border-radius: 100%;
+}
+.single-column .doctor .box .text p {
+  font-size: 12px;
+}
+.single-column .doctor .box .text p.name {
+  font-size: 14px;
+  font-family: "Bold";
+  margin-bottom: 5px;
+}
+.single-column .post-nav-back {
+  margin: 30px auto 60px 24px;
+}
+.single-column .post-nav-back a.nav-button-back {
+  color: var(--base-black);
+  background: var(--base-blightgray);
+  border: none;
+  position: relative;
+  font-family: "Bold";
+  padding-bottom: 0;
+  padding: 10px 20px;
+  padding-left: 30px;
+  border-radius: 8px;
+  display: inline;
+}
+.single-column .post-nav-back a.nav-button-back::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid var(--base-black);
+  border-left: 2px solid var(--base-black);
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.single-column .post-nav-back a.nav-button-back:hover {
+  opacity: 0.8;
+}
+
+.content-box {
+  padding-bottom: 60px;
+}
+.content-box p {
+  padding: 10px 0;
+}
+.content-box h2 {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 10px;
+  position: relative;
+  margin: 40px auto 10px;
+}
+.content-box h2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--accent-gradation);
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content-box img {
+  margin: 20px auto;
+}
+.content-box .wp-block-group {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  position: relative;
+}
+.content-box .wp-block-group h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.content-box .wp-block-group.is-style-titled-box {
+  background: var(--base-blightgray);
+}
+.content-box .wp-block-group.is-style-titled-box p {
+  font-size: 14px;
+}
+.content-box .wp-block-group.is-style-titled-box ul li {
+  font-size: 14px;
+  padding-left: 10px;
+  list-style: none;
+  margin-bottom: 5px;
+  position: relative;
+}
+.content-box .wp-block-group.is-style-titled-box ul li::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--base-darkgray);
+  border-radius: 100%;
+  top: 7px;
+  left: 0px;
+}
+.content-box .wp-block-group.is-style-cta-box {
+  background-color: var(--blue-blight);
+}
+.content-box .wp-block-group.is-style-cta-box h3 {
+  text-align: center;
+}
+.content-box .wp-block-group.is-style-cta-box .wp-block-buttons.is-layout-flex {
+  justify-content: center;
+}
+.content-box .wp-block-group.is-style-cta-box .wp-block-buttons.is-layout-flex .wp-block-button__link {
+  background: var(--blue-dark);
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
