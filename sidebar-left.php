@@ -8,7 +8,7 @@
             <p class="point"><span>来院</span></p>
             <p>木・金・土</p>
             <p class="point"><span>オンライン</span></p>
-            <p>月〜土</p>
+            <p>月〜土曜　18:00~23:00</p>
             <p class="point"><span>住所</span></p>
             <p>東京都新宿区新宿6-29-11<br>
                 新宿イーストクロスタワー3F</p>

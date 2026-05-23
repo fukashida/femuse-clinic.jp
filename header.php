@@ -77,7 +77,7 @@
                                         </div>
                                         <div class="bottom-menu">
                                             <a href="tel:03-6205-5937" class="tel">☎ 03-6205-5937</a>
-                                            <p>来院 木・金・土 18:00〜23:00 ／ オンライン 月〜土</p>
+                                            <p>来院 木・金・土 18:00〜23:00 ／ 月〜土曜　18:00~23:00</p>
                                             <div class="cta-buttons">
                                                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
                                                 <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>

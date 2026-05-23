@@ -40,7 +40,7 @@
         <div class="sub-container">
             <p class="sub-title">監修医師</p>
             <div class="box">
-                <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="" class="icon">
+                <!-- <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="" class="icon"> -->
                 <div class="text">
                     <p class="name">広川 麻理菜（ひろかわ まりな）</p>
                     <p>フェミューズクリニック院長<br>

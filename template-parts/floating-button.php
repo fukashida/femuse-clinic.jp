@@ -35,6 +35,12 @@ $all_buttons = [
         'text'  => 'オンライン',
         'class' => 'sky',
     ],
+    'online-pill' => [
+        'url'   => 'https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1',
+        'icon'  => 'laptop-icon.svg',
+        'text'  => 'オンライン',
+        'class' => 'sky',
+    ],
     'online-manjaro' => [
         'url'   => 'https://liff.line.me/2003578447-9LneB3xY?flowPathId=1358&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447',
         'icon'  => 'laptop-icon.svg',
@@ -64,8 +70,10 @@ $all_buttons = [
 // 2. ページごとに「表示するキー」と「順番」を指定
 if ( is_front_page() ) {
     $show_keys = ['reserve','online','line','tel'];
-} elseif ( is_page(['pill','medical-diet']) ) { //ピルとメディカルダイエット
+} elseif ( is_page('medical-diet') ) { //メディカルダイエット
     $show_keys = ['online','reserve','line','tel'];
+} elseif ( is_page('pill') ) { //ピル
+    $show_keys = ['online-pill','reserve','line','tel'];
 } elseif ( is_page( 'std' ) ) { //性感染症
     $show_keys = ['kensa-kit','reserve','line','tel'];
 } elseif ( is_page(['beauty-drip','drip-care']) ) { //美容点滴・体調ケア点滴

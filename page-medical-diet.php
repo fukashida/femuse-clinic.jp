@@ -608,9 +608,9 @@
         <div class="sub-container">
             <p class="doctor-section__label">監修医師</p>
             <div class="doctor-card">
-                <div class="doctor-card__avatar">
+                <!-- <div class="doctor-card__avatar">
                     <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="広川 麻理菜 医師" onerror="this.style.display='none';this.parentElement.querySelector('.doctor-card__avatar-placeholder').style.display='block'" />
-                </div>
+                </div> -->
                 <p class="doctor-card__role">院長 / 精神保健指定医</p>
                 <h2 class="doctor-card__name">広川 麻理菜</h2>
                 <p class="doctor-card__bio">ダイエットがうまくいかないのは、意志が弱いからではありません。食欲や代謝はホルモンバランスに左右されるもので、気合いだけでは限界があります。<br><br>

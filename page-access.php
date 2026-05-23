@@ -47,7 +47,7 @@
                         <div class="hours-row">
                             <span class="hours-badge badge-online">オンライン</span>
                             <div class="hours-content">
-                                <p class="hours-main">主に月〜土</p>
+                                <p class="hours-main">月〜土曜　18:00~23:00</p>
                             </div>
                         </div>
                         <div class="hours-row">

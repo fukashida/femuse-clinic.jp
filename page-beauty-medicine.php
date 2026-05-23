@@ -53,11 +53,11 @@
                             <div class="col-medicine">抗酸化・美白</div>
                             <div class="col-price">2,178円</div>
                         </div>
-                        <div class="price-table-row">
+                        <!-- <div class="price-table-row">
                             <div class="col-type">ビオチン</div>
                             <div class="col-medicine">肌荒れ・髪</div>
                             <div class="col-price">1,958円</div>
-                        </div>
+                        </div> -->
                         <div class="price-table-row">
                             <div class="col-type">ユベラ</div>
                             <div class="col-medicine">血行促進</div>
@@ -95,8 +95,8 @@
                 <div class="exp-item">
                     <div class="exp-card">
                         <div class="exp-card-inner">
-                            <h3>定期配送なら15%OFF</h3>
-                            <p>30日・60日・90日から選択可能。<br>自動配送で買い忘れなし。</p>
+                            <h3>定期配送なら20%OFF</h3>
+                            <p>1.3.6ヶ月から選択可能。<br>自動配送で買い忘れなし。</p>
                         </div>
                     </div>
                     <div class="exp-icon">
@@ -118,7 +118,7 @@
                     <div class="exp-card">
                         <div class="exp-card-inner">
                             <h3>いつでも変更・停止OK</h3>
-                            <p>次回お届け日の7日前まで<br>スキップ・解約が可能。</p>
+                            <p>次回お届け日の10日前まで<br>スキップ・解約が可能。</p>
                         </div>
                     </div>
                     <div class="exp-icon">
@@ -288,12 +288,12 @@
                             <div class="col-price">1,958円</div>
                             <div class="col-day1">約65円</div>
                         </div>
-                        <div class="price-table-row">
+                        <!-- <div class="price-table-row">
                             <div class="col-type">ビオチン散</div>
                             <div class="col-medicine">60包</div>
                             <div class="col-price">1,958円</div>
                             <div class="col-day1">約65円</div>
-                        </div>
+                        </div> -->
                         <div class="price-table-row">
                             <div class="col-type">グルタチオン</div>
                             <div class="col-medicine">100mg 60錠</div>
@@ -338,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info-card">
+                        <!-- <div class="info-card">
                             <p class="info-card-title">肌荒れ・ニキビ</p>
                             <div class="info-card-rows">
                                 <div class="info-row">
@@ -350,7 +350,7 @@
                                     <span class="info-row-content">約122円</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="info-card">
                             <p class="info-card-title">総合美肌ケア</p>
                             <div class="info-card-rows">
@@ -364,7 +364,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info-card">
+                        <!-- <div class="info-card">
                             <p class="info-card-title">肌荒れ+疲れ</p>
                             <div class="info-card-rows">
                                 <div class="info-row">
@@ -376,7 +376,7 @@
                                     <span class="info-row-content">約187円</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -443,7 +443,7 @@
                 <div class="card-header">
                     <div class="card-title-row">
                     <h3>オンライン診療</h3>
-                    <span class="badge sky">主に月〜土</span>
+                    <span class="badge sky">月〜土曜　18:00~23:00</span>
                     </div>
                     <p class="card-description xs">どの組み合わせがいいかわからない方はこちら。</p>
                 </div>
@@ -631,7 +631,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="risk-card">
+                <!-- <div class="risk-card">
                     <div class="risk-card__header">
                         <div class="risk-card__title">ビオチン散</div>
                     </div>
@@ -642,7 +642,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="risk-card">
                     <div class="risk-card__header">
                         <div class="risk-card__title">グルタチオン</div>
@@ -684,9 +684,9 @@
         <div class="sub-container">
                 <p class="doctor-section__label">監修医師</p>
                 <div class="doctor-card">
-                    <div class="doctor-card__avatar">
+                    <!-- <div class="doctor-card__avatar">
                         <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="広川 麻理菜 医師" onerror="this.style.display='none';this.parentElement.querySelector('.doctor-card__avatar-placeholder').style.display='block'" />
-                    </div>
+                    </div> -->
                     <p class="doctor-card__role">院長 / 精神保健指定医</p>
                     <h2 class="doctor-card__name">広川 麻理菜</h2>
                     <a href="<?php echo esc_url( get_site_url().'/doctor' ); ?>" class="btn-outline">医師紹介を見る</a>

@@ -504,7 +504,7 @@
                 </div>
                 <div class="qa-box">
                     <p class="question">新宿でマンジャロを処方してもらえますか？?</p>
-                    <p class="answer">東新宿駅A3出口から徒歩1分です。来院（木金土 18-23時）とオンライン診療（月〜土）の両方で処方可能です。</p>
+                    <p class="answer">東新宿駅A3出口から徒歩1分です。来院（木金土 18-23時）とオンライン診療（月〜土曜　18:00~23:00）の両方で処方可能です。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">マンジャロの保管方法は？</p>
@@ -628,9 +628,9 @@
         <div class="sub-container">
             <p class="doctor-section__label">監修医師</p>
             <div class="doctor-card">
-                <div class="doctor-card__avatar">
+                <!-- <div class="doctor-card__avatar">
                     <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="広川 麻理菜 医師" onerror="this.style.display='none';this.parentElement.querySelector('.doctor-card__avatar-placeholder').style.display='block'" />
-                </div>
+                </div> -->
                 <p class="doctor-card__role">院長 / 精神保健指定医</p>
                 <h2 class="doctor-card__name">広川 麻理菜</h2>
                 <p class="doctor-card__bio">「痩せたいのに、食べるのが止められない」<br>

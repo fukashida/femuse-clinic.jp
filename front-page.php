@@ -94,7 +94,7 @@
                                             </div>
                                         </div>
                                         <div class="tab tab03">
-                                            <p>店舗</p>
+                                            <p>来院</p>
                                             <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/top/clinic-icon.svg" alt="">
                                             <div class="bottom">
                                                 <div class="triangle"></div>
@@ -161,7 +161,8 @@
                                     <div class="card-content">
                                     <div class="card-inner">
                                         <div class="tags">
-                                        <span class="badge badge-green">スマホ購入</span>
+                                                <span class="badge badge-sky">オンライン</span>
+                                        <!-- <span class="badge badge-green">スマホ購入</span> -->
                                         <span class="badge badge-blue">来院</span>
                                         </div>
                                         <div class="image-area">
@@ -219,7 +220,7 @@
                                     <div class="card-content">
                                     <div class="card-inner">
                                         <div class="tags">
-                                        <span class="badge badge-green">スマホ購入</span>
+                                        <!-- <span class="badge badge-green">スマホ購入</span> -->
                                         <span class="badge badge-sky">オンライン</span>
                                         </div>
                                         <div class="image-area">
@@ -297,6 +298,7 @@
                                     <div class="card-content">
                                     <div class="card-inner">
                                         <div class="tags">
+                                                <span class="badge badge-sky">オンライン</span>
                                         <span class="badge badge-blue">来院</span>
                                         </div>
                                         <div class="image-area">
@@ -319,7 +321,7 @@
                         <div class="container">
                             <h2 class="header-title">今月の診療カレンダー</h2>
                             <p class="header-subtitle gr">CALENDAR</p>
-                            <div class="status-group">
+                            <!-- <div class="status-group">
                                 <div class="badge">
                                     <div class="type clinic"></div>
                                     <p>対面診療</p>
@@ -332,8 +334,8 @@
                                     <div class="type stay"></div>
                                     <p>休診</p>
                                 </div>
-                            </div>
-                            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/top/calendar-image.png" alt="">
+                            </div> -->
+                            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/top/calendar/202605-sp.png" alt="">
                             <p class="ano">※最終受付は閉院15分前<br>
                             ※診療スケジュールは月により変動する場合があります</p>
                         </div>
@@ -393,7 +395,7 @@
                             <a href="<?php echo esc_url( get_site_url().'/about' ); ?>" class="btn-outline blue">詳しく見る</a>
                             <div class="doctor">
                                 <div class="flex">
-                                    <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="">
+                                    <!-- <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt=""> -->
                                     <div class="text">
                                         <p class="status">院長</p>
                                         <p class="name">広川 麻理菜</p>

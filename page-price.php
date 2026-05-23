@@ -147,13 +147,13 @@
                     <h3 class="subsection-header">注射薬（マンジャロ）</h3>
                     <table class="price-table">
                         <thead>
-                            <tr><th>用量</th><th>月額</th><th>2ヶ月</th><th>3ヶ月</th></tr>
+                            <tr><th>用量</th><th>1ヶ月分</th><th>2ヶ月分</th><th>3ヶ月分</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>2.5mg</td><td>19,800円</td><td>15,840円</td><td>14,850円</td></tr>
-                            <tr><td>5.0mg</td><td>39,600円</td><td>31,680円</td><td>29,700円</td></tr>
-                            <tr><td>7.5mg</td><td>59,400円</td><td>47,520円</td><td>44,550円</td></tr>
-                            <tr><td>10mg</td><td>79,200円</td><td>63,360円</td><td>59,400円</td></tr>
+                            <tr><td>2.5mg</td><td>19,800円<br>/月</td><td>15,840円<br>/月</td><td>14,850円<br>/月</td></tr>
+                            <tr><td>5.0mg</td><td>39,600円<br>/月</td><td>31,680円<br>/月</td><td>29,700円<br>/月</td></tr>
+                            <tr><td>7.5mg</td><td>59,400円<br>/月</td><td>47,520円<br>/月</td><td>44,550円<br>/月</td></tr>
+                            <tr><td>10mg</td><td>79,200円<br>/月</td><td>63,360円<br>/月</td><td>59,400円<br>/月</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -164,6 +164,7 @@
                             <tr><td><span class="oral-name">カナグル錠</span><span class="oral-cat">SGLT2阻害薬</span></td><td>16,500円/月</td></tr>
                             <tr><td><span class="oral-name">スーグラ錠</span><span class="oral-cat">SGLT2阻害薬</span></td><td>18,150円/月</td></tr>
                             <tr><td><span class="oral-name">防風通聖散</span><span class="oral-cat">漢方薬</span></td><td>7,260円/月</td></tr>
+                            <tr><td><span class="oral-name">ダパグリフロジン</span><span class="oral-cat">SGLT2阻害薬</span></td><td>6,380円/月</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -184,7 +185,7 @@
                 <tr><td><span class="item-name">ユベラ 200mg</span><span class="item-sub">60カプセル</span></td><td><span class="item-price">1,518<span class="unit">円</span></span></td></tr>
                 <tr><td><span class="item-name">ミヤBM錠</span><span class="item-sub">60錠</span></td><td><span class="item-price">1,716<span class="unit">円</span></span></td></tr>
                 <tr><td><span class="item-name">ビタメジン配合カプセルB25</span><span class="item-sub">60カプセル</span></td><td><span class="item-price">1,958<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">ビオチン散0.2%</span><span class="item-sub">60包</span></td><td><span class="item-price">1,958<span class="unit">円</span></span></td></tr>
+                <!-- <tr><td><span class="item-name">ビオチン散0.2%</span><span class="item-sub">60包</span></td><td><span class="item-price">1,958<span class="unit">円</span></span></td></tr> -->
                 <tr><td><span class="item-name">グルタチオン 100mg</span><span class="item-sub">60錠</span></td><td><span class="item-price">2,178<span class="unit">円</span></span></td></tr>
                 </tbody>
             </table>

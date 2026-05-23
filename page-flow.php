@@ -53,7 +53,7 @@
                 <div class="card-header">
                     <div class="card-title-row">
                     <h3>オンライン診療</h3>
-                    <span class="badge sky">主に月〜土</span>
+                    <span class="badge sky">月〜土曜　18:00~23:00</span>
                     </div>
                     <p class="card-description xs">医師に相談してから処方。届くのを待つだけ。</p>
                 </div>

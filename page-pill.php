@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="cta">
-            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
+            <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
             <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
         </div>
     </section>
@@ -45,11 +45,11 @@
                     </div>
                     <div class="list">
                         <p class="title">料金</p>
-                        <p>月2,750円（税込）〜<br>
+                        <p>2,200円〜/月<br>
                             定期便なら10%OFF</p>
                     </div>
                 </div>
-                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
             </div>
         </div>
     </section>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="actions">
-                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
             </div>
         </div>
@@ -158,7 +158,7 @@
                     <div class="card-body">
                         <div class="card-header">
                             <h3 class="card-title">低用量ピル</h3>
-                            <p class="card-price">月2,750円〜</p>
+                            <p class="card-price">2,200円〜/月</p>
                         </div>
                         <p class="card-description">毎月届く定期処方。副作用が出たら来院で相談できます。</p>
                     </div>
@@ -188,7 +188,7 @@
                     <div class="card-body">
                     <div class="card-header">
                         <h3 class="card-title">月経移動ピル</h3>
-                        <p class="card-price">4,158円</p>
+                        <p class="card-price">3,300円</p>
                     </div>
                     <p class="card-description">生理日を早めたり遅らせたり。大事な予定に合わせて調整。</p>
                     </div>
@@ -266,7 +266,7 @@
                         </div>
                     </div>
                     <div class="action-buttons">
-                        <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                        <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
                         <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
                     </div>
                 </div>
@@ -332,7 +332,7 @@
                                                 <h4>3シート（約3ヶ月分）</h4>
                                             </div>
                                             <div class="plan-item-body">
-                                                <p>1シートあたり 2,250円（税抜）/<br>合計 6,750円</p>
+                                                <p>1シートあたり 2,475円（税込）/<br>合計 7,425円</p>
                                             </div>
                                         </div>
                                         <div class="plan-item">
@@ -340,7 +340,7 @@
                                                 <h4>6シート（約6ヶ月分）</h4>
                                             </div>
                                             <div class="plan-item-body">
-                                                <p>1シートあたり 2,250円（税抜）/<br>合計 13,500円</p>
+                                                <p>1シートあたり 2,200円（税込）/<br>合計 13,200円</p>
                                             </div>
                                         </div>
                                     </div>
@@ -360,20 +360,20 @@
                                             <div>
                                                 <div class="delivery-item-header">
                                                     <h4>3シートプラン</h4>
-                                                    <span>¥6,750 / 回</span>
+                                                    <span>¥7,425 / 回</span>
                                                 </div>
                                                 <div class="delivery-item-body">
-                                                    <p>約3ヶ月分をまとめてお届け。<br>1シートあたり2,250円（10%OFF）</p>
+                                                    <p>約3ヶ月分をまとめてお届け。<br>1シートあたり2,475円</p>
                                                     <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/menu/pill/3sheet-plan.png" alt="">
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="delivery-item-header">
                                                     <h4>6シートプラン</h4>
-                                                    <span>¥13,500 / 回</span>
+                                                    <span>¥13,200 / 回</span>
                                                 </div>
                                                 <div class="delivery-item-body tall">
-                                                    <p>約6ヶ月分をまとめてお届け。<br>1シートあたり2,250円（10%OFF）<br>送料の節約にも。</p>
+                                                    <p>約6ヶ月分をまとめてお届け。<br>1シートあたり2,200円</p>
                                                     <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/menu/pill/6sheet-plan.png" alt="">
                                                 </div>
                                             </div>
@@ -403,7 +403,6 @@
                     <div class="price-note-card">
                         <div class="price-note-card-body">
                             <p>初診料 1,500円（税込）/ 再診料 500円（税込）</p>
-                            <p>オンライン診療の場合、別途配送料550円（税込）</p>
                         </div>
                     </div>
                     <div class="price-table-card">
@@ -415,12 +414,12 @@
                         <div class="price-table-row">
                             <div class="col-type">低用量ピル</div>
                             <div class="col-medicine">ファボワール 28錠</div>
-                            <div class="col-price">2,750円</div>
+                            <div class="col-price">2,200円〜</div>
                         </div>
                         <div class="price-table-row">
                             <div class="col-type">低用量ピル</div>
                             <div class="col-medicine">ラベルフィーユ 28錠</div>
-                            <div class="col-price">2,750円</div>
+                            <div class="col-price">2,200円〜</div>
                         </div>
                         <div class="price-table-row">
                             <div class="col-type">アフターピル</div>
@@ -435,14 +434,14 @@
                         <div class="price-table-row">
                             <div class="col-type">月経移動ピル</div>
                             <div class="col-medicine">プラノバール 21錠</div>
-                            <div class="col-price">4,158円</div>
+                            <div class="col-price">3,300円</div>
                         </div>
                     </div>
                     <p class="price-disclaimer">※すべて自由診療です。公的医療保険は適用されません。</p>
                 </div>
             </div>
             <div class="action-buttons">
-                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
             </div>
         </div>
@@ -593,9 +592,9 @@
         <div class="sub-container">
                 <p class="doctor-section__label">監修医師</p>
                 <div class="doctor-card">
-                    <div class="doctor-card__avatar">
+                    <!-- <div class="doctor-card__avatar">
                         <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="広川 麻理菜 医師" onerror="this.style.display='none';this.parentElement.querySelector('.doctor-card__avatar-placeholder').style.display='block'" />
-                    </div>
+                    </div> -->
                     <p class="doctor-card__role">院長 / 精神保健指定医</p>
                     <h2 class="doctor-card__name">広川 麻理菜</h2>
                     <p class="doctor-card__bio">
@@ -610,7 +609,7 @@
             <h2 class="cta-title wh">あなたに合ったピルを<br>ご提案します。</h2>
             <nav class="cta-buttons" aria-label="相談と予約">
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
-                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
             </nav>
         </div>
     </section>

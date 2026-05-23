@@ -242,9 +242,9 @@
                 <div class="director-section">
                     <h2>院長紹介</h2>
                     <div class="director-card">
-                        <div class="director-avatar">
+                        <!-- <div class="director-avatar">
                             <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="">
-                        </div>
+                        </div> -->
                         <div>
                             <p class="director-role">院長</p>
                             <p class="director-name">広川 麻理菜</p>
@@ -299,7 +299,7 @@
                     <h3>診療時間</h3>
                     <p>
                         来院: 主に木・金・土 18:00〜23:00（最終受付 22:45）<br>
-                        オンライン診療: 月〜土<br>
+                        オンライン診療: 月〜土曜　18:00~23:00<br>
                         休診: 日曜<br>
                         ※シフト制のため、月により診療日・時間が変動します
                     </p>

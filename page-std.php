@@ -533,7 +533,7 @@
                                 <div class="card-header">
                                     <div class="card-title-row">
                                     <h3>オンライン診療</h3>
-                                    <span class="badge sky">主に月〜土</span>
+                                    <span class="badge sky">月〜土曜　18:00~23:00</span>
                                     </div>
                                     <p class="card-description xs">医師に相談してから処方。届くのを待つだけ。</p>
                                 </div>
@@ -776,9 +776,9 @@
         <div class="sub-container">
                 <p class="doctor-section__label">監修医師</p>
                 <div class="doctor-card">
-                    <div class="doctor-card__avatar">
+                    <!-- <div class="doctor-card__avatar">
                         <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="広川 麻理菜 医師" onerror="this.style.display='none';this.parentElement.querySelector('.doctor-card__avatar-placeholder').style.display='block'" />
-                    </div>
+                    </div> -->
                     <p class="doctor-card__role">院長 / 精神保健指定医</p>
                     <h2 class="doctor-card__name">広川 麻理菜</h2>
                     <p class="doctor-card__bio">
