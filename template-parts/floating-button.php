@@ -36,7 +36,7 @@ $all_buttons = [
         'class' => 'sky',
     ],
     'online-pill' => [
-        'url'   => 'https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1',
+        'url'   => 'https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447',
         'icon'  => 'laptop-icon.svg',
         'text'  => 'オンライン',
         'class' => 'sky',

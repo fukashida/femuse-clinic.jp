@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="cta">
-            <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
+            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
             <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
         </div>
     </section>
@@ -49,7 +49,7 @@
                             定期便なら10%OFF</p>
                     </div>
                 </div>
-                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
             </div>
         </div>
     </section>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="actions">
-                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
             </div>
         </div>
@@ -266,7 +266,7 @@
                         </div>
                     </div>
                     <div class="action-buttons">
-                        <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                        <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
                         <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
                     </div>
                 </div>
@@ -441,7 +441,7 @@
                 </div>
             </div>
             <div class="action-buttons">
-                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
             </div>
         </div>
@@ -609,7 +609,7 @@
             <h2 class="cta-title wh">あなたに合ったピルを<br>ご提案します。</h2>
             <nav class="cta-buttons" aria-label="相談と予約">
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
-                <a href="https://aposuru.com/salon/salon_schedules/inflow/29cd6532-a18e-4fbc-ab3e-8a824dbf67c1" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
             </nav>
         </div>
     </section>
