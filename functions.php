@@ -41,7 +41,7 @@ function my_theme_scripts() {
         wp_enqueue_style('menu-style', get_template_directory_uri() . '/menu/style.css');
     }
     // ご案内ページ
-    if (is_page(array('about', 'flow', 'doctor', 'price', 'faq', 'access', 'contact'))) {
+    if (is_page(array('about', 'flow', 'doctor', 'price', 'faq', 'access', 'contact', 'regular-delivery'))) {
         wp_enqueue_style('info-style', get_template_directory_uri() . '/info/style.css');
     }
     // 法務ページ

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>フェミューズクリニック</title> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
     <?php wp_head(); ?>
 </head>
 <body>
@@ -66,6 +67,7 @@
                                             <ul>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/about' ); ?>">クリニック紹介</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/flow' ); ?>">診療の流れ</a></li>
+                                                <li><a href="<?php echo esc_url( get_site_url().'/regular-delivery' ); ?>">定期配送ガイド</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/doctor' ); ?>">医師紹介</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/price' ); ?>">料金一覧</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/faq' ); ?>">よくある質問</a></li>

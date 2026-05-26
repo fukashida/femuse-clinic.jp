@@ -54,6 +54,10 @@ header {
   border-bottom: 1px solid var(--base-gray);
 }
 
+footer {
+  padding-bottom: 30px;
+}
+
 .top-title {
   margin-top: 90px;
   padding: 45px 0 60px;
@@ -77,6 +81,13 @@ header {
 }
 .top-title.price {
   background: url(../img/info/price-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 60px 0 80px;
+}
+.top-title.regular-delivery {
+  background: url(../img/info/regular-delivery-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -119,14 +130,17 @@ header {
   background: var(--base-blightgray);
 }
 .faq-content section.bg-sky {
-  background: var(--blue-blight);
+  background: var(--sky-blight);
 }
 .faq-content section.bg-green {
   background: var(--green-blight);
 }
+.faq-content section.bg-blue {
+  background: var(--blue-blight);
+}
 .faq-content h2 {
   text-align: center;
-  font-family: "Bold";
+  font-family: "Bold", sans-serif;
   line-height: 1.3;
   color: var(--base-darkgray);
   margin-bottom: 30px;
@@ -136,6 +150,9 @@ header {
 }
 .faq-content h2.green-title {
   color: var(--green-dark);
+}
+.faq-content h2.blue-title {
+  color: var(--blue-dark);
 }
 .faq-content .faq-list {
   display: flex;
@@ -182,6 +199,10 @@ header {
   background: var(--green-dark);
   color: var(--base-white);
 }
+.faq-content .faq-list .faq-card .faq-row span.badge.badge-q-blue {
+  background: var(--blue-dark);
+  color: var(--base-white);
+}
 .faq-content .faq-list .faq-card .faq-row span.badge.badge-a {
   background: var(--base-white);
   color: var(--base-black);
@@ -200,6 +221,12 @@ header {
   border: 1px solid var(--green-dark);
   font-family: "Inter", sans-serif;
 }
+.faq-content .faq-list .faq-card .faq-row span.badge.badge-a-blue {
+  background: var(--base-white);
+  color: var(--blue-dark);
+  border: 1px solid var(--blue-dark);
+  font-family: "Inter", sans-serif;
+}
 .faq-content .faq-list .faq-card .faq-row p.q-text {
   font-family: "Bold";
   line-height: 22px;
@@ -207,7 +234,7 @@ header {
 }
 .faq-content .faq-list .faq-card .faq-row p.a-text {
   font-size: 13px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 20px;
   flex: 1;
 }
@@ -324,7 +351,7 @@ header {
 }
 .price-content .menu-table tbody tr td span.item-sub {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 16px;
   color: var(--base-darkgray);
   display: block;
@@ -337,7 +364,7 @@ header {
 }
 .price-content .menu-table tbody tr td span.item-price .unit {
   font-size: 13px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
 }
 .price-content .menu-table.bordered tbody tr td {
   border-top: 1px solid var(--base-lightgray);
@@ -379,7 +406,7 @@ header {
   color: #189fb4;
 }
 .price-content a.btn-outline.btn-blue {
-  border-color: #6068d5;
+  border-color: var(--blue-dark);
   color: #4a54c8;
 }
 .price-content {
@@ -468,7 +495,7 @@ header {
 }
 .price-content .oral-table td span.oral-cat {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   color: var(--base-darkgray);
   display: block;
   margin-top: 2px;
@@ -522,7 +549,7 @@ header {
 }
 .price-content .common-block .info-card p {
   font-size: 14px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 18px;
   color: var(--base-black);
 }
@@ -568,7 +595,7 @@ header {
 }
 .access .clinic-overview .info-list .info-item .info-value {
   font-size: 15px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 22px;
   color: var(--base-black);
 }
@@ -728,7 +755,7 @@ header {
   border-radius: 8px;
   padding: 16px;
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 18px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -775,7 +802,7 @@ header {
 }
 .access .visitor-section .guideline-list .guideline-card .guideline-body .guideline-desc {
   font-size: 13px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 20px;
   color: var(--base-darkgray);
 }
@@ -804,7 +831,7 @@ header {
 }
 .doctor-content .profile-section .profile-header .profile-name-row span.profile-kana {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.5;
   color: var(--base-darkgray);
 }
@@ -846,7 +873,7 @@ header {
 }
 .doctor-content .profile-section .profile-cards .profile-card ul li {
   font-size: 14px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.43;
   color: var(--base-darkgray);
   margin-left: 15px;
@@ -872,7 +899,7 @@ header {
 }
 .doctor-content .message-section .message-body p {
   font-size: 14px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.86;
 }
 .doctor-content .message-section p.message-signature {
@@ -939,14 +966,14 @@ header {
 .doctor-content .doctors-section p.doctors-intro {
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.64;
   color: var(--base-black);
   margin-bottom: 20px;
 }
 .doctor-content .doctors-section p.doctors-note {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.5;
   color: var(--base-darkgray);
   max-width: 342px;
@@ -989,7 +1016,7 @@ header {
 }
 .doctor-content .doctors-section .doctors-card .doctor-item .doctor-info .doctor-detail {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.33;
 }
 .doctor-content .doctors-section .doctors-card .doctor-item + .doctor-item {
@@ -1142,13 +1169,13 @@ header {
 }
 .flow-content .guides-section .cards-container .guide-card .card-body .step-row .step-content p {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.5;
   color: var(--base-darkgray);
 }
 .flow-content .guides-section .cards-container .guide-card .card-body .card-note {
   font-size: 11px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.4;
   color: var(--base-darkgray);
 }
@@ -1211,7 +1238,7 @@ header {
 }
 .flow-content .guides-section .cards-container .info-box span {
   font-size: 12px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.5;
   color: var(--base-black);
 }
@@ -1273,7 +1300,7 @@ header {
 }
 .flow-content .pricing-section .pricing-list .pricing-item .pricing-value .val {
   font-size: 15px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.15;
 }
 .flow-content .pricing-section .pricing-list .pricing-item .pricing-value .val small {
@@ -1290,7 +1317,7 @@ header {
 }
 .flow-content .pricing-section .notes-list p {
   font-size: 13px;
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
   line-height: 1.5;
 }
 
@@ -1432,7 +1459,7 @@ header {
   font-family: "Bold";
 }
 .about-content .first-time-assurance .assurance-card p .txt-normal, .about-content .first-time-assurance .assurance-card-full p .txt-normal {
-  font-weight: 400;
+  font-family: "Medium", sans-serif;
 }
 .about-content .hero-statement {
   background: var(--accent-light-gradation);
@@ -1587,7 +1614,7 @@ header {
   border-color: #1dbed6;
 }
 .about-content .access-section .access-cards .access-card.border-blue {
-  border-color: #6068d5;
+  border-color: var(--blue-dark);
 }
 .about-content .functionality-overview h2 {
   font-size: 23px;
@@ -1778,4 +1805,497 @@ header {
 .about-content .organization-info .organization-info-inner .org-content .hours-card p {
   font-size: 12px;
   line-height: 1.5;
+}
+
+.regular-delivery-content .first-copy {
+  padding: 40px 0 50px;
+}
+.regular-delivery-content .first-copy p {
+  line-height: 1.75;
+}
+.regular-delivery-content .first-copy p span {
+  font-family: "Bold", sans-serif;
+}
+.regular-delivery-content .card {
+  background: var(--base-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.regular-delivery-content .benefits-section {
+  position: relative;
+  width: 100%;
+  padding: 0 0 40px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient {
+  background: var(--accent-light-gradation);
+  padding: 60px 0 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefits-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefits-header .badge {
+  display: inline-block;
+  background: var(--sky-dark);
+  color: var(--base-white);
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.07;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefits-header h2.section-main-title {
+  font-size: 32px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.25;
+  color: var(--sky-dark);
+  text-align: center;
+  text-shadow: 0 0 10px var(--base-white), 0 0 10px var(--base-white), 0 0 10px var(--base-white), 0 0 10px var(--base-white), 0 0 10px var(--base-white), 0 0 10px var(--base-white), 0 0 10px var(--base-white);
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item {
+  position: relative;
+  min-height: 92px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item .benefit-card {
+  margin-left: 45px;
+  min-height: 91px;
+  border-radius: 0 12px 12px 0;
+  background: var(--base-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  padding: 22px 20px 22px 60px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item .benefit-card h3.benefit-title {
+  font-size: 20px;
+  font-family: "Bold", sans-serif;
+  line-height: 1;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item .benefit-card h3.benefit-title.green {
+  color: var(--green-dark);
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item .benefit-card h3.benefit-title.sky {
+  color: var(--sky-moredark);
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item .benefit-card h3.benefit-title.blue {
+  color: var(--blue-dark);
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-item .benefit-card p.benefit-desc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--base-darkgray);
+  max-width: 216px;
+}
+.regular-delivery-content .benefits-section .benefits-gradient .benefits-inner .benefit-items .benefit-icon {
+  position: absolute;
+  left: -4px;
+  top: -2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+.regular-delivery-content .benefits-section .plan-card {
+  position: relative;
+  margin-top: -380px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  background: var(--base-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.regular-delivery-content .benefits-section .plan-card h3.plan-section-title {
+  font-size: 23px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.39;
+  color: var(--sky-moredark);
+  text-align: center;
+}
+.regular-delivery-content .benefits-section .plan-card p.plan-desc {
+  line-height: 1.57;
+  text-align: center;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item {
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-label {
+  width: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  font-size: 14px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.3;
+  color: var(--base-white);
+  text-align: center;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-label.green {
+  background: var(--green-dark);
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-label.sky {
+  background: var(--sky-dark);
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-label.blue {
+  background: var(--blue-dark);
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 11px;
+  background: var(--base-white);
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-discount-num {
+  font-size: 30px;
+  font-family: "Bold", sans-serif;
+  white-space: nowrap;
+  line-height: 1;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-discount-unit {
+  font-size: 15px;
+  font-family: "Bold", sans-serif;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-discount-text {
+  font-size: 13px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.69;
+  white-space: nowrap;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-discount-text.sky {
+  color: var(--sky-moredark);
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-discount-text.blue {
+  color: var(--blue-dark);
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-note {
+  font-size: 15px;
+  line-height: 1.47;
+}
+.regular-delivery-content .benefits-section .plan-card .payment-card {
+  background: var(--base-blightgray);
+  border-radius: 12px;
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.regular-delivery-content .benefits-section .plan-card .payment-card h3.payment-title {
+  font-size: 18px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.33;
+  text-align: center;
+}
+.regular-delivery-content .benefits-section .plan-card .payment-card p.payment-text {
+  line-height: 1.71;
+}
+.regular-delivery-content .benefits-section .plan-card .payment-card .payment-list {
+  list-style: none;
+  font-size: 14px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.71;
+}
+.regular-delivery-content .benefits-section .plan-card .payment-card .payment-note {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.regular-delivery-content .benefits-section .plan-card .payment-card .payment-method {
+  background: var(--base-white);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.regular-delivery-content .discount-section {
+  padding-bottom: 100px;
+}
+.regular-delivery-content .discount-section .discount-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-header h2.section-title-white {
+  font-family: "Bold", sans-serif;
+  line-height: 1.52;
+  letter-spacing: 0.06em;
+  color: var(--base-white);
+  text-align: center;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-header p.section-subtitle-white {
+  font-family: "Bold", sans-serif;
+  line-height: 1.71;
+  color: var(--base-white);
+  text-align: center;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--base-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-header {
+  display: grid;
+  grid-template-columns: 1fr 108px;
+  gap: 20px;
+  background: var(--blue-dark);
+  padding: 10px 12px;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-header .discount-table-header-cell {
+  font-size: 12px;
+  font-family: "Bold", sans-serif;
+  color: var(--base-white);
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-row {
+  display: grid;
+  grid-template-columns: 1fr 108px;
+  gap: 20px;
+  background: var(--base-white);
+  padding: 10px 12px;
+  border-top: 1px solid var(--base-gray);
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-row:first-of-type {
+  border-top: none;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-row .discount-row-label {
+  font-size: 14px;
+  font-family: "Bold", sans-serif;
+  color: var(--blue-dark);
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-row .discount-row-value {
+  white-space: nowrap;
+  line-height: 1;
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-row .discount-row-value .num {
+  font-size: 25px;
+  font-family: "Bold", sans-serif;
+  color: var(--blue-dark);
+}
+.regular-delivery-content .discount-section .discount-inner .discount-table .discount-table-row .discount-row-value .unit {
+  font-size: 16px;
+  font-family: "Bold", sans-serif;
+  color: var(--blue-dark);
+}
+.regular-delivery-content .steps-section {
+  padding-bottom: 110px;
+}
+.regular-delivery-content .steps-section .steps-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-header h2.steps-title {
+  font-family: "Bold", sans-serif;
+  line-height: 1.52;
+  letter-spacing: 0.06em;
+  color: var(--base-white);
+  text-align: center;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-header p.steps-subtitle {
+  font-family: "Bold", sans-serif;
+  line-height: 1.71;
+  color: var(--base-white);
+  text-align: center;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-card {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--sky-moredark);
+  background: var(--base-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px 20px;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-card .steps-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-card .steps-list .step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-card .steps-list .step-item .step-num {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--sky-dark);
+  color: var(--base-white);
+  font-size: 12px;
+  font-family: "Bold", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regular-delivery-content .steps-section .steps-inner .steps-card .steps-list .step-item .step-label {
+  font-size: 15px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.5;
+}
+.regular-delivery-content .shipping-section {
+  padding: 70px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.regular-delivery-content .shipping-section h2.shipping-title {
+  font-family: "Bold", sans-serif;
+  line-height: 1.52;
+  letter-spacing: 0.06em;
+  color: var(--base-white);
+  text-align: center;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.regular-delivery-content .shipping-section .shipping-card {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #82e36c;
+  background: var(--base-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid var(--base-gray);
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section:last-child {
+  border-bottom: none;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section h3.shipping-sub-title {
+  font-size: 20px;
+  font-family: "Bold", sans-serif;
+  line-height: 2;
+  color: var(--green-dark);
+  text-align: center;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 20px;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content p.shipping-note {
+  font-size: 12px;
+  font-family: "Medium", sans-serif;
+  line-height: 1.67;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content p.shipping-text {
+  font-size: 15px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.6;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content p.shipping-text .tax {
+  font-size: 12px;
+  font-family: "Medium", sans-serif;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content .shipping-method-item {
+  display: flex;
+  flex-direction: column;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content .shipping-method-item p.shipping-method-note {
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 1.67;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .shipping-sub-content .shipping-method-item p.schedule-text {
+  line-height: 1.43;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .schedule-text p {
+  margin-bottom: 5px;
+}
+.regular-delivery-content .shipping-section .shipping-card .shipping-sub-section .schedule-text p:last-child {
+  margin-bottom: 0;
+}
+.regular-delivery-content .change-section {
+  background: var(--base-white);
+  padding: 60px 0;
+}
+.regular-delivery-content .change-section .change-header {
+  margin-bottom: 30px;
+}
+.regular-delivery-content .change-section .change-header h2.change-title {
+  line-height: 1.3;
+  text-align: center;
+}
+.regular-delivery-content .change-section .change-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.regular-delivery-content .change-section .change-cards .change-card {
+  background: var(--base-blightgray);
+  border-radius: 8px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.regular-delivery-content .change-section .change-cards .change-card h3.change-card-title {
+  font-size: 16px;
+  font-family: "Bold", sans-serif;
+  line-height: 1.25;
+}
+.regular-delivery-content .change-section .change-cards .change-card .change-card-text {
+  line-height: 1.57;
 }/*# sourceMappingURL=style.css.map */
