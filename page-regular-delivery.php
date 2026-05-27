@@ -52,25 +52,25 @@
             <div class="plan-card">
                 <h3 class="plan-section-title">発送サイクル</h3>
                 <p class="plan-desc">
-                    3つのお届けサイクルからお選びいただけます。<br />
+                    3つのお届けサイクルからお選びいただけます。<br>
                     期間が長いほどお得にご利用いただけます。
                 </p>
                 <div class="plan-items" style="margin-top:15px;">
                     <div class="plan-item">
-                        <div class="plan-label green">1ヶ月<br />プラン</div>
+                        <div class="plan-label green">1ヶ月<br>プラン</div>
                         <div class="plan-content">
                             <p class="plan-note">まずはお試しの方に</p>
                         </div>
                     </div>
                     <div class="plan-item">
-                        <div class="plan-label sky">3ヶ月<br />プラン</div>
-                        <div class="plan-content">
+                        <div class="plan-label sky">3ヶ月<br>プラン</div>
+                        <div class="plan-content sky">
                             <span class="plan-discount-num">5<span class="plan-discount-unit">%OFF</span></span>
                             <p class="plan-discount-text sky">一番人気のプラン</p>
                         </div>
                     </div>
                     <div class="plan-item">
-                        <div class="plan-label blue">6ヶ月<br />プラン</div>
+                        <div class="plan-label blue">6ヶ月<br>プラン</div>
                         <div class="plan-content">
                             <span class="plan-discount-num">10<span class="plan-discount-unit">%OFF</span></span>
                             <p class="plan-discount-text blue">最大割引でお得に</p>
@@ -80,7 +80,7 @@
                 <div class="payment-card">
                     <h3 class="payment-title">お支払いについて</h3>
                     <p class="payment-text">
-                        お支払いはお届けサイクルごとの<br />
+                        お支払いはお届けサイクルごとの<br>
                         一括引き落としです。
                     </p>
                     <ul class="payment-list">
@@ -88,7 +88,7 @@
                         <li>・6ヶ月プラン：6ヶ月分を一括お支払い</li>
                     </ul>
                     <p class="payment-note">
-                        ※毎月のお引き落としは<br />
+                        ※毎月のお引き落としは<br>
                         発生いたしませんのでご安心ください。
                     </p>
                     <div class="payment-method">
@@ -104,7 +104,7 @@
                 <div class="discount-header">
                     <h2 class="section-title-white">割引制度</h2>
                     <p class="section-subtitle-white">
-                        まとめ買い割引と定期プラン割引の<br />
+                        まとめ買い割引と定期プラン割引の<br>
                         掛け合わせが可能です。
                     </p>
                 </div>
@@ -139,7 +139,7 @@
                 <div class="steps-header">
                     <h2 class="steps-title">申し込み方法</h2>
                     <p class="steps-subtitle">
-                        初回のみ医師による診察が必要です。<br />
+                        初回のみ医師による診察が必要です。<br>
                         2回目以降の定期更新は自動でお届けいたします。
                     </p>
                 </div>
@@ -178,7 +178,7 @@
                     <h3 class="shipping-sub-title">送料</h3>
                     <div class="shipping-sub-content">
                         <p class="shipping-text">
-                            ・5,000円<span class="tax">(税込)</span>以上のご注文 → 送料無料<br />
+                            ・5,000円<span class="tax">(税込)</span>以上のご注文 → 送料無料<br>
                             ・5,000円<span class="tax">(税込)</span>未満のご注文 → 送料550円
                         </p>
                         <p class="shipping-note">

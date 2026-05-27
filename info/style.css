@@ -1983,6 +1983,23 @@ footer {
   padding: 12px 11px;
   background: var(--base-white);
 }
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content.sky {
+  border: 2px solid var(--sky-dark);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+}
+.regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content.sky::before {
+  position: absolute;
+  content: "おすすめ";
+  color: var(--base-white);
+  background-color: var(--sky-dark);
+  top: 0;
+  right: 0;
+  font-size: 9px;
+  font-family: "Medium", sans-serif;
+  padding: 2px 5px;
+  border-radius: 0 0 0 5px;
+}
 .regular-delivery-content .benefits-section .plan-card .plan-items .plan-item .plan-content .plan-discount-num {
   font-size: 30px;
   font-family: "Bold", sans-serif;
