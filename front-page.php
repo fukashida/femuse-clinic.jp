@@ -335,7 +335,7 @@
                                     <p>休診</p>
                                 </div>
                             </div> -->
-                            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/top/calendar/202605-sp.png" alt="">
+                            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/top/calendar/202606.png" alt="">
                             <p class="ano">※最終受付は閉院15分前<br>
                             ※診療スケジュールは月により変動する場合があります</p>
                         </div>
