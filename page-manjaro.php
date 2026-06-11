@@ -232,12 +232,17 @@
                             </tr>
                             <tr>
                                 <td class="td-label">配送料</td>
-                                <td class="td-femuse-val">無料</td>
-                                <!-- <td class="td-market-val">550〜1,100円</td> -->
+                                <td class="td-femuse-val">550円</td>
+                                <td class="td-market-val">550〜1,100円</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <p>・送料は全国一律550円（税込）です。<br>
+                ・1回のお会計金額5,000円（税込）以上で送料無料となります。<br>
+                ・クーポン利用時は、割引適用後のお支払い金額が5,000円（税込）以上の場合に送料無料が適用されます。<br>
+                ・離島、一部地域でも追加送料は発生いたしません。
+                </p>
             </div>
         </div>
     </section>
@@ -359,8 +364,8 @@
                             </tr>
                             <tr>
                                 <td>オンライン+1ヶ月</td>
-                                <td>初診1,500円<br>+19,800円+送料550円</td>
-                                <td>21,850円</td>
+                                <td>19,800円</td>
+                                <td>19,800円</td>
                             </tr>
                         </tbody>
                     </table>

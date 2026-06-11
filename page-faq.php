@@ -333,7 +333,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">発行可能でございます。ご希望の場合は、カスタマーサポート（公式LINE）までお申し付けください。</p>
+                        <p class="a-text">決済システムからのメールにてお送りしておりますので、決済完了時にお送りしておりますメールをご確認ください。</p>
                     </div>
                 </div>
             </div>
@@ -363,7 +363,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">カスタマーサポート（公式LINE）にお問い合わせいただければ、次回の発送予定日をご案内いたします。なお、更新日の7日前にもLINEにて事前通知をお送りしております。</p>
+                        <p class="a-text">カスタマーサポート（公式LINE）にお問い合わせいただければ、次回の発送予定日をご案内いたします。</p>
                     </div>
                 </div>
                 <div class="faq-card">
@@ -570,7 +570,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a-green">A</span>
-                        <p class="a-text">無地のコンパクトな箱でポスト投函します。伝票の品名は「日用品」です。</p>
+                        <p class="a-text">無地のコンパクトな箱でポスト投函します。伝票の品名は「医薬品」です。</p>
                     </div>
                 </div>
             </div>

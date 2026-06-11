@@ -459,8 +459,11 @@
                 <div class="price-content">
                     <div class="price-note-card">
                         <div class="price-note-card-body">
-                            <!-- <p>オンライン診療の場合、別途配送料550円（税込）</p> -->
-                            <p>配送料は無料！</p>
+                            <p>配送料は一律550円！<br>
+                        <span>・送料は全国一律550円（税込）です。<br>
+                        ・1回のお会計金額5,000円（税込）以上で送料無料となります。<br>
+                        ・クーポン利用時は、割引適用後のお支払い金額が5,000円（税込）以上の場合に送料無料が適用されます。<br>
+                        ・離島、一部地域でも追加送料は発生いたしません。</span></p>
                         </div>
                     </div>
                     <div class="price-table-card">
@@ -480,7 +483,7 @@
                             <div class="col-price"> 1回 2,200円〜</div>
                         </div>
                     </div>
-                    <p class="price-disclaimer">※すべて自由診療です。<br>公的医療保険は適用されません。</p>
+                    <p class="price-disclaimer">※すべて自由診療です。公的医療保険は適用されません。</p>
                 </div>
             </div>
             <div class="action-buttons">

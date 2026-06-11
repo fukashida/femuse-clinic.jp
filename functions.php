@@ -37,7 +37,7 @@ function my_theme_scripts() {
         wp_enqueue_style('news-style', get_template_directory_uri() . '/news/style.css');
     }
     // 施術メニューページ
-    if (is_page(array('pill', 'std', 'test-kit', 'xolair', 'urso', 'doxypep', 'beauty-drip', 'drip-care', 'beauty-medicine', 'medical-diet', 'manjaro', 'botox'))) {
+    if (is_page(array('pill', 'std', 'test-kit', 'xolair', 'urso', 'doxypep', 'beauty-drip', 'drip-care', 'beauty-medicine', 'medical-diet', 'manjaro', 'botox', 'acne'))) {
         wp_enqueue_style('menu-style', get_template_directory_uri() . '/menu/style.css');
     }
     // ご案内ページ

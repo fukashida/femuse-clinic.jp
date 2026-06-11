@@ -95,7 +95,7 @@
                 <div class="exp-item">
                     <div class="exp-card">
                         <div class="exp-card-inner">
-                            <h3>定期配送なら20%OFF</h3>
+                            <h3>定期配送なら最大20%OFF</h3>
                             <p>1.3.6ヶ月から選択可能。<br>自動配送で買い忘れなし。</p>
                         </div>
                     </div>
@@ -106,8 +106,11 @@
                 <div class="exp-item">
                     <div class="exp-card">
                         <div class="exp-card-inner">
-                            <h3>送料無料</h3>
-                            <p>配送料550円が毎回無料</p>
+                            <h3>送料550円</h3>
+                            <p>・送料は全国一律550円（税込）です。<br>
+                            ・1回のお会計金額5,000円（税込）以上で<br>　送料無料となります。<br>
+                            ・クーポン利用時は、<br>　割引適用後のお支払い金額が<br>　5,000円（税込）以上の場合に<br>　送料無料が適用されます。<br>
+                            ・離島、一部地域でも<br>　追加送料は発生いたしません。</p>
                         </div>
                     </div>
                     <div class="exp-icon">
@@ -127,9 +130,9 @@
                 </div>
             </div>
             <div class="example">
-                <p class="title">例　美白セット（トラネキサム酸+シナール）</p>
+                <p class="title">例　シミ・肝斑ケア（トラネキサム酸・シナール・ユベラ）</p>
                 <div class="text">
-                    <p>定期配送の場合　3,702円（税込）</p>
+                    <p>定期配送の場合　5,287円（税込）</p>
                     <p class="mini">毎月654円おトク ＋ 送料550円も無料</p>
                 </div>
             </div>

@@ -24,6 +24,10 @@
     display: none;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --base-black:#3C3C3C;
   --base-darkgray:#858585;
@@ -667,6 +671,7 @@ header {
   align-items: flex-start;
   gap: 26px;
   width: 100%;
+  margin-bottom: 30px;
 }
 .section-price .price-header .price-content .price-note-card {
   width: 100%;
@@ -2076,6 +2081,18 @@ header {
 }
 .std .section-price.blue-bg .price-header {
   margin-bottom: 0;
+}
+.std .section-price.green-bg .price-header .price-content .price-note-card .price-note-card-body p {
+  text-align: center;
+  font-family: "Bold", sans-serif;
+}
+.std .section-price.green-bg .price-header .price-content .price-note-card .price-note-card-body p span {
+  text-align: left;
+  font-size: 12px;
+  color: var(--base-darkgray);
+  margin-top: 10px;
+  display: inline-block;
+  font-family: "regular", sans-serif;
 }
 .std .section-price.green-bg .price-header .price-content .price-table-card .price-table-head {
   background-color: var(--green-dark);
@@ -8074,4 +8091,203 @@ header {
   color: #3b3978;
   line-height: 1.7;
   padding: 30px 15px;
+}
+
+.acne .top-title h1 {
+  font-size: 25px;
+}
+.acne .top-title .point {
+  padding: 0 15px 35px;
+}
+.acne .negative h2 {
+  margin-bottom: 60px;
+}
+.acne .negative .list-box {
+  max-width: none;
+  width: 100%;
+}
+.acne .negative .list-box img.lady.lady04 {
+  margin: 0 auto 20px;
+  transform: translateY(-50px);
+}
+.acne .negative .list-box ul {
+  margin-top: -50px;
+}
+.acne .variation .card-list .card .card-image .card-tag {
+  color: var(--green-dark);
+  border-color: var(--green-dark);
+}
+.acne .variation .card-list .card .card-image .card-tag.online {
+  color: var(--sky-dark);
+  border-color: var(--sky-dark);
+}
+.acne .other-menu {
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
+.acne .related-posts {
+  padding-top: 0px;
+}
+.acne .cta-section h2 {
+  font-size: 23px;
+}
+.acne .isotretinoin {
+  background-color: var(--sky-blight);
+}
+.acne .isotretinoin h2 {
+  color: var(--sky-moredark);
+  margin-bottom: 30px;
+}
+.acne .isotretinoin .hero-img {
+  width: 100%;
+  height: 190px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.acne .isotretinoin .hero-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.acne .isotretinoin {
+  /* Card */
+}
+.acne .isotretinoin .contents-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.acne .isotretinoin .contents-group .card {
+  width: 100%;
+  border-radius: 12px;
+  background: var(--base-white);
+  border: 1px solid var(--sky-main);
+}
+.acne .isotretinoin .contents-group .card .card-header {
+  padding: 30px 16px 0;
+}
+.acne .isotretinoin .contents-group .card .card-header .card-title {
+  font-size: 20px;
+  font-family: "Bold", sans-serif;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: var(--sky-moredark);
+  text-align: center;
+}
+.acne .isotretinoin .contents-group .card .card-body {
+  padding: 10px 16px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px 12px;
+  background: var(--sky-light);
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row .pricing-col {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--baseblack);
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row .pricing-col.duration {
+  width: 100px;
+  font-family: "Bold", sans-serif;
+  color: var(--sky-moredark);
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row .pricing-col.monthly {
+  width: 90px;
+  color: var(--sky-moredark);
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row .pricing-col.total {
+  width: 100px;
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row.featured {
+  background: var(--sky-dark);
+  border: 1px solid #f1fdff;
+  padding: 15px 12px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.acne .isotretinoin .contents-group .card .card-body .pricing-list .pricing-row.featured .pricing-col {
+  color: var(--base-white);
+  font-family: "Bold", sans-serif;
+}
+.acne .isotretinoin .contents-group .card .card-body p.pricing-note {
+  font-size: 14px;
+  font-family: "Medium", sans-serif;
+  line-height: 150%;
+  text-align: center;
+}
+.acne .isotretinoin .contents-group .card .card-body p.pricing-disclaimer {
+  font-size: 12px;
+  font-family: "Medium", sans-serif;
+  color: var(--basedarkgray);
+  line-height: normal;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 12px;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item {
+  display: flex;
+  flex-direction: column;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item .step-label {
+  display: inline-flex;
+  width: 87px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  background: var(--sky-dark);
+  padding: 6px 16px 5px 15px;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item .step-label span {
+  font-size: 15px;
+  font-family: "Bold", sans-serif;
+  line-height: 15px;
+  color: var(--base-white);
+  text-align: center;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item .step-content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--sky-light);
+  padding: 15px;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item .step-content .step-icon {
+  width: 91px;
+  height: 91px;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item .step-content .step-icon img {
+  border-radius: 8px;
+}
+.acne .isotretinoin .contents-group .card .card-body .steps-list .step-item .step-content p.step-text {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--baseblack);
+}
+.acne .isotretinoin {
+  /* Steps */
 }/*# sourceMappingURL=style.css.map */

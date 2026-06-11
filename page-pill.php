@@ -10,7 +10,8 @@
             <div class="flex">
                 <div class="circle">
                     <p>初診料<br>
-                    1,500円</p>
+                    1,500円<br>
+                    <span style="font-size:12px;">＊対面のみ</span></p>
                 </div>
                 <div class="circle">
                     <p>オンライン<br>
@@ -227,7 +228,7 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-label bg-sky">配送料</div>
-                    <div class="feature-value">なし</div>
+                    <div class="feature-value">全国一律550円（税込）</div>
                 </div>
             </div>
         </div>
@@ -291,7 +292,7 @@
                             </svg>
                             <div>
                                 <p class="privacy-text-title">配送はプライバシーに配慮</p>
-                                <p class="privacy-text-desc">無地パッケージでお届け。品名は「日用品」。ポスト投函で対面受取不要。</p>
+                                <p class="privacy-text-desc">無地パッケージでお届け。品名は「医薬品」。ポスト投函で対面受取不要。</p>
                             </div>
                         </div>
                         <div class="privacy-item">
@@ -344,7 +345,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="plan-note">※初回のみ初診料1,500円（税込）が別途かかります。</p>
+                                    <p class="plan-note">※ 対面の場合初回のみ初診料1,500円（税込）が別途かかります。</p>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +381,10 @@
                                         </div>
                                         <p class="delivery-footnotes">
                                             ※ 初回は決済完了後に発送（最短翌日ポスト届け）<br>
-                                            ※ 送料無料 / 縛りなし / キャンセル料無料<br>
+                                            ※ 送料は全国一律550円（税込）<br>
+                                            ※ 1回のお会計金額5,000円（税込）以上で送料無料<br>
+                                            ※ クーポン利用時は、割引適用後のお支払い金額が5,000円（税込）以上の場合に送料無料が適用されます。<br>
+                                            ※ 離島、一部地域でも追加送料は発生いたしません。<br>
                                             ※ 次回発送日前日までに連絡で変更・解約OK
                                         </p>
                                     </div>
@@ -402,7 +406,8 @@
                 <div class="price-content">
                     <div class="price-note-card">
                         <div class="price-note-card-body">
-                            <p>初診料 1,500円（税込）/ 再診料 500円（税込）</p>
+                            <p>初診料 1,500円（税込）/ 再診料 500円（税込）<br>
+                                ＊対面のみ</p>
                         </div>
                     </div>
                     <div class="price-table-card">

@@ -71,6 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/botox' ); ?>">ボトックス</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/xolair' ); ?>">ゾレア</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/urso' ); ?>">ウルソ</a></li>
+                                                <li><a href="<?php echo esc_url( get_site_url().'/acne' ); ?>">ニキビ治療</a></li>
                                             </ul>
                                         </div>
                                         <div class="middle-menu">
