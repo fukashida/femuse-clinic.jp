@@ -17,7 +17,6 @@
                         <p class="profile-card-title">資格</p>
                         <ul>
                             <li>医師免許</li>
-                            <li>精神保健指定医</li>
                         </ul>
                     </div>
                     <div class="profile-card sky">

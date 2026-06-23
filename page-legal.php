@@ -15,7 +15,7 @@
                 </div>
                 <div class="box">
                     <p class="subtitle">代表者</p>
-                    <p>（確認中）</p>
+                    <p>広川 麻理菜</p>
                 </div>
                 <div class="box">
                     <p class="subtitle">所在地</p>
@@ -30,15 +30,16 @@
                 </div>
                 <div class="box">
                     <p class="subtitle">メールアドレス</p>
-                    <p>（確認中）</p>
+                    <p>info@femuse-clinic.com</p>
                 </div>
             </div>
             <h2>販売価格</h2>
             <p>各商品ページに税込価格で表示しています</p>
-            <!-- <h2>商品代金以外の必要料金</h2>
+            <h2>商品代金以外の必要料金</h2>
             <p>・配送料: 550円（税込）<br>
                 　※一部商品は送料込みの価格です<br>
-                ・決済手数料: お客様のご負担はありません</p> -->
+                ・決済手数料: お客様のご負担はありません<br>
+            ・診察料</p>
             <h2>支払方法</h2>
             <p>クレジットカード<br>
             （VISA / Mastercard / JCB / AMEX / Diners）</p>

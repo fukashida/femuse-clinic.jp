@@ -2,7 +2,7 @@
 
 <div class="calculator-sidebar" id="sidebar">
     <div class="calculator-trigger" onclick="toggleCalculator()">
-        <span><?php echo esc_html($shortcode_title); ?></span>
+        <span>割引額<br class="sp">シミュレーター</span>
         <div class="calculator-icon">
             <div class="triangle" id="pointer"></div>
         </div>
