@@ -574,11 +574,6 @@
                                 血栓症のある方は服用できません
                             </div>
                         </div>
-                        <div class="risk-row  wi100">
-                            <div class="risk-row__value">
-                                食欲不振、悪心、下痢、胸やけ
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="risk-card">
