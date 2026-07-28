@@ -295,6 +295,6 @@
     src="https://d3dto4s466v48.cloudfront.net/selling-chatbot.js"
     data-tracking-endpoint="https://chat.spirits-ltd.com/api/tracking.php"
     data-campaign-id="doxipep-001"
-    data-bot-icon="https://femuse-clinic.jp/wp-content/uploads/2026/05/operator-scaled.jpg"
+    data-bot-icon="https://femuse-clinic.jp/urso/operator.jpg"
   ></script>
   <?php get_footer(); ?>
