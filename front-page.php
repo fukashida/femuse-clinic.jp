@@ -321,23 +321,49 @@
                         <div class="container">
                             <h2 class="header-title">今月の診療カレンダー</h2>
                             <p class="header-subtitle gr">CALENDAR</p>
-                            <!-- <div class="status-group">
-                                <div class="badge">
-                                    <div class="type clinic"></div>
-                                    <p>対面診療</p>
+
+                            <div class="calendar-carousel js-calendar-carousel">
+                                <div class="calendar-carousel__viewport">
+                                    <div class="calendar-carousel__track">
+                                        <div class="calendar-carousel__slide">
+                                            <img
+                                                src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top/calendar/202607.png"
+                                                alt="2026年7月の診療カレンダー"
+                                            >
+                                        </div>
+
+                                        <div class="calendar-carousel__slide">
+                                            <img
+                                                src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top/calendar/202608.png"
+                                                alt="2026年8月の診療カレンダー"
+                                            >
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="badge">
-                                    <div class="type online"></div>
-                                    <p>オンライン診療</p>
-                                </div>
-                                <div class="badge">
-                                    <div class="type stay"></div>
-                                    <p>休診</p>
-                                </div>
-                            </div> -->
-                            <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/top/calendar/202607.png" alt="">
-                            <p class="ano">※最終受付は閉院15分前<br>
-                            ※診療スケジュールは月により変動する場合があります</p>
+
+                                <button
+                                    class="calendar-carousel__button calendar-carousel__button--prev"
+                                    type="button"
+                                    aria-label="前月のカレンダーを表示"
+                                >
+                                    ‹
+                                </button>
+
+                                <button
+                                    class="calendar-carousel__button calendar-carousel__button--next"
+                                    type="button"
+                                    aria-label="翌月のカレンダーを表示"
+                                >
+                                    ›
+                                </button>
+
+                                <div class="calendar-carousel__dots"></div>
+                            </div>
+
+                            <p class="ano">
+                                ※最終受付は閉院15分前<br>
+                                ※診療スケジュールは月により変動する場合があります
+                            </p>
                         </div>
                     </section>
                     <section class="news sky-bg">
