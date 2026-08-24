@@ -782,7 +782,7 @@
                     <!-- <div class="doctor-card__avatar">
                         <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/common/doctor-icon01.png" alt="広川 麻理菜 医師" onerror="this.style.display='none';this.parentElement.querySelector('.doctor-card__avatar-placeholder').style.display='block'" />
                     </div> -->
-                    <p class="doctor-card__role">院長 / 精神保健指定医</p>
+                    <p class="doctor-card__role">院長</p>
                     <h2 class="doctor-card__name">広川 麻理菜</h2>
                     <p class="doctor-card__bio">
                         東京慈恵会医科大学卒業。精神科・心療内科での診療経験を経て、フェミューズクリニック院長に就任。性感染症の検査・治療からピル処方、メンタル面のご相談まで幅広く対応しています。

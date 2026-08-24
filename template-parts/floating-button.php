@@ -54,7 +54,7 @@ $all_buttons = [
         'class' => 'green',
     ],
     'tel' => [
-        'url'   => 'tel:0312345678',
+        'url'   => 'tel:0362055937',
         'icon'  => 'tel-icon.svg',
         'text'  => '電話',
         'class' => 'white',

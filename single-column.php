@@ -44,7 +44,7 @@
                 <div class="text">
                     <p class="name">広川 麻理菜（ひろかわ まりな）</p>
                     <p>フェミューズクリニック院長<br>
-                    精神保健指定医 / 東京慈恵会医科大学卒</p>
+                    東京慈恵会医科大学卒</p>
                 </div>
             </div>
             <a href="<?php echo esc_url( get_site_url().'/doctor' ); ?>" class="btn-outline">医師紹介を見る</a>

@@ -250,7 +250,7 @@
                             <p class="director-name">広川 麻理菜</p>
                         </div>
                         <p class="director-desc">
-                            東京慈恵会医科大学卒業。精神保健指定医。<br>
+                            東京慈恵会医科大学卒業。<br>
                             精神科・心療内科での診療経験を活かし、心身両面からのケアを大切にしています。
                         </p>
                         <a href="<?php echo esc_url( get_site_url().'/doctor' ); ?>" class="btn-outline">医師紹介を見る</a>

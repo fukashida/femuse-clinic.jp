@@ -426,8 +426,7 @@
                                         <p class="status">院長</p>
                                         <p class="name">広川 麻理菜</p>
                                         <p class="status kana">ひろかわ まりな</p>
-                                        <p class="biography">精神保健指定医<br>
-                                            東京慈恵会医科大学卒</p>
+                                        <p class="biography">東京慈恵会医科大学卒</p>
                                     </div>
                                 </div>
                                 <p class="message">肌のことも、体のことも、言いづらいことも。<br>
