@@ -147,13 +147,12 @@
                     <h3 class="subsection-header">注射薬（マンジャロ）</h3>
                     <table class="price-table">
                         <thead>
-                            <tr><th>用量</th><th>1ヶ月分</th><th>2ヶ月分</th><th>3ヶ月分</th></tr>
+                            <tr><th>用量</th><th>1ヶ月分</th><th>2ヶ月分</th><th>3ヶ月分</th><th>6ヶ月分</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>2.5mg</td><td>19,800円<br>/月</td><td>15,840円<br>/月</td><td>14,850円<br>/月</td></tr>
-                            <tr><td>5.0mg</td><td>39,600円<br>/月</td><td>31,680円<br>/月</td><td>29,700円<br>/月</td></tr>
-                            <tr><td>7.5mg</td><td>59,400円<br>/月</td><td>47,520円<br>/月</td><td>44,550円<br>/月</td></tr>
-                            <tr><td>10mg</td><td>79,200円<br>/月</td><td>63,360円<br>/月</td><td>59,400円<br>/月</td></tr>
+                            <tr><td>2.5mg</td><td>12,600円<br>/月</td><td>11,900円<br>/月</td><td>11,200円<br>/月</td><td>10,500円<br>/月</td></tr>
+                            <tr><td>5.0mg</td><td>21,000円<br>/月</td><td>20,300円<br>/月</td><td>19,600円<br>/月</td><td>18,900円<br>/月</td></tr>
+                            <tr><td>7.5mg</td><td>29,400円<br>/月</td><td>28,700円<br>/月</td><td>28,000円<br>/月</td><td>27,300円<br>/月</td></tr>
                         </tbody>
                     </table>
                 </div>

@@ -8,7 +8,7 @@
         </div>
         <div class="point">
             <p class="main-text">マンジャロ（チルゼパチド）2.5mg<br>
-            3ヶ月セットなら月14,850円（税込）。<br>
+            6ヶ月セットなら月10,500円（税込）。<br>
             女性院長が心身両面からサポート＋初診料1,500円。</p>
             <div class="flex">
                 <div class="circle">
@@ -207,7 +207,7 @@
                         <tbody>
                             <tr>
                                 <td class="td-label">2.5mg<br>月額</td>
-                                <td class="td-femuse-val text-sm">14,850円〜</td>
+                                <td class="td-femuse-val text-sm">10,500円〜</td>
                                 <td class="td-market-val">22,000〜30,000円</td>
                             </tr>
                             <tr>
@@ -304,32 +304,30 @@
                             <th style="width:82px;">月額(定価)</th>
                             <th style="width:100px;">2ヶ月セット<br>(月あたり)</th>
                             <th style="width:100px;">3ヶ月セット<br>(月あたり)</th>
+                            <th style="width:100px;">6ヶ月セット<br>(月あたり)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>2.5mg</td>
-                            <td>19,800円</td>
-                            <td>15,840円<br>(20%OFF)</td>
-                            <td>14,850円<br>(25%OFF)</td>
+                            <td>12,600円</td>
+                            <td>11,900円</td>
+                            <td>11,200円</td>
+                            <td>10,500円</td>
                         </tr>
                         <tr>
                             <td>5.0mg</td>
-                            <td>39,600円</td>
-                            <td>31,680円</td>
-                            <td>29,700円</td>
+                            <td>21,000円</td>
+                            <td>20,300円</td>
+                            <td>19,600円</td>
+                            <td>18,900円</td>
                         </tr>
                         <tr>
                             <td>7.5mg</td>
-                            <td>59,400円</td>
-                            <td>47,520円</td>
-                            <td>44,550円</td>
-                        </tr>
-                        <tr>
-                            <td>10mg</td>
-                            <td>79,200円</td>
-                            <td>63,360円</td>
-                            <td>59,400円</td>
+                            <td>29,400円</td>
+                            <td>28,700円</td>
+                            <td>28,000円</td>
+                            <td>27,300円</td>
                         </tr>
                     </tbody>
                 </table>
@@ -353,19 +351,19 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>来院+1ヶ月</td>
-                                <td>初診1,500円<br>+マンジャロ19,800円</td>
-                                <td>21,300円</td>
+                                <td>来院/1ヶ月×2.5mg</td>
+                                <td>初診1,500円<br>+マンジャロ12,600円</td>
+                                <td>14,100円</td>
                             </tr>
                             <tr>
-                                <td>来院+3ヶ月セット</td>
-                                <td>初診1,500円<br>+3ヶ月分44,550円</td>
-                                <td>46,050円<br>(月約15,350円)</td>
+                                <td>オンライン/1ヶ月×2.5mg</td>
+                                <td>初診0円＋<br>マンジャロ12,600円</td>
+                                <td>12,600円</td>
                             </tr>
                             <tr>
-                                <td>オンライン+1ヶ月</td>
-                                <td>19,800円</td>
-                                <td>19,800円</td>
+                                <td>オンライン/3ヶ月×2.5mg</td>
+                                <td>初診0円＋<br>11,200円/月</td>
+                                <td>33,600円</td>
                             </tr>
                         </tbody>
                     </table>

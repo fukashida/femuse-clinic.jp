@@ -13,7 +13,7 @@
             慣れたらオンライン診療に切替えOK。</p>
             <div class="flex">
                 <div class="circle">
-                    <p>月額<br>14,850円〜</p>
+                    <p>月額<br>10,500円〜</p>
                 </div>
                 <div class="circle">
                     <p>オンライン<br>診療OK</p>
@@ -121,7 +121,7 @@
                             </div>
                             <div class="info-row">
                                 <div class="info-label accent-green"><span>価格</span></div>
-                                <div class="info-value"><div>14,850円〜/月</div><div>（3ヶ月セット・税込）</div></div>
+                                <div class="info-value"><div>10,500円〜/月</div><div>（6ヶ月セット・税込）</div></div>
                             </div>
                             <div class="info-row">
                                 <div class="info-label accent-green"><span>おすすめ</span></div>
@@ -160,20 +160,18 @@
                                             <th>月額(定価)</th>
                                             <th>2ヶ月セット/月</th>
                                             <th>3ヶ月セット/月</th>
+                                            <th>6ヶ月セット/月</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="row-highlight">
-                                            <td>2.5mg</td><td>¥19,800</td><td>¥15,840</td><td>¥14,850</td>
+                                            <td>2.5mg</td><td>¥12,600</td><td>¥11,900</td><td>¥11,200</td><td>¥10,500</td>
                                         </tr>
                                         <tr class="row-normal">
-                                            <td>5.0mg</td><td>¥39,600</td><td>¥31,680</td><td>¥29,700</td>
+                                            <td>5.0mg</td><td>¥21,000</td><td>¥20,300</td><td>¥19,600</td><td>¥18,900</td>
                                         </tr>
                                         <tr class="row-normal">
-                                            <td>7.5mg</td><td>¥59,400</td><td>¥47,520</td><td>¥44,550</td>
-                                        </tr>
-                                        <tr class="row-normal">
-                                            <td>10mg</td><td>¥79,200</td><td>¥63,360</td><td>¥59,400</td>
+                                            <td>7.5mg</td><td>¥29,400</td><td>¥28,700</td><td>¥28,000</td><td>¥27,300</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -335,7 +333,7 @@
                             <p class="card-desc">食欲抑制+代謝促進の二重作用。<br>初回は来院で注射の打ち方を練習。</p>
                         </div>
                         <div class="price-box">
-                            <p class="price-text">3ヶ月セット 月14,850円〜</p>
+                            <p class="price-text">6ヶ月セット 月10,500円〜</p>
                         </div>
                     </div>
                 </div>
