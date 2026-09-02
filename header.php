@@ -72,6 +72,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/xolair' ); ?>">ゾレア</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/urso' ); ?>">ウルソ</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/acne' ); ?>">ニキビ治療</a></li>
+                                                <!-- <li class="aco-block">
+                                                    <div class="aco-content q content-q">
+                                                        <a href="<?php echo esc_url( get_site_url().'/acne' ); ?>">ニキビ治療</a>
+                                                    </div>
+                                                    <ul class="aco-content a content-a">
+                                                        <li><a href="<?php echo esc_url( get_site_url().'/acne/isotretinoin' ); ?>">イソトレチノイン</a></li>
+                                                    </ul>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="middle-menu">
