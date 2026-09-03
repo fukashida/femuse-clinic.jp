@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="cta">
-            <a href="#" class="btn-cta btn-sky">オンライン診療を予約する</a>
+            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1678&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
             <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
         </div>
     </section>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="cta">
-                <a href="#" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1678&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
             </div>
         </div>
@@ -438,7 +438,7 @@
         <div class="cta-inner">
             <h2 class="cta-title wh">繰り返すニキビ、<br>諦める前に<br>一度ご相談ください。</h2>
             <nav class="cta-buttons" aria-label="相談と予約">
-                <a href="#" class="btn-cta btn-sky">オンライン診療を予約する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1678&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
                 <a href="https://aposuru.com/salon/salon_schedules/create/fab37cc0-ddfe-44f9-9023-7772489e2b1f" class="btn-cta btn-blue">来院で予約する</a>
             </nav>
         </div>
