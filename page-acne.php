@@ -47,7 +47,7 @@
                     <div class="card-body">
                         <div class="card-header">
                             <h3 class="card-title">美容内服</h3>
-                            <p class="card-price">（ビオチン・ミヤBM）</p>
+                            <p class="card-price">（ミヤBM・ビタメジン）</p>
                         </div>
                         <p class="card-description">皮脂バランスや腸内環境を整えることで、肌荒れ・ニキビの改善をサポートします。</p>
                         <a href="<?php echo esc_url( get_site_url().'/beauty-medicine' ); ?>" class="btn-outline">詳細を見る</a>
