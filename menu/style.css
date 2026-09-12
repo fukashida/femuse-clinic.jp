@@ -622,7 +622,7 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 0px;
 }
 .variation .card-list .card .card-body .card-header h3.card-title {
   font-size: 22px;
