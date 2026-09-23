@@ -185,7 +185,7 @@
                 <tr><td><span class="item-name">ミヤBM錠</span><span class="item-sub">60錠</span></td><td><span class="item-price">1,716<span class="unit">円</span></span></td></tr>
                 <tr><td><span class="item-name">ビタメジン配合カプセルB25</span><span class="item-sub">60カプセル</span></td><td><span class="item-price">1,958<span class="unit">円</span></span></td></tr>
                 <!-- <tr><td><span class="item-name">ビオチン散0.2%</span><span class="item-sub">60包</span></td><td><span class="item-price">1,958<span class="unit">円</span></span></td></tr> -->
-                <tr><td><span class="item-name">グルタチオン 100mg</span><span class="item-sub">60錠</span></td><td><span class="item-price">2,178<span class="unit">円</span></span></td></tr>
+                <!-- <tr><td><span class="item-name">グルタチオン 100mg</span><span class="item-sub">60錠</span></td><td><span class="item-price">2,178<span class="unit">円</span></span></td></tr> -->
                 </tbody>
             </table>
             <a href="<?php echo esc_url( get_site_url().'/beauty-medicine' ); ?>" class="btn-outline btn-blue">メニューの詳細を見る</a>
