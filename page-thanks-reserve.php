@@ -12,11 +12,13 @@
             <h2>予約日までにやっておくこと</h2>
             <div class="box reserve">
                 <div class="text">
-                    <p class="title">事前問診の入力</p>
-                    <p>スマホから事前に問診に回答しておくと、<br>
-                    当日の待ち時間が短くなります。</p>
+                    <p class="title">公式LINEの登録</p>
+                    <p>
+                        来院までのアクセス案内の確認や<br>
+                        キャンセルのご連絡などをスムーズに行えます。
+                    </p>
                 </div>
-                <a href="#" class="btn-cta btn-blue">事前問診を入力する</a>
+                <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1064&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-blue">LINEで友だち追加する</a>
             </div>
         </div>
     </section>
@@ -68,7 +70,7 @@
             </div>
         </div>
     </section>
-    <section class="flow sky-bg">
+    <!-- <section class="flow sky-bg">
         <div class="container">
             <h2 class="header-title wh">当日の流れ</h2>
             <p class="header-subtitle">オンライン診療の場合</p>
@@ -109,13 +111,13 @@
                 ・静かな場所（プライバシーが守れる環境）</p>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="line">
         <div class="sub-container">
             <h2>LINEで便利に</h2>
             <p>公式LINEに登録すると、<br>
             予約リマインドやお得な情報をお届けします。</p>
-            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=837&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-green">LINEで友だち追加する</a>
+            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1064&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-green">LINEで友だち追加する</a>
         </div>
     </section>
     <section class="faq">
@@ -124,16 +126,25 @@
             <div class="qa-boxes">
                 <div class="qa-box">
                     <p class="question">予約の変更・キャンセルはできますか？</p>
-                    <p class="answer">予約日前日までに、予約システムからキャンセル・変更が可能です。</p>
+                    <p class="answer">予約の変更・キャンセルは、予約日前日までにLINEまたはお電話（<a href="tel:03-6205-5937">03-6205-5937</a>）でご連絡ください。やむを得ず当日のご連絡となる場合も、同様にLINEまたはお電話にてご連絡をお願いいたします。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">遅刻しそうな場合は？</p>
-                    <p class="answer">LINEまたはお電話（03-6205-5937）でご連絡ください。</p>
+                    <p class="answer">LINEまたはお電話（<a href="tel:03-6205-5937">03-6205-5937</a>）でご連絡ください。</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cta-section">
+    <section class="attention">
+        <div class="sub-container">
+            <h2>注意事項</h2>    
+            <div class="attention-box">
+                <p>21:30以降はビルの入口が施錠されるため、ご来院予定の方は到着時にクリニックまでお電話ください。</p>
+                <p>電話番号：<a href="tel:03-6205-5937">03-6205-5937</a></p>
+            </div>        
+        </div>
+    </section>
+    <!-- <section class="cta-section">
         <div class="sub-container">
             <div class="cta-inner">
                 <nav class="cta-buttons" aria-label="相談と予約">
@@ -142,6 +153,6 @@
                 </nav>
             </div>
         </div>
-    </section>
+    </section> -->
 </main>
 <?php get_footer(); ?>

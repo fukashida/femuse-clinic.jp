@@ -814,6 +814,27 @@ header .close-menu.open .top-bar {
   color: var(--base-black);
   border: 1px solid var(--base-black);
 }
+.faq .qa-boxes .qa-box p.answer a {
+  display: inline;
+  color: #6068d5;
+}
+
+.attention {
+  padding: 40px 0;
+}
+.attention h2 {
+  margin-bottom: 35px;
+}
+.attention p {
+  margin-bottom: 15px;
+}
+.attention p:last-child {
+  margin-bottom: 0;
+}
+.attention p a {
+  display: inline;
+  color: #6068d5;
+}
 
 /* ── Footer ── */
 footer {
