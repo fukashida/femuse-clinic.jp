@@ -112,14 +112,6 @@
             </div>
         </div>
     </section> -->
-    <section class="line">
-        <div class="sub-container">
-            <h2>LINEで便利に</h2>
-            <p>公式LINEに登録すると、<br>
-            予約リマインドやお得な情報をお届けします。</p>
-            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1064&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-green">LINEで友だち追加する</a>
-        </div>
-    </section>
     <section class="faq">
         <div class="sub-container">
             <h2>よくある質問</h2>
@@ -142,6 +134,14 @@
                 <p>21:30以降はビルの入口が施錠されるため、ご来院予定の方は到着時にクリニックまでお電話ください。</p>
                 <p>電話番号：<a href="tel:03-6205-5937">03-6205-5937</a></p>
             </div>        
+        </div>
+    </section>
+    <section class="line">
+        <div class="sub-container">
+            <h2>LINEで便利に</h2>
+            <p>公式LINEに登録すると、<br>
+            予約リマインドやお得な情報をお届けします。</p>
+            <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1064&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-green">LINEで友だち追加する</a>
         </div>
     </section>
     <!-- <section class="cta-section">

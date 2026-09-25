@@ -819,11 +819,14 @@ header .close-menu.open .top-bar {
   color: #6068d5;
 }
 
-.attention {
-  padding: 40px 0;
-}
 .attention h2 {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+}
+.attention .attention-box {
+  background: var(--base-white);
+  border: 1px solid var(--base-gray);
+  padding: 20px;
+  border-radius: 8px;
 }
 .attention p {
   margin-bottom: 15px;
