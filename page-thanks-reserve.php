@@ -31,7 +31,7 @@
                     <div class="num">1</div>
                     <div class="content">
                         <p class="title">東新宿駅A3出口</p>
-                        <p>徒歩1分。新宿イーストクロスタワー3Fへ</p>
+                        <p>徒歩1分。新宿イーストクロスタワー3階へ</p>
                     </div>
                 </div>
                 <div class="flow-box">

@@ -31,7 +31,7 @@
                         </div>
                         <div class="price-section">
                             <div class="price">
-                                <span class="price-number">1,000</span><span class="price-unit">円～</span>
+                                <span class="price-number">1,100</span><span class="price-unit">円～</span>
                             </div>
                             <div class="price-quantity">1回</div>
                         </div>

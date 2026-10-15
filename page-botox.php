@@ -140,12 +140,12 @@
                 <div class="contents">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/menu/botox/answer-list01.png" alt="">
                     <p><span>エラ・目尻・眉間・おでこ・</span><br>
-                        <span>あご・脇の6部位に対応。</span></p>
+                        <span>あご・脇など複数部位に対応。</span></p>
                 </div>
                 <div class="contents">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/menu/botox/answer-list02.png" alt="">
                     <p><span>施術5〜10分、</span><br>
-                        <span>完全予約制で待ち時間なし。</span></p>
+                        <span>予約制で待ち時間なし。</span></p>
                 </div>
                 <div class="contents">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/menu/medical-diet/answer-list03.png" alt="">

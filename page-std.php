@@ -407,7 +407,6 @@
                     <div class="price-note-card">
                         <div class="price-note-card-body">
                             <p>初診料 1,500円（税込）/ 再診料 500円（税込）</p>
-                            <p>※検査のみの場合、診察料はかかりません。</p>
                         </div>
                     </div>
                     <div class="price-table-card">
@@ -536,7 +535,7 @@
                                 <div class="card-header">
                                     <div class="card-title-row">
                                     <h3>オンライン診療</h3>
-                                    <span class="badge sky">月〜土曜　18:00~23:00</span>
+                                    <span class="badge sky">月〜土曜　18:00〜23:00</span>
                                     </div>
                                     <p class="card-description xs">医師に相談してから処方。届くのを待つだけ。</p>
                                 </div>

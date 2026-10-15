@@ -335,7 +335,7 @@
                             <tbody>
                                 <tr>
                                 <td>グルタチオン</td>
-                                <td>600mg</td>
+                                <td>1200mg</td>
                                 <td><div>強力な抗酸化</div><div>メラニン抑制・デトックス</div></td>
                                 </tr>
                                 <tr>
@@ -454,7 +454,7 @@
                             <tbody>
                                 <tr>
                                 <td>αリポ酸点滴</td>
-                                <td>25mg</td>
+                                <td>50mg</td>
                                 <td><div>強力な抗酸化</div><div>メラニン生成抑制</div><div>糖代謝促進</div></td>
                                 </tr>
                                 <tr>
@@ -573,7 +573,7 @@
                             <tbody>
                                 <tr>
                                 <td>ビオチン注</td>
-                                <td>1mg / 2mL</td>
+                                <td>2mg / 4mL</td>
                                 <td><div>皮膚・髪・爪の</div><div>細胞代謝を促進</div></td>
                                 </tr>
                                 <tr>
@@ -705,7 +705,7 @@
                         <h3 class="card-title">白玉点滴</h3>
                         <p class="card-price">8,800円</p>
                     </div>
-                    <p class="card-description">グルタチオン600mgをゆっくり点滴投与。仕事帰りの30分で美白ケア。</p>
+                    <p class="card-description">グルタチオン1,200mgをゆっくり点滴投与。仕事帰りの30分で美白ケア。</p>
                     </div>
                 </div>
                 <div class="card">
@@ -750,7 +750,7 @@
                         <h3 class="card-title">肌質・髪質改善注射</h3>
                         <p class="card-price">3,300円</p>
                     </div>
-                    <p class="card-description">ビオチン1mg+ビタミンC+B群。コスパ◎のインナービューティー。</p>
+                    <p class="card-description">ビオチン2mg+ビタミンC+B群。コスパ◎のインナービューティー。</p>
                     </div>
                 </div>
                 <div class="card">
@@ -856,7 +856,7 @@
                             <div class="reason-card">
                                 <ul>
                                     <li>医師が直接施術するため、来院のみの対応です</li>
-                                    <li>完全予約制ですが、当日でも空きがあればご予約いただけます</li>
+                                    <li>原則予約制ですが、当日でも空きがあればご予約いただけます</li>
                                     <li>初回の費用目安: 初診料1,500円 + 施術費（例: 美白注射2,750円なら合計4,250円）</li>
                                 </ul>
                             </div>
@@ -873,11 +873,11 @@
             <div class="qa-boxes">
                 <div class="qa-box">
                     <p class="question">白玉注射と白玉点滴の違いは何ですか？</p>
-                    <p class="answer">配合成分（グルタチオン600mg+ビタミンC+ビタミンB群）は同じです。注射は5分で完了（手軽さ重視）、点滴は20〜30分（吸収効率重視）。</p>
+                    <p class="answer">グルタチオンの配合量は、白玉注射が600mg、白玉点滴が1,200mgです。どちらもビタミンC・ビタミンB群を配合しています。注射は5分で完了（手軽さ重視）、点滴は20〜30分（吸収効率重視）。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">成分の量は他のクリニックと比べてどうですか？</p>
-                    <p class="answer">白玉系のグルタチオンは600mg配合です。高濃度ビタミンC点滴はビタミンC 10g（10,000mg）を使用しています。各メニューの成分と配合量はすべて本ページに記載しています。</p>
+                    <p class="answer">グルタチオンは、白玉注射に600mg、白玉点滴に1,200mg配合しています。高濃度ビタミンC点滴には、ビタミンCを10g（10,000mg）使用しています。各メニューの成分と配合量は、本ページの成分表をご確認ください。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">どのくらいの頻度で通えばいいですか？</p>

@@ -281,6 +281,9 @@ footer{
                     font-family: 'Bold';
                     font-size: 16px;
                     color: var(--blue-dark);
+                    & span {
+                      font-size: 12px;
+                    }
                 }
             }
         }
@@ -481,6 +484,8 @@ footer{
         span{
             &.oral-name { font-size: 14px; font-family: 'Medium'; color: var(--base-black); display: block; }
             &.oral-cat  { font-size: 12px; font-family: 'Medium',sans-serif; color: var(--base-darkgray); display: block; margin-top: 2px; }
+            &.item-price {font-size: 18px; font-weight: bold;}
+            &.unit {font-size: 13px;}
         }
       }
     }

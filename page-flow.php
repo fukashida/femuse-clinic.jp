@@ -43,17 +43,17 @@
                         <div class="step-number"><span>3</span></div>
                         <div class="step-content">
                             <h4>届いたら使う</h4>
-                            <p>通常2〜3営業日でお届け</p>
+                            <p>通常2〜3営業日で発送</p>
                         </div>
                     </div>
-                    <p class="card-note">無地の箱でポスト投函。伝票の品名は「日用品」。</p>
+                    <p class="card-note">無地の箱でポスト投函。伝票の品名は「医薬品」。</p>
                 </div>
             </div>
             <div class="guide-card sky">
                 <div class="card-header">
                     <div class="card-title-row">
                     <h3>オンライン診療</h3>
-                    <span class="badge sky">月〜土曜　18:00~23:00</span>
+                    <span class="badge sky">月〜土曜　18:00〜23:00</span>
                     </div>
                     <p class="card-description xs">医師に相談してから処方。届くのを待つだけ。</p>
                 </div>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="qa-box">
                     <p class="question">初めてですが、何を準備すればいいですか？</p>
-                    <p class="answer">LINEまたはお電話（03-6205-特別な準備は不要です。保険証もいりません。事前にWebで問診を入力しておくとスムーズです。</p>
+                    <p class="answer">特別な準備は不要です。保険証もいりません。事前にWebで問診を入力しておくとスムーズです。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">オンライン診療と来院、どちらがいいですか？</p>

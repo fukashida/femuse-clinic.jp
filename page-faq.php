@@ -19,7 +19,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">予約制です。予約フォームからご予約ください。</p>
+                        <p class="a-text">原則予約制です。予約フォームからご予約ください。予約なしでも受診可能な場合がありますが、ご案内できない場合があります。</p>
                     </div>
                 </div>
                 <div class="faq-card">
@@ -52,7 +52,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">閉院15分前までです。診療時間は月によって異なるため、最新のスケジュールはお知らせをご確認ください。</p>
+                        <p class="a-text">閉院15分前までです。診療時間は月によって異なるため、最新のスケジュールはトップページをご確認ください。</p>
                     </div>
                 </div>
                 <div class="faq-card">
@@ -602,17 +602,6 @@
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
                         <p class="a-text">いいえ。受付番号でお呼びします。</p>
-                    </div>
-                </div>
-                <div class="faq-card">
-                    <div class="faq-row">
-                        <span class="badge badge-q">Q</span>
-                        <p class="q-text">配送の荷物でバレませんか？</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="faq-row">
-                        <span class="badge badge-a">A</span>
-                        <p class="a-text">無地の箱でポスト投函します。伝票の品名は「日用品」、差出人は個人名で表記しています。</p>
                     </div>
                 </div>
             </div>

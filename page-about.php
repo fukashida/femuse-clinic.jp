@@ -261,7 +261,7 @@
                     <dl class="corporate-rows">
                         <div class="corporate-row">
                             <dt>医療法人名</dt>
-                            <dd>医療法人能美会</dd>
+                            <dd>医療法人社団能美会</dd>
                         </div>
                         <div class="corporate-row">
                             <dt>クリニック名</dt>
@@ -273,7 +273,7 @@
                         </div>
                         <div class="corporate-row">
                             <dt>所在地</dt>
-                            <dd>東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3F</dd>
+                            <dd>東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3階</dd>
                         </div>
                         <div class="corporate-row">
                             <dt>電話番号</dt>
@@ -292,14 +292,14 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.158262129713!2d139.7051493765248!3d35.697722872581835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd95fccaaf1%3A0x89c2535f2a283669!2z44OV44Kn44Of44Ol44O844K644Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1777547133957!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <address class="address-block" style="font-style:normal;">
-                    <p>東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3F</p>
+                    <p>東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3階</p>
                     <strong>東京メトロ副都心線・都営大江戸線 東新宿駅 A3出口 徒歩1分</strong>
                 </address>
                 <div class="hours-card">
                     <h3>診療時間</h3>
                     <p>
                         来院: 主に木・金・土 18:00〜23:00（最終受付 22:45）<br>
-                        オンライン診療: 月〜土曜　18:00~23:00<br>
+                        オンライン診療: 月〜土曜　18:00〜23:00<br>
                         休診: 日曜<br>
                         ※シフト制のため、月により診療日・時間が変動します
                     </p>

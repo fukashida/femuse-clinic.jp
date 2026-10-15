@@ -13,7 +13,7 @@
                                     <p>オンライン　月〜土曜　　18:00〜23:00</p>
                                 </div>
                                 <address class="footer-addr">
-                                    東京都新宿区新宿6-29-11 新宿イーストクロスタワー3F<br>
+                                    東京都新宿区新宿6-29-11 新宿イーストクロスタワー3階<br>
                                     東新宿駅A3出口 徒歩1分
                                 </address>
                             </div>
@@ -55,14 +55,14 @@
                                     <a href="<?php echo esc_url( get_site_url().'/privacy' ); ?>">プライバシーポリシー</a>
                                     <a href="<?php echo esc_url( get_site_url().'/legal' ); ?>">特定商取引法に基づく表記</a>
                                 </nav>
-                                <p class="footer-copy sp">© 2026 医療法人能美会 フェミューズクリニック</p>
+                                <p class="footer-copy sp">© 2026 医療法人社団能美会 フェミューズクリニック</p>
                             </div>
                         </div>
                         <?php get_template_part( 'template-parts/floating-button' ); ?>
                     </footer>
                 </div>
             </div>
-            <p class="copylight pc">© 2026 医療法人能美会 フェミューズクリニック</p>
+            <p class="copylight pc">© 2026 医療法人社団能美会 フェミューズクリニック</p>
         </div>
 
         <?php if ( ! wp_is_mobile() ) : ?>

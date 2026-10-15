@@ -10,7 +10,7 @@
             <div class="flex">
                 <div class="circle">
                     <p>初診料<br>
-                    1,500円</p>
+                    1,500円<br><span>＊対面のみ</span></p>
                 </div>
                 <div class="circle">
                     <p>再診料<br>
@@ -126,12 +126,12 @@
             <h2 class="section-title text-sky-dark">ボトックス注射</h2>
             <table class="menu-table">
                 <tbody>
-                <tr><td><span class="item-name">エラ</span></td><td><span class="item-price">12,100<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">おでこ（額）</span></td><td><span class="item-price">13,200<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">眉間</span></td><td><span class="item-price">8,800<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">目尻（両側）</span></td><td><span class="item-price">11,000<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">ワキ（多汗症）</span></td><td><span class="item-price">39,600<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">あご（梅干しジワ）</span></td><td><span class="item-price">8,800<span class="unit">円</span></span></td></tr>
+                <tr><td><span class="item-name">エラ</span></td><td><span class="item-price">13,200<span class="unit">円</span></span></td></tr>
+                <tr><td><span class="item-name">おでこ（額）</span></td><td><span class="item-price">5,500<span class="unit">円〜</span></span></td></tr>
+                <tr><td><span class="item-name">眉間</span></td><td><span class="item-price">5,500<span class="unit">円〜</span></span></td></tr>
+                <tr><td><span class="item-name">目尻（両側）</span></td><td><span class="item-price">5,500<span class="unit">円〜</span></span></td></tr>
+                <tr><td><span class="item-name">ワキ（多汗症）</span></td><td><span class="item-price">27,500<span class="unit">円</span></span></td></tr>
+                <tr><td><span class="item-name">あご（梅干しジワ）</span></td><td><span class="item-price">5,500<span class="unit">円〜</span></span></td></tr>
                 </tbody>
             </table>
             <a href="<?php echo esc_url( get_site_url().'/botox' ); ?>" class="btn-outline btn-sky">メニューの詳細を見る</a>
@@ -202,7 +202,7 @@
                 <tr><td><span class="item-name">ラベルフィーユ 28錠</span><span class="item-sub">低用量ピル</span></td><td><span class="item-price">2,750<span class="unit">円/月</span></span></td></tr>
                 <tr><td><span class="item-name">レボノルゲストレル</span><span class="item-sub">アフターピル</span></td><td><span class="item-price">8,800<span class="unit">円</span></span></td></tr>
                 <tr><td><span class="item-name">エラワン</span><span class="item-sub">アフターピル</span></td><td><span class="item-price">8,800<span class="unit">円</span></span></td></tr>
-                <tr><td><span class="item-name">プラノバール 21錠</span><span class="item-sub">月経移動ピル</span></td><td><span class="item-price">4,158<span class="unit">円</span></span></td></tr>
+                <tr><td><span class="item-name">プラノバール 21錠</span><span class="item-sub">月経移動ピル</span></td><td><span class="item-price">3,300<span class="unit">円</span></span></td></tr>
                 </tbody>
             </table>
             <a href="<?php echo esc_url( get_site_url().'/pill' ); ?>" class="btn-outline btn-gray">メニューの詳細を見る</a>
@@ -284,6 +284,25 @@
                 </tbody>
             </table>
             <a href="<?php echo esc_url( get_site_url().'/urso' ); ?>" class="btn-outline btn-sky">メニューの詳細を見る</a>
+        </div>
+    </section>
+
+        <!-- ニキビ治療 -->
+    <section class="menu-section bg-white">
+        <div class="sub-container">
+            <h2 class="section-title text-dark-gray">ニキビ治療</h2>
+            <div class="detox-inner">
+                <div class="detox-part">
+                    <h3 class="subsection-header">イソトレチノイン</h3>
+                    <table class="oral-table">
+                        <tbody>
+                            <tr><td><span class="oral-name">1ヶ月分</span><span class="oral-cat">30錠</span></td><td><span class="item-price">6,600<span class="unit">円</span></span></td></tr>
+                            <tr><td><span class="oral-name">3ヶ月分</span><span class="oral-cat">90錠</span></td><td><span class="item-price">16,500<span class="unit">円</span></span></td></tr>
+                            <tr><td><span class="oral-name">6ヶ月分</span><span class="oral-cat">180錠</span></td><td><span class="item-price">29,700<span class="unit">円</span></span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
 

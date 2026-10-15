@@ -271,6 +271,9 @@ footer {
   font-size: 16px;
   color: var(--blue-dark);
 }
+.price-content .point .flex .circle p span {
+  font-size: 12px;
+}
 .price-content .menu-section {
   width: 100%;
   padding: 60px 0;
@@ -499,6 +502,13 @@ footer {
   color: var(--base-darkgray);
   display: block;
   margin-top: 2px;
+}
+.price-content .oral-table td span.item-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.price-content .oral-table td span.unit {
+  font-size: 13px;
 }
 .price-content {
   /* ── 性病検査 ── */

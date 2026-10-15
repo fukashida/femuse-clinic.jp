@@ -198,9 +198,9 @@
                 </div>
                 <ul class="access">
                   <li><span>差出人</span>フェミューズクリニック</li>
-                  <li><span>住所</span>〒 160-0022<br>東京都新宿区新宿6-29-11新宿イーストクロスタワー3F</li>
-                  <li><span>TEL</span>03-6205-5938</li>
-                  <li><span>品名</span>日用品</li>
+                  <li><span>住所</span>〒 160-0022<br>東京都新宿区新宿6-29-11新宿イーストクロスタワー3階</li>
+                  <li><span>TEL</span>03-6205-5937</li>
+                  <li><span>品名</span>医薬品</li>
                 </ul>
             </div>
 
@@ -506,7 +506,7 @@
           <div class="divider"></div>
           <div class="answer">
             <span class="a-icon">A</span>
-            <p class="a-text">検体が検査所に到着してから、最短当日に結果通知されます。</p>
+            <p class="a-text">検査キットの購入後、検査や結果確認に追加費用はかかりません。陽性だった場合など、治療をご希望される場合は、治療内容に応じて別途費用が発生します。</p>
           </div>
         </div>
 

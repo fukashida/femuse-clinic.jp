@@ -10,11 +10,11 @@
             <div class="info-list">
                 <div class="info-item">
                     <dt class="info-label">クリニック名</dt>
-                    <dd class="info-value">フェミューズクリニック<br>（医療法人能美会）</dd>
+                    <dd class="info-value">フェミューズクリニック<br>（医療法人社団能美会）</dd>
                 </div>
                 <div class="info-item">
                     <dt class="info-label">住所</dt>
-                    <dd class="info-value">〒160-0022<br>東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3F</dd>
+                    <dd class="info-value">〒160-0022<br>東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3階</dd>
                 </div>
                 <div class="info-item">
                     <dt class="info-label">電話番号</dt>
@@ -47,7 +47,7 @@
                         <div class="hours-row">
                             <span class="hours-badge badge-online">オンライン</span>
                             <div class="hours-content">
-                                <p class="hours-main">月〜土曜　18:00~23:00</p>
+                                <p class="hours-main">月〜土曜　18:00〜23:00</p>
                             </div>
                         </div>
                         <div class="hours-row">
@@ -60,7 +60,7 @@
                 </div>
                 <p class="hours-disclaimer">
                 ※シフト制のため、月により診療日・時間が変動します。<br>
-                最新のスケジュールはお知らせをご確認ください
+                最新のスケジュールはトップページをご確認ください
                 </p>
             </div>
             <div class="directions">
@@ -84,7 +84,7 @@
                         </li>
                         <li class="step-card">
                             <span class="step-number">4</span>
-                            <p class="step-text">エレベーターで3Fへ</p>
+                            <p class="step-text">エレベーターで3階へ</p>
                         </li>
                     </ol>
                     <div class="tip-card">
@@ -113,7 +113,7 @@
                     </div>
                     <div class="guideline-body">
                         <h3 class="guideline-heading">予約</h3>
-                        <p class="guideline-desc">完全予約制です。<br>当日予約も空きがあれば可能です。</p>
+                        <p class="guideline-desc">原則予約制です。<br>当日予約も空きがあれば可能です。</p>
                     </div>
                 </div>
                 <div class="guideline-card">

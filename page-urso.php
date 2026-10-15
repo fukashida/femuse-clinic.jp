@@ -16,7 +16,6 @@
                 </div>
                 <div class="service">
                     <p>診察料無料</p>
-                    <p>配送料無料</p>
                 </div>
                 <p class="price">
                     40錠   (10回分)<br><span class="orange">3,980</span><span class="yen">円</span>
@@ -25,6 +24,7 @@
                     今すぐ購入
                 </a>
             </div>
+            <p class="center"><span>送料は全国一律550円（税込）です。1回のご注文金額が5,000円（税込）以上の場合は、送料無料にてお届けいたします。</span></p>
             <p class="point">
                 ウルソ<span>は</span> 二日酔い<span>の</span><br>「予防・軽減」<span>を目的とした</span><br>
                 <span class="manage ">医師管理</span>の<span class="orange">処方薬</span>です。
@@ -160,7 +160,6 @@
             <div class="right">
                 <div class="service">
                     <p>診察料無料</p>
-                    <p>配送料無料</p>
                 </div>
                 <p>40錠   (10回分)</p>
                 <p class="cost">3,980<span>円</span></p>
@@ -169,6 +168,7 @@
                 </a>
             </div>
         </div>
+        <p class="center"><span>送料は全国一律550円（税込）です。1回のご注文金額が5,000円（税込）以上の場合は、送料無料にてお届けいたします。</span></p>
         <p class="center"><span>※飲酒の前後にそれぞれ2錠ずつ内服した場合です</span></p>
     </section>
 

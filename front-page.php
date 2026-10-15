@@ -229,7 +229,7 @@
                                             </div>
                                             <div class="title-area">
                                                 <h3 class="card-title">美容内服</h3>
-                                                <p class="card-desc">内服7種セット・<br>単品処方</p>
+                                                <p class="card-desc">内服5種セット・<br>単品処方</p>
                                             </div>
                                         </div>
                                     </div>
@@ -492,7 +492,7 @@
                                 <address>
                                     <div class="location-address">
                                         <p class="location-title">東新宿駅A3出口 徒歩1分</p>
-                                        <p class="location-addr">東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3F</p>
+                                        <p class="location-addr">東京都新宿区新宿6-29-11<br>新宿イーストクロスタワー3階</p>
                                     </div>
                                 </address>
                             </div>

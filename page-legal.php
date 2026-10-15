@@ -10,7 +10,7 @@
             <div class="items">
                 <div class="box">
                     <p class="subtitle">販売事業者名</p>
-                    <p>医療法人能美会<br>
+                    <p>医療法人社団能美会<br>
                     フェミューズクリニック</p>
                 </div>
                 <div class="box">
@@ -21,7 +21,7 @@
                     <p class="subtitle">所在地</p>
                     <p>〒160-0022<br>
                         東京都新宿区新宿6-29-11<br>
-                        新宿イーストクロスタワー3F</p>
+                        新宿イーストクロスタワー3階</p>
                 </div>
                 <div class="box">
                     <p class="subtitle">電話番号</p>

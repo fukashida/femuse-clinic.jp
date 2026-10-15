@@ -79,7 +79,7 @@
                         <div class="step-card-inner align-start">
                             <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/menu/pill/pill-step02.png" alt="ビデオ通話で診察">
                             <div class="step-text">
-                                <h3>ビデオ通話で診察<br><span class="sub">(5分~10分)</span></h3>
+                                <h3>ビデオ通話で診察<br><span class="sub">(5分〜10分)</span></h3>
                                 <p>医師が体調・希望を聞いて、<br>あなたに合うピルを<br>提案します。</p>
                             </div>
                         </div>
@@ -385,7 +385,7 @@
                                             ※ 1回のお会計金額5,000円（税込）以上で送料無料<br>
                                             ※ クーポン利用時は、割引適用後のお支払い金額が5,000円（税込）以上の場合に送料無料が適用されます。<br>
                                             ※ 離島、一部地域でも追加送料は発生いたしません。<br>
-                                            ※ 次回発送日前日までに連絡で変更・解約OK
+                                            ※ 次回発送日の10日前までに連絡で変更・解約OK
                                         </p>
                                     </div>
                                 </div>
