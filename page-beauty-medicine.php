@@ -48,11 +48,11 @@
                             <div class="col-medicine">ビタミンC</div>
                             <div class="col-price">2,178円</div>
                         </div>
-                        <div class="price-table-row">
+                        <!-- <div class="price-table-row">
                             <div class="col-type">グルタチオン</div>
                             <div class="col-medicine">抗酸化・美白</div>
                             <div class="col-price">2,178円</div>
-                        </div>
+                        </div> -->
                         <!-- <div class="price-table-row">
                             <div class="col-type">ビオチン</div>
                             <div class="col-medicine">肌荒れ・髪</div>
@@ -297,12 +297,12 @@
                             <div class="col-price">1,958円</div>
                             <div class="col-day1">約65円</div>
                         </div> -->
-                        <div class="price-table-row">
+                        <!-- <div class="price-table-row">
                             <div class="col-type">グルタチオン</div>
                             <div class="col-medicine">100mg 60錠</div>
                             <div class="col-price">2,178円</div>
                             <div class="col-day1">約73円</div>
-                        </div>
+                        </div> -->
                     </div>
                     <p class="price-disclaimer">※すべて自由診療です。公的医療保険は適用されません。</p>
                 </div>
@@ -315,7 +315,7 @@
             <div class="infections-list">
                 <div class="infection-article">
                     <div class="infection-sections">
-                        <div class="info-card">
+                        <!-- <div class="info-card">
                             <p class="info-card-title">美白+抗酸化</p>
                             <div class="info-card-rows">
                                 <div class="info-row">
@@ -327,7 +327,7 @@
                                     <span class="info-row-content">約218円</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="info-card">
                             <p class="info-card-title">シミ・くすみ</p>
                             <div class="info-card-rows">
@@ -641,7 +641,7 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="risk-card">
+                <!-- <div class="risk-card">
                     <div class="risk-card__header">
                         <div class="risk-card__title">グルタチオン</div>
                     </div>
@@ -652,7 +652,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="risk-card">
                     <div class="risk-card__header">
                         <div class="risk-card__title">ご注意事項</div>
