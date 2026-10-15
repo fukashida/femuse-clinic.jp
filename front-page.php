@@ -328,14 +328,14 @@
                                         
                                         <div class="calendar-carousel__slide">
                                             <img
-                                            src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top/calendar/202609.jpg"
+                                            src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top/calendar/202609.png"
                                             alt="2026年9月の診療カレンダー"
                                             >
                                         </div>
                                         <div class="calendar-carousel__slide">
                                             <img
-                                                src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top/calendar/202608.png"
-                                                alt="2026年8月の診療カレンダー"
+                                                src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top/calendar/202610.png"
+                                                alt="2026年10月の診療カレンダー"
                                             >
                                         </div>
                                     </div>
