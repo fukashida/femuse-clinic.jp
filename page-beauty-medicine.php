@@ -133,7 +133,7 @@
                 <p class="title">例　シミ・肝斑ケア（トラネキサム酸・シナール・ユベラ）</p>
                 <div class="text">
                     <p>定期配送の場合　5,287円（税込）</p>
-                    <p class="mini">毎月654円おトク ＋ 送料550円も無料</p>
+                    <p class="mini">毎月587円おトク ＋ 送料550円も無料</p>
                 </div>
             </div>
             <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1357&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-green">定期配送で注文する</a>
@@ -437,7 +437,7 @@
                         <div class="step-number"><span>5</span></div>
                         <div class="step-content">
                             <h4>配送</h4>
-                            <p>無地パッケージ、品名は「日用品」</p>
+                            <p>無地パッケージ、品名は「医薬品」</p>
                         </div>
                     </div>
                 </div>
@@ -446,7 +446,7 @@
                 <div class="card-header">
                     <div class="card-title-row">
                     <h3>オンライン診療</h3>
-                    <span class="badge sky">月〜土曜　18:00~23:00</span>
+                    <span class="badge sky">月〜土曜　18:00〜23:00</span>
                     </div>
                     <p class="card-description xs">どの組み合わせがいいかわからない方はこちら。</p>
                 </div>
@@ -484,7 +484,7 @@
                         <div class="step-number"><span>5</span></div>
                         <div class="step-content">
                             <h4>配送</h4>
-                            <p>無地パッケージ、品名は「日用品」</p>
+                            <p>無地パッケージ、品名は「医薬品」</p>
                         </div>
                     </div>
                 </div>

@@ -207,7 +207,7 @@
                         <div class="step-number"><span>5</span></div>
                         <div class="step-content">
                             <h4>配送</h4>
-                            <p>無地パッケージ、品名は「日用品」</p>
+                            <p>無地パッケージ、品名は「医薬品」</p>
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                 <div class="card-header">
                     <div class="card-title-row">
                     <h3>オンライン診療</h3>
-                    <span class="badge sky">月〜土曜　18:00~23:00</span>
+                    <span class="badge sky">月〜土曜　18:00〜23:00</span>
                     </div>
                     <p class="card-description xs">どの組み合わせがいいかわからない方はこちら。</p>
                 </div>
@@ -254,7 +254,7 @@
                         <div class="step-number"><span>5</span></div>
                         <div class="step-content">
                             <h4>配送</h4>
-                            <p>無地パッケージ、品名は「日用品」</p>
+                            <p>無地パッケージ、品名は「医薬品」</p>
                         </div>
                     </div>
                 </div>

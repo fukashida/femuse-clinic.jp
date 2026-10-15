@@ -279,7 +279,7 @@
                     <div class="exp-card">
                         <div class="exp-card-inner">
                             <h3>コストを抑えたいなら</h3>
-                            <p>3ヶ月セットで月14,850円</p>
+                            <p>3ヶ月セットで月11,200円</p>
                         </div>
                     </div>
                     <div class="exp-icon">
@@ -507,7 +507,7 @@
                 </div>
                 <div class="qa-box">
                     <p class="question">新宿でマンジャロを処方してもらえますか？?</p>
-                    <p class="answer">東新宿駅A3出口から徒歩1分です。来院（木金土 18-23時）とオンライン診療（月〜土曜　18:00~23:00）の両方で処方可能です。</p>
+                    <p class="answer">東新宿駅A3出口から徒歩1分です。来院（木金土 18-23時）とオンライン診療（月〜土曜　18:00〜23:00）の両方で処方可能です。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">マンジャロの保管方法は？</p>
@@ -749,7 +749,7 @@
         <div class="cta-inner">
             <h2 class="cta-title wh">まずは対面で、<br>一緒に始めましょう。</h2>
             <p class="cta-sub">初診料1,500円。マンジャロ2.5mg<br>
-                3ヶ月セットなら月14,850円から。<br><br>
+                3ヶ月セットなら月11,200円から。<br><br>
 
                 初回は来院で注射の打ち方を指導します。<br>
                 慣れたらオンラインに切り替えOK。</p>
