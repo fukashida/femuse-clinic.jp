@@ -85,6 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <p class="title">ご案内</p>
                                             <ul>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/about' ); ?>">クリニック紹介</a></li>
+                                                <li><a href="<?php echo esc_url( get_site_url().'/night-clinic' ); ?>">夜間診療のご案内</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/flow' ); ?>">診療の流れ</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/regular-delivery' ); ?>">定期配送ガイド</a></li>
                                                 <li><a href="<?php echo esc_url( get_site_url().'/doctor' ); ?>">医師紹介</a></li>
