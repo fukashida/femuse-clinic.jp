@@ -59,14 +59,14 @@
                     <div class="num">5</div>
                     <div class="content">
                         <p class="title">お会計</p>
-                        <p>クレジットカード・現金</p>
+                        <p>クレジットカード・現金・交通系IC・電子マネー・QRコード決済</p>
                     </div>
                 </div>
             </div>
             <div class="belong">
                 <p class="title">持ち物</p>
                 <p>・保険証は不要です（すべて自由診療のため）<br>
-                ・クレジットカード or 現金</p>
+                ・お支払いはクレジットカード・現金・交通系IC・電子マネー・QRコード決済に対応</p>
             </div>
         </div>
     </section>

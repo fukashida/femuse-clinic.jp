@@ -47,7 +47,7 @@
                     <div class="list">
                         <p class="title">料金</p>
                         <p>2,200円〜/月<br>
-                            定期便なら10%OFF</p>
+                            定期便なら最大20%OFF</p>
                     </div>
                 </div>
                 <a href="https://liff.line.me/2003578447-9LneB3xY?flowPathId=1379&basicId=@436fsscv&liffId=2003578447-9LneB3xY&clientId=2003578447" class="btn-cta btn-sky">オンライン診療を予約する</a>
@@ -320,7 +320,7 @@
                             <div class="plan-card-inner">
                                 <h3>定期便プラン（縛りなし）</h3>
                                 <div class="plan-header-info">
-                                    <p>通常価格から10%OFF。<br>続ける方のための価格です。</p>
+                                    <p>3シートプランは10%OFF、6シートプランなら20%OFF。<br>続ける方のための価格です。</p>
                                     <div class="badge-wrap">
                                         <span class="badge">送料無料</span>
                                         <span class="badge">2回目以降 診察料無料</span>

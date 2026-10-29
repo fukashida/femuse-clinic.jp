@@ -446,7 +446,7 @@
                             <div class="step-num step-num--teal">3</div>
                             <div class="step-body">
                                 <p class="step-title">処方・決済</p>
-                                <p class="step-desc">マンジャロを処方。<br>クレジットカードでお支払い</p>
+                                <p class="step-desc">マンジャロを処方。<br>クレジットカードまたは銀行振込でお支払い</p>
                             </div>
                         </li>
                         <li class="step">

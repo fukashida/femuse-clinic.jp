@@ -103,8 +103,8 @@
                         <img src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/info/guideline-icon01.png" alt="">
                     </div>
                     <div class="guideline-body">
-                        <h3 class="guideline-heading">持ち物</h3>
-                        <p class="guideline-desc">保険証は不要です(すべて自由診療)。<br>クレジットカードまたは現金をお持ちください。</p>
+                        <h3 class="guideline-heading">持ち物・お支払い</h3>
+                        <p class="guideline-desc">保険証は不要です(すべて自由診療)。<br>お支払いはカード・現金・交通系IC・電子マネー・QRコード決済に対応しております。</p>
                     </div>
                 </div>
                 <div class="guideline-card">
