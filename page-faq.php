@@ -256,7 +256,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">来院: クレジットカード・現金に対応しています。オンライン診療・配送: クレジットカード・銀行振込に対応しています。</p>
+                        <p class="a-text">来院時は、クレジットカード・現金・交通系IC・電子マネー・QRコード決済に対応しています。オンライン診療・配送は、クレジットカード・銀行振込に対応しています。</p>
                     </div>
                 </div>
                 <div class="faq-card">
@@ -278,7 +278,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">クレジットカードによるお支払いに対応しております。</p>
+                        <p class="a-text">オンライン診療・配送ではクレジットカード・銀行振込、来院時はクレジットカード・現金・交通系IC・電子マネー・QRコード決済によるお支払いに対応しております。</p>
                     </div>
                 </div>
                 <div class="faq-card">
@@ -374,7 +374,7 @@
                     <div class="divider"></div>
                     <div class="faq-row">
                         <span class="badge badge-a">A</span>
-                        <p class="a-text">お届けサイクルごとの一括払いとなります。3ヶ月プランの場合は3ヶ月に1回、6ヶ月プランの場合は6ヶ月に1回のお引き落としとなり、毎月のお引き落としは発生いたしません。</p>
+                        <p class="a-text">お届けサイクルごとの一括払いとなります。3ヶ月プランの場合は3ヶ月に1回、6ヶ月プランの場合は6ヶ月に1回のお支払いとなり、毎月のお支払いは発生いたしません。</p>
                     </div>
                 </div>
                 <div class="faq-card">

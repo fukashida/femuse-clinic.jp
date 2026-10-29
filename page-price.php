@@ -313,8 +313,8 @@
             <div class="common-block">
                 <div class="info-card">
                     <h3>お支払い方法</h3>
-                    <p>クレジットカード（VISA / Mastercard / JCB / AMEX / Diners）</p>
-                    <p>現金 / 交通系IC / QRコード決済</p>
+                    <p>オンライン診療：クレジットカード（VISA / Mastercard / JCB / AMEX / Diners）・銀行振込</p>
+                    <p>来院：クレジットカード・現金・交通系IC・電子マネー・QRコード決済</p>
                 </div>
                 <div class="info-card">
                     <h3>自由診療について</h3>

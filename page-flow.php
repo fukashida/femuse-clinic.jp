@@ -77,7 +77,7 @@
                         <div class="step-number"><span>3</span></div>
                         <div class="step-content">
                             <h4>処方薬が届く</h4>
-                            <p>クレカ決済 → 自宅に配送</p>
+                            <p>カードまたは銀行振込で決済 → 自宅に配送</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                         <div class="step-number"><span>3</span></div>
                         <div class="step-content">
                             <h4>その場でお会計</h4>
-                            <p>クレジットカードまたは現金</p>
+                            <p>カード・現金・交通系IC・電子マネー・QRコード決済に対応</p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,8 @@
             </div>
             <div class="notes-list">
                 <p>・保険証は不要です（すべて自由診療）</p>
-                <p>・持ち物（来院）: クレジットカード or 現金</p>
+                <p>・お支払い（オンライン）: カード・銀行振込</p>
+                <p>・お支払い（来院）: カード・現金・交通系IC・電子マネー・QRコード決済</p>
                 <p>・キャンセル: 予約日前日まで変更・キャンセル可能</p>
             </div>
         </div>

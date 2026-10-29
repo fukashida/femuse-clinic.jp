@@ -81,14 +81,14 @@
                     <h3 class="payment-title">お支払いについて</h3>
                     <p class="payment-text">
                         お支払いはお届けサイクルごとの<br>
-                        一括引き落としです。
+                        一括払いです。
                     </p>
                     <ul class="payment-list">
                         <li>・3ヶ月プラン：3ヶ月分を一括お支払い</li>
                         <li>・6ヶ月プラン：6ヶ月分を一括お支払い</li>
                     </ul>
                     <p class="payment-note">
-                        ※毎月のお引き落としは<br>
+                        ※毎月のお支払いは<br>
                         発生いたしませんのでご安心ください。
                     </p>
                     <p class="payment-note">
@@ -96,7 +96,7 @@
                         自動で次のサイクルへ更新されます（自動更新）
                     </p>
                     <div class="payment-method">
-                        お支払い方法：クレジットカード
+                        お支払い方法：クレジットカードまたは銀行振込
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
                         </li>
                         <li class="step-item">
                             <span class="step-num">3</span>
-                            <span class="step-label">決済（クレジットカード）</span>
+                            <span class="step-label">決済（クレジットカードまたは銀行振込）</span>
                         </li>
                         <li class="step-item">
                             <span class="step-num">4</span>
@@ -258,7 +258,7 @@
             <div class="qa-boxes">
                 <div class="qa-box">
                     <p class="question">定期購入の場合、お支払いは毎月発生しますか？</p>
-                    <p class="answer">お届けサイクルごとの一括払いとなります。3ヶ月プランの場合は3ヶ月に1回、6ヶ月プランの場合は6ヶ月に1回のお引き落としとなり、毎月のお引き落としは発生いたしません。</p>
+                    <p class="answer">お届けサイクルごとの一括払いとなります。3ヶ月プランの場合は3ヶ月に1回、6ヶ月プランの場合は6ヶ月に1回のお支払いとなり、毎月のお支払いは発生いたしません。</p>
                 </div>
                 <div class="qa-box">
                     <p class="question">送料を教えてください。</p>

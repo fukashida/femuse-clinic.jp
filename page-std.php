@@ -526,7 +526,7 @@
                                         <div class="step-number"><span>3</span></div>
                                         <div class="step-content">
                                             <h4>その場でお会計</h4>
-                                            <p>クレジットカードまたは現金</p>
+                                            <p>カード・現金・交通系IC・電子マネー・QRコード決済に対応</p>
                                         </div>
                                     </div>
                                 </div>
@@ -559,7 +559,7 @@
                                         <div class="step-number"><span>3</span></div>
                                         <div class="step-content">
                                             <h4>処方薬が届く</h4>
-                                            <p>クレカ決済 → 自宅に配送</p>
+                                            <p>カード決済 → 自宅に配送</p>
                                         </div>
                                     </div>
                                 </div>
