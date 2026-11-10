@@ -1,6 +1,6 @@
 <!-- コラム記事の記事ページです -->
 <?php get_header(); ?>
-<main class="single-column">
+<main class="single-column" id="column">
     <div class="thumbnail">
         <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>

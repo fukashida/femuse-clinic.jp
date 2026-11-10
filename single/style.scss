@@ -401,3 +401,728 @@ header{
     }
 }
 
+
+/* ===================================
+   FEMUSE COLUMN（SP専用：767px以下）
+
+   【色の役割】
+   ・メイン   シアン #2db5cf … 見出し・表・リスト・ボックスなど「構造」すべて
+   ・アクセント グリーン #30be50 … 太字マーカー・POINTボックスなど「強調」だけ
+   ・リンク   パープル #5860cc … リンクと出典番号だけ
+   ※サイト全体では 緑=スマホ/LINE、シアン=オンライン、紫=来院 の意味を持つため、
+     記事内では装飾目的で3色を均等に使わない
+=================================== */
+
+#column {
+  --c-text: #333;
+  --c-sub: #6b7280;
+
+  --c-main: #2db5cf;
+  --c-main-dark: #1f9bb3;
+  --c-main-light: #eaf9fc;
+  --c-main-pale: #f5fcfd;
+  --c-main-border: #cdeef4;
+
+  --c-accent: #30be50;
+  --c-accent-light: #f0fbf2;
+  --c-accent-border: #c9eed1;
+  --c-marker: #e4ffde;
+
+  --c-link: #5860cc;
+
+  --c-caution: #e57373;
+  --c-caution-light: #fff5f5;
+  --c-caution-border: #f6d4d4;
+
+  --c-line: #e3ebed;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(30, 80, 100, 0.07);
+
+  color: var(--c-text);
+
+  /* ===================================
+     記事タイトルまわり（content-box外でも効くように #column 直下）
+  =================================== */
+
+  h1 {
+    position: relative;
+    color: var(--c-text);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    padding-bottom: 18px;
+    margin: 12px 0 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 48px;
+      height: 3px;
+      border-radius: 2px;
+      background: var(--c-main);
+    }
+  }
+
+  /* カテゴリ・タグ */
+  .tag,
+  .tags a,
+  .category,
+  .cat,
+  .post-categories a,
+  a[rel="tag"] {
+    display: inline-flex;
+    align-items: center;
+    background: var(--c-main);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 999px;
+    margin: 0 6px 6px 0;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  /* 投稿日・更新日 */
+  time,
+  .date {
+    color: var(--c-sub);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ===================================
+     本文エリア
+  =================================== */
+
+  .content-box {
+    color: var(--c-text);
+    font-size: 15px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    overflow-wrap: anywhere;
+
+    /* ---------- 見出し ---------- */
+
+    /* H2：シアンの面 */
+    h2 {
+      color: var(--c-text);
+      background: var(--c-main-light);
+      border: none;
+      border-left: 4px solid var(--c-main);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.55;
+      padding: 14px 16px;
+      margin: 48px 0 22px;
+
+      &::after {
+        background: none;
+      }
+    }
+
+    /* H3：シアンの線（H2より一段軽く） */
+    h3 {
+      position: relative;
+      color: var(--c-text);
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--c-main-border);
+      border-radius: 0;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.6;
+      padding: 0 0 10px 16px;
+      margin: 36px 0 18px;
+
+      /* 左の縦バー */
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.2em;
+        bottom: calc(10px + 0.2em);
+        width: 4px;
+        border-radius: 3px;
+        background: var(--c-main);
+      }
+    }
+
+    h2 + h3 {
+      margin-top: 28px;
+    }
+
+    /* H4：シアンのドット（さらに軽く） */
+    h4 {
+      position: relative;
+      color: var(--c-text);
+      border: none;
+      border-radius: 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.6;
+      padding: 0 0 0 18px;
+      margin: 26px 0 14px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 0.6em;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--c-main);
+      }
+    }
+
+    /* ---------- 本文 ---------- */
+
+    /* 太字：グリーンのマーカー（強調はグリーンに統一） */
+    strong,
+    b {
+      font-weight: 700;
+      background: linear-gradient(transparent 62%, var(--c-marker) 62%);
+      padding: 0 1px;
+    }
+
+    h2, h3, h4, th, a {
+      strong,
+      b {
+        background: none;
+        padding: 0;
+      }
+    }
+
+    /* リンク */
+    p a,
+    li a,
+    td a {
+      display: inline-block;
+      color: var(--c-link);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.7;
+        text-decoration: none;
+      }
+    }
+
+    /* ---------- 注釈・出典 ---------- */
+
+    sup {
+      font-size: 0.68em;
+      line-height: 0;
+      vertical-align: super;
+      margin: 0 1px;
+
+      a {
+        display: inline-block;
+        color: var(--c-link);
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0 2px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    small,
+    .note,
+    .has-small-font-size {
+      display: block;
+      color: var(--c-sub);
+      font-size: 12px;
+      line-height: 1.7;
+      padding-left: 1.2em;
+      text-indent: -1.2em;
+      margin: -8px 0 24px;
+    }
+
+    p small,
+    td small,
+    li small {
+      display: inline;
+      padding: 0;
+      text-indent: 0;
+      margin: 0;
+    }
+
+    figcaption,
+    .wp-element-caption {
+      color: var(--c-sub);
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: left;
+      margin: 8px 0 0;
+    }
+
+    /* ---------- リスト（共通） ---------- */
+
+    ul,
+    ol {
+      list-style: none;
+      background: var(--c-main-pale);
+      border: 1px solid var(--c-main-border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      margin: 20px 0 26px;
+
+      > li {
+        position: relative;
+        line-height: 1.8;
+
+        &::before {
+          position: absolute;
+          left: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    /* 箇条書き：ドット */
+    ul > li {
+      padding-left: 20px;
+      margin-bottom: 8px;
+
+      &::before {
+        content: "";
+        left: 2px;
+        top: 0.68em;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--c-main);
+      }
+    }
+
+    /* 番号付き：丸数字 */
+    ol {
+      counter-reset: col-ol;
+
+      > li {
+        counter-increment: col-ol;
+        padding-left: 32px;
+        margin-bottom: 10px;
+
+        &::before {
+          content: counter(col-ol);
+          top: 0.2em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background: var(--c-main);
+          color: #fff;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 1;
+        }
+      }
+    }
+
+    /* 入れ子のリスト */
+    li {
+      > ul,
+      > ol {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 8px 0 0 4px;
+        margin: 0;
+      }
+
+      > ul > li::before {
+        width: 6px;
+        height: 6px;
+        top: 0.75em;
+        background: transparent;
+        border: 1.5px solid var(--c-main);
+      }
+
+      > ol > li::before {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        color: var(--c-main-dark);
+        border: 1px solid var(--c-main);
+      }
+    }
+
+    /* ---------- 表（横スクロール） ---------- */
+
+    .wp-block-table {
+      max-width: 100%;
+      margin: 24px 0 30px;
+
+      table {
+        margin: 0;
+      }
+    }
+
+    table {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-collapse: separate;
+      border-spacing: 0;
+      border: 1px solid var(--c-main-border);
+      border-radius: var(--radius);
+      margin: 24px 0 30px;
+      background: #fff;
+      color: var(--c-text);
+      font-size: 13px;
+      line-height: 1.65;
+
+      th,
+      td {
+        min-width: 120px;
+        border: none;
+        border-right: 1px solid var(--c-line);
+        border-bottom: 1px solid var(--c-line);
+        padding: 12px;
+        vertical-align: middle;
+        text-align: left;
+        overflow-wrap: break-word;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      tr:last-child {
+        th,
+        td {
+          border-bottom: none;
+        }
+      }
+
+      /* ヘッダー行 */
+      thead th,
+      thead td,
+      &:not(:has(thead)) tbody tr:first-child th,
+      &:not(:has(thead)) tbody tr:first-child td {
+        background: var(--c-main);
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        border-right-color: rgba(255, 255, 255, 0.35);
+      }
+
+      /* 行見出し */
+      tbody th {
+        min-width: 96px;
+        background: var(--c-main-light);
+        font-weight: 700;
+      }
+
+      tbody tr:nth-child(even) td {
+        background: var(--c-main-pale);
+      }
+
+      /* 表内リスト */
+      ul,
+      ol {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+
+        > li {
+          padding-left: 14px;
+          margin-bottom: 4px;
+
+          &::before {
+            left: 0;
+            width: 5px;
+            height: 5px;
+            top: 0.7em;
+          }
+        }
+      }
+
+      ol > li {
+        padding-left: 26px;
+
+        &::before {
+          width: 18px;
+          height: 18px;
+          font-size: 10px;
+          top: 0.15em;
+        }
+      }
+
+      /* 表内リンク（公式サイトなど）はボタン風 */
+      th a,
+      td a {
+        color: var(--c-link);
+        font-size: 11px;
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid var(--c-link);
+        border-radius: 999px;
+        line-height: 1.4;
+        padding: 5px;
+        transition: background 0.2s, color 0.2s;
+
+        &:hover {
+          background: var(--c-link);
+          color: #fff;
+          opacity: 1;
+        }
+      }
+
+      small {
+        display: block;
+        color: var(--c-sub);
+        font-size: 12px;
+        margin-top: 4px;
+      }
+    }
+
+    /* ---------- グループ（ボックス） ----------
+       使い方：グループブロックの「追加CSSクラス」に下記を入れる
+       ・なし        … 白カード（標準）
+       ・is-point    … POINT（グリーン）
+       ・is-summary  … まとめ（シアン）
+       ・is-caution  … 注意（レッド）
+    ------------------------------------------ */
+
+    .wp-block-group {
+      position: relative;
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px 18px;
+      margin: 26px 0 30px;
+
+      /* 背景色をブロック側で指定した場合は枠線だけ消す */
+      &.has-background {
+        border-color: transparent;
+      }
+
+      /* クラシックテーマの内側ラッパー */
+      > .wp-block-group__inner-container > *:first-child,
+      > *:first-child {
+        margin-top: 0;
+      }
+
+      > .wp-block-group__inner-container > *:last-child,
+      > *:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ボックス内の見出しはリセットしてタイトル扱い */
+      h2,
+      h3,
+      h4 {
+        background: none;
+        border: none;
+        border-bottom: 1px dashed var(--c-line);
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 0 12px;
+        margin: 0 0 16px;
+
+        &::before,
+        &::after {
+          content: none;
+        }
+      }
+
+      /* ボックス内のリストは二重の箱にしない */
+      ul,
+      ol {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        margin: 0 0 16px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      /* 入れ子のグループ */
+      .wp-block-group {
+        box-shadow: none;
+        padding: 16px;
+        margin: 16px 0;
+      }
+
+      /* --- 色バリエーション共通：左上のラベル --- */
+      &.is-point,
+      &.is-summary,
+      &.is-caution {
+        box-shadow: none;
+        padding-top: 30px;
+        margin-top: 38px;
+
+        &::before {
+          position: absolute;
+          top: -13px;
+          left: 14px;
+          color: #fff;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 1;
+          letter-spacing: 0.08em;
+          padding: 6px 12px;
+          border-radius: 999px;
+        }
+      }
+
+      /* POINT */
+      &.is-point {
+        background: var(--c-accent-light);
+        border: 1px solid var(--c-accent-border);
+
+        &::before {
+          content: "POINT";
+          background: var(--c-accent);
+        }
+
+        ul > li::before,
+        ol > li::before {
+          background: var(--c-accent);
+        }
+
+        h2, h3, h4 {
+          border-bottom-color: var(--c-accent-border);
+        }
+      }
+
+      /* まとめ */
+      &.is-summary {
+        background: var(--c-main-light);
+        border: 1px solid var(--c-main-border);
+
+        &::before {
+          content: "まとめ";
+          background: var(--c-main);
+        }
+
+        h2, h3, h4 {
+          border-bottom-color: var(--c-main-border);
+        }
+      }
+
+      /* 注意 */
+      &.is-caution {
+        background: var(--c-caution-light);
+        border: 1px solid var(--c-caution-border);
+
+        &::before {
+          content: "注意";
+          background: var(--c-caution);
+        }
+
+        ul > li::before,
+        ol > li::before {
+          background: var(--c-caution);
+        }
+
+        strong,
+        b {
+          background: none;
+          color: #c94a4a;
+        }
+
+        h2, h3, h4 {
+          border-bottom-color: var(--c-caution-border);
+        }
+      }
+    }
+
+    /* ---------- 引用 ---------- */
+
+    blockquote {
+      position: relative;
+      background: #f7f8fa;
+      border: none;
+      border-left: 4px solid #c9d3d6;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 18px 18px 46px;
+      margin: 30px 0;
+      color: var(--c-text);
+      font-size: 14px;
+
+      &::before {
+        content: "\201C";
+        position: absolute;
+        left: 14px;
+        top: 8px;
+        color: #aab6ba;
+        font-family: Georgia, serif;
+        font-size: 36px;
+        line-height: 1;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      cite {
+        display: block;
+        color: var(--c-sub);
+        font-size: 12px;
+        font-style: normal;
+        margin-top: 8px;
+
+        &::before {
+          content: "出典：";
+        }
+      }
+    }
+
+    /* ---------- 画像・区切り線 ---------- */
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    figure {
+      margin: 28px 0 32px;
+
+      img {
+        border-radius: var(--radius);
+      }
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: var(--c-line);
+      margin: 48px 0;
+    }
+  }
+}
